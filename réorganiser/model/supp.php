@@ -3,17 +3,17 @@ include_once 'function.php';
 
 class supp{
 
+    private $Email;
     private $bdd;
 
-    public function __construct(){
+    public function __construct($Email){
+        $this->Email = $Email;
         $this->bdd = bdd();
     }
 
     public function suppression(){
-        $req = $this->bdd->prepare('DELETE FROM profil WHERE Id_Profil= :Id_Profil ');
-        $req->execute(array(
-
-        ));
+        $req = $this->bdd->prepare('DELETE FROM profil WHERE Emal= :Email ');
+        $req->execute();
         return 1;
     }
 }
