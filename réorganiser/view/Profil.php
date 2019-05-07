@@ -27,10 +27,13 @@ $bdd = bdd();
         </div>
         <div class='corpsProfil'>
             <br>
+            <br>
+            <br>
+            <br>
 
-
-            <div class="navMaisons">
+            <div class="navMaisons">&emsp;
                 <?php for($i=0 ; $i < sizeof($_SESSION['Maison']); $i++){
+
                     echo "<a href='#Maison".$i."' class='Maison'>&emsp;".$_SESSION['Maison'][$i][1]."&emsp;</a>";
                 }?>
                 <a class="Maison" href='index.php?action=AjoutMaison'>&emsp;+Ajouter une maison&emsp;</a>
@@ -63,7 +66,7 @@ $bdd = bdd();
                                   
                                  ";
                         }
-                        echo"<a href='index.php?action=AjoutCapteur&id=".$_SESSION['Maison'][$i][2][$j][0]."&Maison=Maison".$i."'>&emsp;+Ajouter un capteur</a></div>";
+                        echo"<a href='index.php?action=AjoutCapteur&id=".$_SESSION['Maison'][$i][2][$j][0]."&Maison=Maison".$i."'>&emsp;+Ajouter un capteur</a><br><br></div><br>";
                     }
 
                 echo "<br><a href='index.php?action=AjoutPiece&id=".$_SESSION['Maison'][$i][0]."&Maison=Maison".$i."'>&emsp;+Ajouter une Piece</a>
