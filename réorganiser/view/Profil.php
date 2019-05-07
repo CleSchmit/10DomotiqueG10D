@@ -1,4 +1,4 @@
-<?php
+    <?php
 session_start();
 include_once "model/function.php";
 include_once "controller/ControlProfil.php";
@@ -19,7 +19,9 @@ $bdd = bdd();
 
         <div class='headerprofil'>
             <div class='deco'><a href='index.php?action=deconnexion'>Deconnexion &emsp;</a> </div>
-            <div class='deco'><a href='index.php?action=ProfilModif'>Modifier le Profil &emsp;</a> </div>
+            <div class='deco'><a href='index.php?action=ProfilModif'>Modifier le profil &emsp;</a> </div>
+            <div class='deco'><a href='index.php?action=supprimer'>Supprimer votre profil &emsp;</a> </div>
+
             <img class="imgprofil" src="view/images/talin.png">
             <h1>
                 <?= $_SESSION['Prenom']?>&ensp;<?= $_SESSION['Nom']?>
