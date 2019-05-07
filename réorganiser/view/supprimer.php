@@ -1,11 +1,12 @@
 <?php session_start();
+include_once 'controller/ControlSupp.php';
 ob_start();
 
 $Email = $_SESSION['Email'];
 
 $body="
 <br>
-<form action=\"/index.php?action=ControlSupp\">
+<form action=\"/index.php?action=controller/ControlSupp.php\">
         Voulez-vous vraiment supprimer votre profil ?
     <input type=\"submit\" value=\"Valider\">
 </form>
