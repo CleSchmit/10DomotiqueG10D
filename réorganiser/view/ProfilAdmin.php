@@ -12,8 +12,13 @@ $Nom = $_SESSION['Nom'];
 $body="<br><div id=\"CProfil\">
 
             <div class='headerprofil'>
-                <div class='deco'><a href='index.php?action=deconnexion'>Deconnexion &emsp;</a> </div>
-                <div class='deco'><a href='index.php?action=ProfilModif'>Modifier le Profil &emsp;</a> </div>
+                <ul class=\"Option\">
+                    <li><a href='index.php?action=deconnexion'><img class=\"dec\" src=\"view/images/deco.png\"></a></li>
+                    <li><a href='index.php?action=ProfilModif'><img class=\"dec\"  src=\"view/images/Modif.png\"></a></li>
+                </ul>
+                <br>
+                <br>
+                <br>
                 <img class=\"imgprofil\" src=\"view/images/Boss.jpg\">
                 <h1>
                     Compte Administrateur de $Prenom $Nom                                        

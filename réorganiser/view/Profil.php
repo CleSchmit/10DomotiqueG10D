@@ -18,30 +18,37 @@ $bdd = bdd();
     <br><div id="CProfil">
 
         <div class='headerprofil'>
-            <div class='deco'><a href='index.php?action=deconnexion'>Deconnexion &emsp;</a> </div>
-            <div class='deco'><a href='index.php?action=ProfilModif'>Modifier le Profil &emsp;</a> </div>
+            <ul class="Option">
+                <li><a href='index.php?action=deconnexion'><img class="dec" src="view/images/deco.png"></a></li>
+                <li><a href='index.php?action=ProfilModif'><img class="dec"  src="view/images/Modif.png"></a></li>
+            </ul>
+            <br>
+            <br>
+            <br>
+
             <img class="imgprofil" src="view/images/talin.png">
             <h1>
                 <?= $_SESSION['Prenom']?>&ensp;<?= $_SESSION['Nom']?>
             </h1>
         </div>
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+
         <div class='corpsProfil'>
-            <br>
-            <br>
-            <br>
-            <br>
 
-            <div class="navMaisons">&emsp;
+            <div class="navMaisons">
                 <?php for($i=0 ; $i < sizeof($_SESSION['Maison']); $i++){
-
-                    echo "<a href='#Maison".$i."' class='Maison'>&emsp;".$_SESSION['Maison'][$i][1]."&emsp;</a>";
+                    echo "<a href='#Maison".$i."' class='Maison'>&emsp;".$_SESSION['Maison'][$i][1]."&emsp; </a> <br><br>";
                 }?>
                 <a class="Maison" href='index.php?action=AjoutMaison'>&emsp;+Ajouter une maison&emsp;</a>
             </div>
 
 
             <div class='internProfil'>
-                <br>
 
                 <?php for($i=0 ; $i < sizeof($_SESSION['Maison']); $i++){
                 echo "
@@ -55,21 +62,52 @@ $bdd = bdd();
 
                     for ($j = 0; $j < sizeof($_SESSION['Maison'][$i][2]); $j++){
                         echo "<div class='Piece'><h4>&emsp;&emsp;".$_SESSION['Maison'][$i][2][$j][1]."</h4> <br>&ensp;
-                              <a href=# class='delete'>&ensp;X&ensp;</a><br><br><br>  ";
+                              <a href=# class='delete'>&ensp;X&ensp;</a><br><br><br>  
+                              <div class='Capteurs'>";
 
 
                         for ($k = 0; $k < sizeof($_SESSION['Maison'][$i][2][$j][2]);$k++){
-                            echo "<a class='Capteur'>&emsp;&emsp;&emsp;".$_SESSION['Maison'][$i][2][$j][2][$k][1]."&emsp;</a>
-                                  <span class='Valeur'>&emsp;".$_SESSION['Maison'][$i][2][$j][2][$k][2]."&emsp;
-                                    <a class='Aug' href='index.php?action=Profil&Aug=".$_SESSION['Maison'][$i][2][$j][2][$k][0]."&Maison=Maison".$i."'>+1</a>
-                                  </span><br><br>
-                                  
-                                 ";
+
+
+
+                            if($_SESSION['Maison'][$i][2][$j][2][$k][3] == 1){
+                                echo "<a href='index.php?action=CapteurAction&Maison=Maison".$i."'><figure>
+                                    <img class='imgCapteur' src='view/images/CapteurI.png'>
+                                        <figcaption>&emsp;".$_SESSION['Maison'][$i][2][$j][2][$k][1]."&emsp;</figcaption>
+                                    </figure></a>";
+                            }
+                            if($_SESSION['Maison'][$i][2][$j][2][$k][3] == 2){
+                                echo "<a><figure>
+                                    <img class='imgCapteur' src='view/images/Capteur.png'>
+                                    <figcaption>&emsp;".$_SESSION['Maison'][$i][2][$j][2][$k][1]."&emsp;</figcaption>
+                                    </figure></a>";                            }
+                            if($_SESSION['Maison'][$i][2][$j][2][$k][3] == 3){
+                                echo "<a><figure>
+                                    <img class='imgCapteur' src='view/images/CapteurP.png'>
+                                    <figcaption>&emsp;".$_SESSION['Maison'][$i][2][$j][2][$k][1]."&emsp;</figcaption>
+                                    </figure></a>";}
+
+                            if (($k+1)%4 == 0){
+                                echo "</div><div class='Capteurs'>";
+                            }
+
+
+                            //     <span class='Valeur'>&emsp;".$_SESSION['Maison'][$i][2][$j][2][$k][2]."&emsp;
+                            //        <a class='Aug' href='index.php?action=Profil&Aug=".$_SESSION['Maison'][$i][2][$j][2][$k][0]."&Maison=Maison".$i."'>+1</a>
+
                         }
-                        echo"<a href='index.php?action=AjoutCapteur&id=".$_SESSION['Maison'][$i][2][$j][0]."&Maison=Maison".$i."'>&emsp;+Ajouter un capteur</a><br><br></div><br>";
+                        echo"<a href='index.php?action=AjoutCapteur&id=".$_SESSION['Maison'][$i][2][$j][0]."&Maison=Maison".$i."'>
+                                    <figure>
+                                    &emsp;<img class='imgAjout' src='view/images/Ajout.png'>
+                                    <figcaption>&emsp;Ajouter Capteur&emsp;</figcaption>
+                                    </figure></a></div></div><br>";
                     }
 
-                echo "<br><a href='index.php?action=AjoutPiece&id=".$_SESSION['Maison'][$i][0]."&Maison=Maison".$i."'>&emsp;+Ajouter une Piece</a>
+                echo "<br><a href='index.php?action=AjoutPiece&id=".$_SESSION['Maison'][$i][0]."&Maison=Maison".$i."'>
+                                    <figure>
+                                    &emsp;<img class='imgAjoutP' src='view/images/Ajout.png'>
+                                    <figcaption>&emsp;Ajouter Pièce&emsp;</figcaption>
+                                    </figure></a>
                       </div>";
                 }?>
                 <br>
