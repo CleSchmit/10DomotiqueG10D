@@ -99,7 +99,7 @@ $bdd = bdd();
                                     <figcaption>&emsp;".$_SESSION['Maison'][$i][2][$j][2][$k][1]."&emsp;</figcaption>
                                     </figure></a>";}
 
-                            echo "<a class='Capteur'>&emsp;&emsp;&emsp;".$_SESSION['Maison'][$i][2][$j][2][$k][1]."&emsp;</a>";
+                            echo "<a href='index.php?action=supprimerCapteur&id=".$_SESSION['Maison'][$i][2][$j][2][$k][0]."&Maison=Maison".$i."' class='delete'>&ensp;X&ensp;</a>";
 
                             if (($k+1)%4 == 0){
                                 echo "</div><div class='Capteurs'>";
