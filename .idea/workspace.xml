@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6c4280c2-295d-417c-9d19-671907b5c0ff" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/réorganiser/controller/ControlSupp.php" beforeDir="false" afterPath="$PROJECT_DIR$/réorganiser/controller/ControlSupp.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/réorganiser/model/connexion.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/réorganiser/model/connexion.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/réorganiser/model/supp.php" beforeDir="false" afterPath="$PROJECT_DIR$/réorganiser/model/supp.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/réorganiser/view/supprimer.php" beforeDir="false" afterPath="$PROJECT_DIR$/réorganiser/view/supprimer.php" afterDir="false" />
     </list>
@@ -35,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/réorganiser/view/ProfilModif.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
+            <state relative-caret-position="495">
+              <caret line="50" column="34" lean-forward="true" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -44,8 +43,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/réorganiser/view/AjoutMaison.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="165">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/réorganiser/view/supprimer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
               <caret line="5" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/réorganiser/controller/ControlSupp.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/réorganiser/model/supp.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="14" column="70" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -54,7 +80,7 @@
         <entry file="file://$PROJECT_DIR$/réorganiser/view/Connexion.php">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="22" selection-start-column="22" selection-end-column="22" />
+              <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -62,44 +88,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/réorganiser/controller/ControlConnexion.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/réorganiser/model/connexion.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+            <state relative-caret-position="462">
+              <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/réorganiser/view/Profil.php">
+        <entry file="file://$PROJECT_DIR$/réorganiser/model/connexion.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="101" column="178" selection-start-line="101" selection-start-column="178" selection-end-line="101" selection-end-column="178" />
-              <folding>
-                <element signature="e#786#792#0#HTML" expanded="true" />
-                <element signature="e#1876#1882#0#HTML" expanded="true" />
-                <element signature="e#1901#1907#0#HTML" expanded="true" />
-                <element signature="e#275#281#0" expanded="true" />
-                <element signature="e#23#29#0" expanded="true" />
-                <element signature="e#29#35#0" expanded="true" />
-                <element signature="e#50#56#0" expanded="true" />
-                <element signature="e#172#178#0" expanded="true" />
-                <element signature="e#179#185#0" expanded="true" />
-                <element signature="e#151#157#0" expanded="true" />
-                <element signature="e#162#168#0" expanded="true" />
-                <element signature="e#152#158#0" expanded="true" />
-                <element signature="e#163#169#0" expanded="true" />
-                <element signature="e#152#158#0" expanded="true" />
-                <element signature="e#258#264#0" expanded="true" />
-                <element signature="e#277#283#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="264">
+              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -108,7 +107,7 @@
         <entry file="file://$PROJECT_DIR$/réorganiser/controller/ControlMaison.php">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="5" selection-start-column="5" selection-end-column="5" />
+              <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -190,11 +189,11 @@
         <option value="$PROJECT_DIR$/view/L'Entreprise.php" />
         <option value="$PROJECT_DIR$/réorganiser/model/modif.php" />
         <option value="$PROJECT_DIR$/réorganiser/view/supprmer.php" />
+        <option value="$PROJECT_DIR$/réorganiser/view/Profil.php" />
         <option value="$PROJECT_DIR$/réorganiser/controller/ControlSupp.php" />
         <option value="$PROJECT_DIR$/réorganiser/view/supprimer.php" />
         <option value="$PROJECT_DIR$/réorganiser/model/connexion.class.php" />
         <option value="$PROJECT_DIR$/réorganiser/model/supp.php" />
-        <option value="$PROJECT_DIR$/réorganiser/view/Profil.php" />
       </list>
     </option>
   </component>
@@ -214,38 +213,53 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="10DomotiqueG10D" type="b2602c69:ProjectViewProjectNode" />
-              <item name="10DomotiqueG10D" type="462c0819:PsiDirectoryNode" />
+              <item name="htdocs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="htdocs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="10DomotiqueG10D" type="b2602c69:ProjectViewProjectNode" />
-              <item name="10DomotiqueG10D" type="462c0819:PsiDirectoryNode" />
+              <item name="htdocs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="htdocs" type="462c0819:PsiDirectoryNode" />
               <item name="réorganiser" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="10DomotiqueG10D" type="b2602c69:ProjectViewProjectNode" />
-              <item name="10DomotiqueG10D" type="462c0819:PsiDirectoryNode" />
+              <item name="htdocs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="htdocs" type="462c0819:PsiDirectoryNode" />
+              <item name="réorganiser" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="htdocs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="htdocs" type="462c0819:PsiDirectoryNode" />
+              <item name="réorganiser" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="htdocs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="htdocs" type="462c0819:PsiDirectoryNode" />
               <item name="réorganiser" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="htdocs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557309160120" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557390349325" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -340,19 +354,18 @@
       <workItem from="1555570455480" duration="1473000" />
       <workItem from="1555577136180" duration="1200000" />
       <workItem from="1557156911990" duration="5548000" />
-      <workItem from="1557216679206" duration="8632000" />
-      <workItem from="1557388697416" duration="773000" />
+      <workItem from="1557216679206" duration="9029000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183698000" />
+    <option name="totallyTimeSpent" value="183322000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11409396" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22867803" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -486,6 +499,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/réorganiser/view/Profil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1353">
+          <caret line="22" column="62" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
+          <folding>
+            <element signature="e#23#29#0" expanded="true" />
+            <element signature="e#29#35#0" expanded="true" />
+            <element signature="e#81#87#0" expanded="true" />
+            <element signature="e#19#25#0" expanded="true" />
+            <element signature="e#25#31#0" expanded="true" />
+            <element signature="e#31#37#0" expanded="true" />
+            <element signature="e#80#86#0" expanded="true" />
+            <element signature="e#94#100#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/réorganiser/view/AjoutMaison.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/réorganiser/view/deconnexion.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -493,19 +530,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/réorganiser/view/supprimer.php" />
-    <entry file="file://$PROJECT_DIR$/réorganiser/controller/ControlSupp.php" />
-    <entry file="file://$PROJECT_DIR$/réorganiser/model/supp.php" />
-    <entry file="file://$PROJECT_DIR$/réorganiser/view/ProfilModif.php">
+    <entry file="file://$PROJECT_DIR$/réorganiser/controller/ControlMaison.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/réorganiser/view/AjoutMaison.php">
+    <entry file="file://$PROJECT_DIR$/réorganiser/view/ProfilModif.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
+        <state relative-caret-position="495">
+          <caret line="50" column="34" lean-forward="true" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/réorganiser/view/supprimer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
@@ -513,53 +554,35 @@
     <entry file="file://$PROJECT_DIR$/réorganiser/view/Connexion.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
+          <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/réorganiser/controller/ControlConnexion.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        <state relative-caret-position="462">
+          <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/réorganiser/controller/ControlMaison.php">
+    <entry file="file://$PROJECT_DIR$/réorganiser/controller/ControlSupp.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        <state relative-caret-position="297">
+          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/réorganiser/model/supp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="14" column="70" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/réorganiser/model/connexion.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state relative-caret-position="264">
           <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/réorganiser/view/Profil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="101" column="178" selection-start-line="101" selection-start-column="178" selection-end-line="101" selection-end-column="178" />
-          <folding>
-            <element signature="e#786#792#0#HTML" expanded="true" />
-            <element signature="e#1876#1882#0#HTML" expanded="true" />
-            <element signature="e#1901#1907#0#HTML" expanded="true" />
-            <element signature="e#275#281#0" expanded="true" />
-            <element signature="e#23#29#0" expanded="true" />
-            <element signature="e#29#35#0" expanded="true" />
-            <element signature="e#50#56#0" expanded="true" />
-            <element signature="e#172#178#0" expanded="true" />
-            <element signature="e#179#185#0" expanded="true" />
-            <element signature="e#151#157#0" expanded="true" />
-            <element signature="e#162#168#0" expanded="true" />
-            <element signature="e#152#158#0" expanded="true" />
-            <element signature="e#163#169#0" expanded="true" />
-            <element signature="e#152#158#0" expanded="true" />
-            <element signature="e#258#264#0" expanded="true" />
-            <element signature="e#277#283#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
