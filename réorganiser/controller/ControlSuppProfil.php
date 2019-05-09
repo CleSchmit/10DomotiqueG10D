@@ -1,0 +1,20 @@
+<?php
+include_once 'model/function.php';
+include_once 'model/suppProfil.php';
+
+$bdd = bdd();
+$erreur = NULL;
+
+if(isset($_POST['Mdp']) AND $_POST['Mdp']==$Mdp) {
+    $supp = new suppProfil($Id_Profil);
+    if ($supp->suppression()) {
+        session_unset();
+        session_destroy();
+        header('Location: index.php?action=Connexion');
+    }
+}
+
+
+
+
+

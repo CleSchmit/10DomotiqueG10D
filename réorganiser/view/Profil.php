@@ -20,7 +20,7 @@ $bdd = bdd();
         <div class='headerprofil'>
             <div class='deco'><a href='index.php?action=deconnexion'>Deconnexion &emsp;</a> </div>
             <div class='deco'><a href='index.php?action=ProfilModif'>Modifier le profil &emsp;</a> </div>
-            <div class='deco'><a href='index.php?action=supprimer'>Supprimer votre profil &emsp;</a> </div>
+            <div class='deco'><a href='index.php?action=supprimerProfil'>Supprimer votre profil &emsp;</a> </div>
 
             <img class="imgprofil" src="view/images/talin.png">
             <h1>
@@ -36,7 +36,9 @@ $bdd = bdd();
             <div class="navMaisons">&emsp;
                 <?php for($i=0 ; $i < sizeof($_SESSION['Maison']); $i++){
 
-                    echo "<a href='#Maison".$i."' class='Maison'>&emsp;".$_SESSION['Maison'][$i][1]."&emsp;</a>";
+                    echo "<a href='#Maison".$i."' class='Maison'>&emsp;".$_SESSION['Maison'][$i][1]."&emsp;</a>
+                          <a href='index.php?action=supprimerMaison&id=".$_SESSION['Maison'][$i][0]."' class='delete'>&ensp;X&ensp;</a><br><br><br>
+                          ";
                 }?>
                 <a class="Maison" href='index.php?action=AjoutMaison'>&emsp;+Ajouter une maison&emsp;</a>
             </div>
@@ -57,14 +59,17 @@ $bdd = bdd();
 
                     for ($j = 0; $j < sizeof($_SESSION['Maison'][$i][2]); $j++){
                         echo "<div class='Piece'><h4>&emsp;&emsp;".$_SESSION['Maison'][$i][2][$j][1]."</h4> <br>&ensp;
-                              <a href=# class='delete'>&ensp;X&ensp;</a><br><br><br>  ";
+                              <a href='index.php?action=supprimerPiece&id=".$_SESSION['Maison'][$i][2][$j][0]."&Maison=Maison".$i."' class='delete'>&ensp;X&ensp;</a><br><br><br> 
+                              ";
 
 
                         for ($k = 0; $k < sizeof($_SESSION['Maison'][$i][2][$j][2]);$k++){
                             echo "<a class='Capteur'>&emsp;&emsp;&emsp;".$_SESSION['Maison'][$i][2][$j][2][$k][1]."&emsp;</a>
                                   <span class='Valeur'>&emsp;".$_SESSION['Maison'][$i][2][$j][2][$k][2]."&emsp;
                                     <a class='Aug' href='index.php?action=Profil&Aug=".$_SESSION['Maison'][$i][2][$j][2][$k][0]."&Maison=Maison".$i."'>+1</a>
-                                  </span><br><br>
+                                  </span>
+                                  <a href='index.php?action=supprimerCapteur&id=".$_SESSION['Maison'][$i][2][$j][2][$k][0]."&Maison=Maison".$i."' class='delete'>&ensp;X&ensp;</a><br><br><br>
+                                  <br><br>
                                   
                                  ";
                         }
