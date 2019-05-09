@@ -74,7 +74,7 @@ $bdd = bdd();
 
                     for ($j = 0; $j < sizeof($_SESSION['Maison'][$i][2]); $j++){
                         echo "<div class='Piece'><h4>&emsp;&emsp;".$_SESSION['Maison'][$i][2][$j][1]."</h4> <br>&ensp;
-                              <a href=# class='delete'>&ensp;X&ensp;</a><br><br><br>  
+                              <a href='index.php?action=supprimerPiece&id=".$_SESSION['Maison'][$i][2][$j][0]."&Maison=Maison".$i."' class='delete'>&ensp;X&ensp;</a><br><br><br>  
                               <div class='Capteurs'>";
 
 
