@@ -47,8 +47,10 @@ $body="
         <input type=\"submit\" value=\"Modifier mon mot de passe\" /><br>
         $erreurMdp<br>
         </form>
+                <br>
+
         
-        <a href='index.php?action=Connexion' class='retProfil'>&emsp;Retourner sur mon profil&emsp;</a>
+        <a href='index.php?action=Connexion' class='bouton'>&emsp;Retourner sur mon profil&emsp;</a>
         <br>
 
 

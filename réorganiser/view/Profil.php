@@ -18,13 +18,22 @@ $bdd = bdd();
     <br><div id="CProfil">
 
         <div class='headerprofil'>
-            <ul class="Option">
-                <li><a href='index.php?action=deconnexion'><img class="dec" src="view/images/deco.png"></a></li>
-                <li><a href='index.php?action=ProfilModif'><img class="dec"  src="view/images/Modif.png"></a></li>
-            </ul>
-            <br>
-            <br>
-            <br>
+            <div class="Option">
+                <a href='index.php?action=ProfilModif'>
+                    <figure>
+                        <img class="decM"  src="view/images/Modif.png">
+                        <figcaption>Modification du profil</figcaption>
+                    </figure>
+                </a>
+                <a href='index.php?action=deconnexion'>
+                        <figure>
+                            <img class="dec" src="view/images/deco.png">
+                            <figcaption>Déconnexion</figcaption>
+                        </figure>
+                    </a>
+
+            </div>
+
 
             <img class="imgprofil" src="view/images/talin.png">
             <h1>
@@ -71,7 +80,7 @@ $bdd = bdd();
 
 
                             if($_SESSION['Maison'][$i][2][$j][2][$k][3] == 1){
-                                echo "<a href='index.php?action=CapteurAction&Maison=Maison".$i."'><figure>
+                                echo "<a href='index.php?action=CapteurAction&Maison=".$i."&Piece=".$j."&Capteur=".$k."'><figure>
                                     <img class='imgCapteur' src='view/images/CapteurI.png'>
                                         <figcaption>&emsp;".$_SESSION['Maison'][$i][2][$j][2][$k][1]."&emsp;</figcaption>
                                     </figure></a>";

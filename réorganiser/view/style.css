@@ -216,20 +216,26 @@ h1{
 
 }
 
+
+
 .headerprofil{
     background-color: gray;
 }
 
-
-.dec{
-    margin: 1% 1%;
-    width: 3%;
-    float: right;
+.Option{
+    display: flex;
+    justify-content: flex-end;
 }
 
-.Option{
-    list-style: none;
+.Option a{
+    width: 10%;
+}
 
+.dec{
+    width: 70%;
+}
+.decM{
+    width: 83%;
 }
 
 .imgprofil{
@@ -349,20 +355,86 @@ h2{
     text-decoration: underline;
 }
 
-.retProfil{
-    text-decoration: none;
-    background: gray;
+
+
+
+/* CheckBox */
+
+.CheckCapteur{
+    margin: 0% auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.slideThree {
+    width: 80px;
+    height: 26px;
+    background: #333;
+    position: relative;
+    border-radius: 50px;
+}
+
+.slideThree:after {
+     content: 'OFF';
+     color: white;
+     position: absolute;
+     right: 10px;
+     z-index: 0;
+     font: 12px/26px Arial, sans-serif;
+     font-weight: bold;
+ }
+.slideThree:before {
+     content: 'ON';
+     color: darkorange;
+     position: absolute;
+     left: 10px;
+     z-index: 0;
+     font: 12px/26px Arial, sans-serif;
+     font-weight: bold;
+ }
+label {
+    display: block;
+    width: 34px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    background: white;
+    top: 3px;
+    left: 3px;
+    z-index: 1;
+    border-radius: 50px;
+    transition: all 0.4s ease;
+}
+input[type=checkbox] {
+    visibility: hidden;
+}
+input[type=checkbox]:checked + label {
+    background: darkorange;
+    left: 43px;
+ }
+
+input[type=checkbox]:checked ~ input[type=submit]{
+
+}
+
+
+
+/* Capteur */
+
+.boutonbis{
+    border-style: none;
+    width: 25%;
+    font-size: 150%;
     color: black;
+    font-weight: bold;
+    background-color: gray;
 }
 
-.retProfil:hover{
-    background: orange;
+
+.boutonbis:hover{
+    background-color: darkorange;
 }
-
-
-
-
-
 
 
 /* FOOTER*/
