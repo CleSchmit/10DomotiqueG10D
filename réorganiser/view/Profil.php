@@ -25,6 +25,7 @@ $bdd = bdd();
                         <figcaption>Modification du profil</figcaption>
                     </figure>
                 </a>
+                <div class='deco'><a href='index.php?action=supprimerProfil'>Supprimer votre profil &emsp;</a> </div>
                 <a href='index.php?action=deconnexion'>
                         <figure>
                             <img class="dec" src="view/images/deco.png">
@@ -33,7 +34,6 @@ $bdd = bdd();
                     </a>
 
             </div>
-
 
             <img class="imgprofil" src="view/images/talin.png">
             <h1>
@@ -51,7 +51,10 @@ $bdd = bdd();
 
             <div class="navMaisons">
                 <?php for($i=0 ; $i < sizeof($_SESSION['Maison']); $i++){
-                    echo "<a href='#Maison".$i."' class='Maison'>&emsp;".$_SESSION['Maison'][$i][1]."&emsp; </a> <br><br>";
+
+                    echo "<a href='#Maison".$i."' class='Maison'>&emsp;".$_SESSION['Maison'][$i][1]."&emsp;</a>
+                          <a href='index.php?action=supprimerMaison&id=".$_SESSION['Maison'][$i][0]."' class='delete'>&ensp;X&ensp;</a><br><br><br>
+                          ";
                 }?>
                 <a class="Maison" href='index.php?action=AjoutMaison'>&emsp;+Ajouter une maison&emsp;</a>
             </div>
@@ -95,6 +98,8 @@ $bdd = bdd();
                                     <img class='imgCapteur' src='view/images/CapteurP.png'>
                                     <figcaption>&emsp;".$_SESSION['Maison'][$i][2][$j][2][$k][1]."&emsp;</figcaption>
                                     </figure></a>";}
+
+                            echo "<a class='Capteur'>&emsp;&emsp;&emsp;".$_SESSION['Maison'][$i][2][$j][2][$k][1]."&emsp;</a>";
 
                             if (($k+1)%4 == 0){
                                 echo "</div><div class='Capteurs'>";

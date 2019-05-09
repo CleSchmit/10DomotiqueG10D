@@ -6,10 +6,7 @@ class connexion{
     private $Mdp;
     private $bdd;
 
-
-
-
-
+    
     public function __construct($Email,$Mdp) {
         $this->Email = $Email;
         $this->Mdp = $Mdp;
