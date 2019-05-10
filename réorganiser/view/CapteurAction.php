@@ -8,7 +8,7 @@ if ($_SESSION['Maison'][$_GET['Maison']][2][$_GET['Piece']][2][$_GET['Capteur']]
             <div class='CheckCapteur'>
             Voulez-vous activez l'alarme ?
             <div class=\"slideThree\">  
-                      <input type=\"checkbox\" value=\"None\" id=\"slideThree\" name=\"check\" onclick=''/>
+                      <input type=\"checkbox\" value=\"Alarm\" id=\"slideThree\" name=\"check\" class='Alarm'/>
                       <label for=\"slideThree\"></label>
             </div>  
             </div>
