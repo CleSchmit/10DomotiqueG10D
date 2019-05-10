@@ -11,7 +11,7 @@ $Nom = $_SESSION['Nom'];
 $body="
 <br>
 
-<div id=\"CProfil\" class=\"Modif\">
+<div id=\"Cforum\" class=\"Modif\">
         <h1>Modification de votre Profil :</h1>
         <form  method=\"post\" action=\"index.php?action=ProfilModif&modif=Prenom\">
         <input name=\"Prenom\" type=\"Text\" placeholder=\"$Prenom\" />
@@ -47,8 +47,10 @@ $body="
         <input type=\"submit\" value=\"Modifier mon mot de passe\" /><br>
         $erreurMdp<br>
         </form>
+                <br>
+
         
-        <a href='index.php?action=Profil#Maison0' class='retProfil'>&emsp;Retourner sur mon profil&emsp;</a>
+        <a href='index.php?action=Connexion' class='bouton'>&emsp;Retourner sur mon profil&emsp;</a>
         <br>
 
 

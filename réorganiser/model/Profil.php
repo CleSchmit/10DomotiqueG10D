@@ -51,7 +51,7 @@ class Maison{
 
     function capteur($id){
 
-        $req = $this->bdd->prepare('SELECT Id_Capteur,Nom,Valeur FROM capteur_actionneur WHERE Id_Piece = :id');
+        $req = $this->bdd->prepare('SELECT Id_Capteur,Nom,Valeur,Model FROM capteur_actionneur WHERE Id_Piece = :id');
         $req->execute(array(
             'id' => $id
         ));
@@ -61,6 +61,7 @@ class Maison{
                     $list[] = $row['Id_Capteur'];
                     $list[] = $row['Nom'];
                     $list[] = $row['Valeur'];
+                    $list[] = $row['Model'];
                     $listCapteur[] = $list;
             }
             return $listCapteur;
