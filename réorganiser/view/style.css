@@ -219,31 +219,45 @@ h1{
 
 
 .headerprofil{
+    border: solid black;
     background-color: gray;
+    width: 25%;
 }
 
-.Option{
-    display: flex;
-    justify-content: flex-end;
+.headerprofil a{
+    color: black;
+    font-size: 150%;
+}
+.lien{
+    border-bottom: solid black;
 }
 
-.Option a{
-    width: 10%;
+.nom{
+    background-color: black;
+    color: white;
+    font-size: 170%;
 }
 
-.dec{
-    width: 70%;
+.navMaisons{
+    background-color: lightgray;
 }
-.decM{
-    width: 83%;
+
+.ChoixMaison{
+    border-bottom: solid black;
+
+}
+
+.imgOption{
+    float: left;
+    width: 11%;
 }
 
 .imgprofil{
-    margin: 2%;
+    background-color: white;
     float: left;
     border: solid black;
     border-radius: 50px;
-    width: 5%;
+    width: 13%;
 }
 
 
@@ -252,11 +266,7 @@ h1{
 }
 
 
-.navMaisons{
-    font-size: 150%;
-    width: 20%;
-    float: left;
-}
+
 
 .fleche{
     float: right;
@@ -264,11 +274,10 @@ h1{
 
 .internProfil{
     width: 80%;
-    border-left: 2px solid black;
 }
 
 .Maison{
-    border: solid white;
+    border: solid lightgray;
     color: black;
 }
 

@@ -10,7 +10,6 @@ class modif{
 
     public function __construct($modification, $element){
 
-
         $this->modification = $modification;
         $this->element = $element;
         $this->bdd = bdd();

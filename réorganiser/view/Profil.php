@@ -17,47 +17,45 @@ $bdd = bdd();
 <div class="corps">
     <br><div id="CProfil">
 
-        <div class='headerprofil'>
-            <div class="Option">
-                <a href='index.php?action=ProfilModif'>
-                    <figure>
-                        <img class="decM"  src="view/images/Modif.png">
-                        <figcaption>Modification du profil</figcaption>
-                    </figure>
-                </a>
-                <div class='deco'><a href='index.php?action=supprimerProfil'>Supprimer votre profil &emsp;</a> </div>
-                <a href='index.php?action=deconnexion'>
-                        <figure>
-                            <img class="dec" src="view/images/deco.png">
-                            <figcaption>Déconnexion</figcaption>
-                        </figure>
-                    </a>
 
-            </div>
-
-            <img class="imgprofil" src="view/images/talin.png">
-            <h1>
-                <?= $_SESSION['Prenom']?>&ensp;<?= $_SESSION['Nom']?>
-            </h1>
-        </div>
-
-
-        <br>
-        <br>
-        <br>
-        <br>
 
         <div class='corpsProfil'>
 
-            <div class="navMaisons">
-                <?php for($i=0 ; $i < sizeof($_SESSION['Maison']); $i++){
 
-                    echo "<a href='#Maison".$i."' class='Maison'>&emsp;".$_SESSION['Maison'][$i][1]."&emsp;</a>
-                          <a href='index.php?action=supprimerMaison&id=".$_SESSION['Maison'][$i][0]."' class='delete'>&ensp;X&ensp;</a><br><br><br>
-                          ";
-                }?>
-                <a class="Maison" href='index.php?action=AjoutMaison'>&emsp;+Ajouter une maison&emsp;</a>
+            <div class='headerprofil'>
+
+
+                <div class="nom"><br><img class="imgprofil" src="view/images/talin.png">&ensp;<?= $_SESSION['Prenom']?>&ensp;<?= $_SESSION['Nom']?><br><br></div>
+
+                <div class="lien"><br><a class="PrezMaison">&emsp;Maisons</a><br><br></div>
+
+                <div class="navMaisons">
+                    <?php for($i=0 ; $i < sizeof($_SESSION['Maison']); $i++){
+
+                        echo "<div class=\"ChoixMaison\"><br><a href='#Maison".$i."' class='Maison'>&emsp;".$_SESSION['Maison'][$i][1]."&emsp;</a>
+                          <a href='index.php?action=supprimerMaison&id=".$_SESSION['Maison'][$i][0]."' class='delete'>&ensp;X&ensp;</a><br><br>
+                          </div>";
+                    }?>
+                    <div class="ChoixMaison"><br><a class="Maison" href='index.php?action=AjoutMaison'>&emsp;+Ajouter une maison&emsp;</a><br><br></div>
+                </div>
+
+
+
+                <a href='index.php?action=ProfilModif'><div class="lien"><br><img class="imgOption" src="view/images/Modif.png">&ensp;Modification du profil<br><br></div></a>
+
+                <a href='index.php?action=supprimerProfil'><div class="lien"><br>Supprimer votre profil<br><br></div></a>
+
+                <a href='index.php?action=deconnexion'><div class="lien"><br><img class="imgOption" src="view/images/deco.png">&ensp;Déconnexion<br><br></div></a>
+
             </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+
 
 
             <div class='internProfil'>
