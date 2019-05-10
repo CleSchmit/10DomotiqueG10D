@@ -23,8 +23,6 @@ $bdd = bdd();
 
 
             <div class='headerprofil'>
-
-
                 <div class="nom"><br><img class="imgprofil" src="view/images/Boss.jpg">&ensp;Compte Administrateur &ensp;<?= $_SESSION['Prenom']?>&ensp;<?= $_SESSION['Nom']?><br><br></div>
 
                                 <a href='index.php?action=ProfilModif'><div class="lien"><br><img class="imgOption" src="view/images/Modif.png">&ensp;Modification du profil<br><br></div></a>
@@ -34,7 +32,10 @@ $bdd = bdd();
                 <a href='index.php?action=deconnexion'><div class="lien"><br><img class="imgOption" src="view/images/deco.png">&ensp;Déconnexion<br><br></div></a>
 
             </div>
-
+                
+            
+                
+        </div><br>";
 
             <br>
             <br>
@@ -45,7 +46,11 @@ $bdd = bdd();
 
 
             <div class='internProfil'>
-
+				<u2>
+                    <li1><a href=\"index.php?action=ListeCapteur\">Liste capteur</a></li1>
+                    <li1><a href=\"#news\">Créer compte gestionnaire d'immmeuble</a></li1>
+                    <li1><a href=\"#contact\">Accéder aux profils</a></li1>
+                </u2>
 
             </div>
 
