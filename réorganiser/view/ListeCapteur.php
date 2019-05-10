@@ -57,8 +57,7 @@ $bdd = bdd();
         </style>
         <u2>
             <?php for($i=0 ; $i < sizeof($_SESSION['capteur']); $i++) {
-                echo " <li1><a href='#capteur" . $i . "'>&emsp;" . $_SESSION['capteur'][$i][0] . "&emsp;&emsp;" . $_SESSION['capteur'][$i][1] . "&emsp;&emsp;" . $_SESSION['capteur'][$i][2] . "&emsp;</a></li1>
-                            <a href='index.php?action=supprimerCapteur&id=" . $_SESSION['capteur'][$i][0] . "' class='delete'>&ensp;X&ensp;</a><br><br><br>
+                echo " <li1><a href='#capteur" . $i . "'>&emsp;" . $_SESSION['capteur'][$i][0] . "&emsp;&emsp;" . $_SESSION['capteur'][$i][1] . "&emsp;&emsp;" . $_SESSION['capteur'][$i][2] . "&emsp;</a><a href='index.php?action=supprimerCapteur&id=" . $_SESSION['capteur'][$i][0] . "' class='delete'>&ensp;X&ensp;</a></li1>
                     ";
             } ?>
         </u2>
