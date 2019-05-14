@@ -35,7 +35,7 @@
         <entry file="file://$PROJECT_DIR$/réorganiser/view/ProfilAdmin.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -296,15 +296,15 @@
       <workItem from="1555577136180" duration="1200000" />
       <workItem from="1557156911990" duration="5548000" />
       <workItem from="1557216679206" duration="9029000" />
-      <workItem from="1557480101013" duration="319000" />
+      <workItem from="1557480101013" duration="675000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183641000" />
+    <option name="totallyTimeSpent" value="183997000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23154363" />
@@ -528,7 +528,7 @@
     <entry file="file://$PROJECT_DIR$/réorganiser/view/ProfilAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>

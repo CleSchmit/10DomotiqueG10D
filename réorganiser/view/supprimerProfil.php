@@ -13,6 +13,7 @@ $body="
     <div class='main'>
     <br>
     <div id=\"Cforum\">
+    <br>
         <form method=\"post\" action=\"index.php?action=supprimerProfil\">
             <p>
                 <input class=\"connexion\" name=\"Mdp\" type=\"password\" placeholder=\"Mot de passe...\" required/><br><br>

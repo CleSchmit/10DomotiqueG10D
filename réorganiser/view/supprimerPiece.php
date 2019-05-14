@@ -12,6 +12,7 @@ $body="
     <div class='main'>
     <br>
     <div id=\"Cforum\">
+    <br>
         <form method=\"post\" action=\"index.php?action=supprimerPiece&id=".$_GET['id']."&Maison=".$_GET['Maison']."\">
             <p>
                 <input class=\"connexion\" name=\"Mdp\" type=\"password\" placeholder=\"Mot de passe...\" required/><br><br>
@@ -21,7 +22,7 @@ $body="
             </p>
         </form>
         
-        <p> <a href=\"index.php?action=Profil&Maison=".$Id_Maison."\">Annuler et revenir à mon profil</a></p>
+        <p> <a href=\"index.php?action=Profil#".$Id_Maison."\">Annuler et revenir à mon profil</a></p>
 
     </div>
     <br>
