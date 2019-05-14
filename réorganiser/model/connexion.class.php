@@ -20,7 +20,7 @@ class connexion{
         $reponse = $requete->fetch();
         if($reponse){
 
-                if($this->Mdp == $reponse['Mdp']){
+                if(password_verify($this->Mdp,$reponse['Mdp'])){
                     if ('Admin' == $reponse['Role']){
                         return 'Admin';
                     }else {
@@ -52,7 +52,7 @@ class connexion{
         $_SESSION['Tel'] = $response['Tel'];
         $_SESSION['Naissance'] = $response['DateNaissance'];
         $_SESSION['Email'] = $this->Email;
-        $_SESSION['Mdp'] = $this->Mdp;
+        $_SESSION['Mdp'] = $response['Mdp'];
         $_SESSION['Role'] = $response['Role'];
 
         return 1;

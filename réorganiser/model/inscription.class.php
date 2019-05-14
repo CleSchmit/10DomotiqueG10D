@@ -34,7 +34,17 @@ class inscription{
     }
     
     public function verif(){
-        
+
+        $requete = $this->bdd->prepare('SELECT Email FROM profil');
+        $requete->execute();
+        while($row = $requete->fetch()){
+            if ($this->Email == $row['Email']){
+                return 'Email déjà utilisé';
+            }
+        }
+
+
+
         if(strlen($this->Prenom) > 5 AND strlen($this->Prenom) < 20 ){ /*Si le Prenom est bon*/
             if(strlen($this->Nom) > 5 AND strlen($this->Nom) < 20 ) { /*Si le Nom est bon*/
 
@@ -76,6 +86,8 @@ class inscription{
     
     
     public function enregistrement(){
+
+        $this->Mdp = password_hash($this->Mdp, PASSWORD_DEFAULT);
 
         $req = $this->bdd->prepare('INSERT INTO profil(Prenom,Nom,Email,Tel,DateNaissance,Mdp,Role) VALUES (:Prenom,:Nom,:Email,:Tel,:Naissance,:Mdp,:Role)');
         $req->execute(array(

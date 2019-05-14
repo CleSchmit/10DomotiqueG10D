@@ -17,6 +17,13 @@ class modif{
 
     public function verif()
     {
+        $requete = $this->bdd->prepare('SELECT Email FROM profil');
+        $requete->execute();
+        while($row = $requete->fetch()){
+            if ($this->modification == $row['Email']){
+                return 'Email déjà utilisé';
+            }
+        }
         if ($this->element == 'Prenom') {
             if (strlen($this->modification) > 5 AND strlen($this->modification) < 20) {
                 return 'ok';
@@ -59,6 +66,7 @@ class modif{
         }else if($this->element == 'Tel'){
             $req = $this->bdd->prepare('UPDATE profil SET Tel = :modification WHERE Email = :Email ');
         }else if($this->element == 'Mdp'){
+            $this->modification = password_hash($this->modification,PASSWORD_DEFAULT);
             $req = $this->bdd->prepare('UPDATE profil SET Mdp = :modification WHERE Email = :Email ');
         }
         $req->execute(array(

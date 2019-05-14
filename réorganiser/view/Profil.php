@@ -41,7 +41,7 @@ $bdd = bdd();
                                     </div>
                               </a>";
                     }?>
-                    <div class="ChoixMaison"><br><a class="Maison" href='index.php?action=AjoutMaison'><p>&emsp;</p><img class='imgOption' src='view/images/Ajout.png'>&ensp;Ajouter une maison&emsp;</a><br><br></div>
+                    <div class="ChoixMaison"><br><a class="Maison" href="index.php?action=AjoutMaison&Maison=Maison<?=sizeof($_SESSION['Maison'])?>"><p>&emsp;</p><img class='imgOption' src='view/images/Ajout.png'>&ensp;Ajouter une maison&emsp;</a><br><br></div>
                 </div>
 
 

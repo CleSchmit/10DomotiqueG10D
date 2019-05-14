@@ -8,7 +8,7 @@ if(isset($_POST['Nom']) AND isset($_POST['Adresse']) AND isset($_POST['Superfici
 {
     $maison = new maison($_POST['Nom'], $_POST['Adresse'], $_POST['Superficie'], $_POST['NbPieces'], $_POST['NbHabitant']);
     if($maison->enregistrement()){
-        header('Location: index.php?action=Profil');
+        header("Location: index.php?action=Profil#Maison0");
     } else { /*Erreur lors de l'enregistrement*/
         echo 'Une erreur est survenue';
     }
