@@ -17,7 +17,7 @@ class listeProfil
 
     function profil()
     {
-        $req = $this->bdd->prepare('SELECT Id_Profil,Prenom,Nom,Email,Tel,DateNaissance,Mdp,Role,Adresse FROM profil');
+        $req = $this->bdd->prepare('SELECT * FROM profil');
         $req->execute(array());
         while ($row = $req->fetch()) {
             $list = array();
@@ -30,6 +30,7 @@ class listeProfil
             $list[] = $row['Role'];
             $list[] = $row['Mdp'];
             $list[] = $row['Id_Profil'];
+            $list[] = $row['Validation'];
             $this->profil[] = $list;
         }
         $_SESSION['profil'] = $this->profil;

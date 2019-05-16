@@ -28,20 +28,14 @@ class modif{
             } else {
                 return 'Syntaxe de l\'adresse Email incorrect ';
             }
-        } else if ($this->element == 'Mdp'){
-            if (strlen($this->modification) > 5) {
-                return 'ok';
-            }else{
-                return 'la taille du mot de passe doit être comprise entre 6 et 20 caractères';
-            }
         } else if ($this->element == 'Tel'){
             return 'ok';
         } else if ($this->element == 'Adresse'){
             return 'ok';
+        }  else if ($this->element == 'Validation'){
+            return 'ok';
         }
     }
-
-
 
     public function enregistrement(){
         if ($this->element == 'Prenom'){
@@ -54,8 +48,8 @@ class modif{
             $req = $this->bdd->prepare('UPDATE profil SET Tel = :modification WHERE Email = :Email ');
         }else if($this->element == 'Adresse'){
             $req = $this->bdd->prepare('UPDATE profil SET Adresse = :modification WHERE Email = :Email ');
-        }else if($this->element == 'Mdp'){
-            $req = $this->bdd->prepare('UPDATE profil SET Mdp = :modification WHERE Email = :Email ');
+        }else if($this->element == 'Validation'){
+            $req = $this->bdd->prepare('UPDATE profil SET Validation = :modification WHERE Email = :Email ');
         }
         $req->execute(array(
             'modification' => $this->modification,

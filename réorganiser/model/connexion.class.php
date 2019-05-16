@@ -20,10 +20,17 @@ class connexion{
         $reponse = $requete->fetch();
         if($reponse){
                 if(password_verify($this->Mdp,$reponse['Mdp'])){
-                    if ('Admin' == $reponse['Role']){
-                        return 'Admin';
+                    if('ok' == $reponse['Validation']) {
+                        if ('Admin' == $reponse['Role']) {
+                            return 'Admin';
+                        } else if ('Gestionnaire' == $reponse['Role']) {
+                            return 'Gestionnaire';
+                        } else {
+                            return 'ok';
+                        }
                     } else {
-                        return 'ok';
+                        $erreur = "Compte non validé par l'administrateur";
+                        return $erreur;
                     }
                 } else {
                     $erreur = 'Le mot de passe est incorrect';
@@ -48,6 +55,8 @@ class connexion{
         $_SESSION['Email'] = $this->Email;
         $_SESSION['Mdp'] = $response['Mdp'];
         $_SESSION['Role'] = $response['Role'];
+        $_SESSION['Adresse'] = $response['Adresse'];
+        $_SESSION['Validation'] = $response['Validation'];
 
         return 1;
     }

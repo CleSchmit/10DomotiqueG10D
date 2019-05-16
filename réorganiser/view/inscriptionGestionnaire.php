@@ -1,6 +1,5 @@
 <?php
 include_once 'controller/ControlInscriptionGestionnaire.php';
-
 ob_start();
 
 $body="
