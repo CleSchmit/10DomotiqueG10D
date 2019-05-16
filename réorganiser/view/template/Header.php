@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="view/style.css" />
 </head>
 <body>
+    <p>Switch to：<a href="index.php">french</a> | <a href="index_cn.php">chinese</a></p>
     <div id="menu">
         <img src="view/images/LOGObis.png" class="Logo">
         <ul>
