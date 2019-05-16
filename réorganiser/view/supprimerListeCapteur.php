@@ -19,7 +19,7 @@ $body="
                 <br>
                 <input class=\"bouton\" type=\"submit\" value=\"Validé\" />
                 
-                <p> <a href=\"index.php?action=ListeCapteur\">Annuler et revenir à la liste des capteurs</a></p>
+                <p> <a href=\"index.php?action=ProfilAdmin#ListeCapteur\">Annuler et revenir à la liste des capteurs</a></p>
 
             </p>
         </form>

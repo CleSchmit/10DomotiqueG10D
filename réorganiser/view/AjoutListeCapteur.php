@@ -8,7 +8,7 @@ $body="
     <div id=\"Cforum\">
     <br>
         <h1>Ajout d'un capteur</h1>
-        <form method=\"post\" action=\"index.php?action=AjoutListeCapteur\">
+        <form method=\"post\" action=\"index.php?action=ProfilAdmin\">
             <p>
                 <input class=\"connexion\" name=\"Nom\" type=\"text\" placeholder=\"Nom...\" required /><br><br>
                 <input class=\"connexion\" name=\"Prix\" type=\"number\" placeholder=\"Prix...\" required /><br><br>
@@ -18,7 +18,7 @@ $body="
                 <br>
                 <input class=\"bouton\" type=\"submit\" value=\"Valider l'ajout!\" />
                 
-                <p> <a href=\"index.php?action=ListeCapteur\">Annuler et revenir à la liste des capteurs</a></p>
+                <p> <a href=\"index.php?action=ProfilAdmin#ListeCapteur\">Annuler et revenir à la liste des capteurs</a></p>
             </p>
         </form>
         <br>

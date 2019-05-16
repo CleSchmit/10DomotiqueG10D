@@ -258,6 +258,7 @@ h1{
 
 .navMaisons{
     background-color: lightgray;
+
 }
 
 .ChoixMaison{
@@ -506,6 +507,53 @@ h2{
     font-weight: bold;
 }
 
+
+
+
+/*Profil Admin*/
+
+.ChoixListe{
+    background-color: lightgray;
+    border-bottom: solid black;
+}
+.ChoixListe:hover{
+    background-color: rgb(247,121,53);
+}
+
+
+.navListe{
+    display: none;
+}
+
+.navListe:target{
+    display: none;
+}
+#ListeCapteur:target{
+    display: block;
+}
+
+#ListeProfil:target{
+    display: block;
+}
+
+.ChoixListeC{
+    background-color: lightgray;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr{
+    border: 14px solid lightgray;
+    background-color: lightgray;
+}
+.line{
+    border: 14px solid white;
+    background-color: white;
+
+}
 
 /* FOOTER*/
 

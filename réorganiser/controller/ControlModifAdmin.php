@@ -8,6 +8,7 @@ $erreurNom = NULL;
 $erreurEmail = NULL;
 $erreurTel = NULL;
 $erreurAdresse = NULL;
+$erreurMdp = NULL;
 $verif = NULL;
 $donnee = NULL;
 
@@ -39,14 +40,23 @@ if(isset($_GET["modif"])) {
         $verif = $modif->verif();
     }
 
-    if ($element == 'Validation') {
-        $modif = new modif($_POST['Validation'], 'Validation');
-        $verif = $modif->verif();
+    if ($element == 'Mdp') {
+        if (strlen($_POST['Mdp']) != 0 AND strlen($_POST['Mdp2']) != 0){
+            if ($_POST['Mdp'] == $_POST['Mdp2']){
+                $modif = new modif($_POST['Mdp'], 'Mdp');
+                $verif = $modif->verif();
+            }else{
+                $verif = 'Les mots de passe doivent être les mêmes';
+            }
+        }else{
+            $verif = 'Vous devez remplir les deux champs';
+        }
+
     }
 
     if ($verif == "ok") {/*Tout est bon*/
         if ($modif->enregistrement()) {
-            header('Location: index.php?action=ListeProfil');
+            header('Location: index.php?action=ListeProfil  ');
         } else { /*Erreur lors de l'enregistrement*/
             echo 'Une erreur est survenue';
         }
@@ -65,5 +75,11 @@ if(isset($_GET["modif"])) {
         if ($element == 'Tel') {
             $erreurTel = $verif;
         }
+
+        if($element == 'Mdp'){
+            $erreurMdp = $verif;
+        }
     }
+
+
 }

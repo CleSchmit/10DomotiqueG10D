@@ -27,8 +27,6 @@ class inscriptionadmin
 
     public function enregistrement()
     {
-        $this->Mdp = password_hash($this->Mdp, PASSWORD_DEFAULT);
-
         $req = $this->bdd->prepare('INSERT INTO profil(Prenom,Nom,Mdp,Role) VALUES (:Prenom,:Nom,:Mdp,:Role)');
         $req->execute(array(
             'Prenom' => $this->Prenom,

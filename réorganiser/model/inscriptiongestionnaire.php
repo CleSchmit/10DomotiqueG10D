@@ -25,13 +25,6 @@ class inscriptiongestionnaire{
 
     public function verif()
     {
-        $requete = $this->bdd->prepare('SELECT Email FROM profil');
-        $requete->execute();
-        while ($row = $requete->fetch()) {
-            if ($this->Email == $row['Email']) {
-                return 'Email déjà utilisé';
-            }
-        }
         $syntaxe = '#^[\w.-]+@[\w.-]+\.[a-zA-Z]{2,6}$#';
 
         if(preg_match($syntaxe,$this->Email)){ /*Email bon*/
@@ -55,8 +48,6 @@ class inscriptiongestionnaire{
 
     public function enregistrement()
     {
-        $this->Mdp = password_hash($this->Mdp, PASSWORD_DEFAULT);
-
         $req = $this->bdd->prepare('INSERT INTO profil(Email,Mdp,Role,Adresse) VALUES (:Email,:Mdp,:Role,:Adresse)');
         $req->execute(array(
             'Email' => $this->Email,
