@@ -23,7 +23,7 @@ $body="
             </p>
         </form>
         
-        <p> <a href=\"index.php?action=Profil\">Annuler et revenir à mon profil</a></p>
+        <p> <a href=\"index.php?action=Connection\">Annuler et revenir à mon profil</a></p>
 
     </div>
     <br>
