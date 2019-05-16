@@ -1,53 +1,36 @@
 <?php
 session_start();
 include_once "model/function.php";
-include_once "controller/ControlProfil.php";
+include_once "controller/ControlListeCapteur.php";
 
 $bdd = bdd();
 ?>
 <html>
 <head>
     <title>10Domotique</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
+
 <header>
     <?php include "template/Header.php" ?>
 </header>
+
 <div class="corps">
-    <br><div id="CProfil">
 
+    <br>
 
-
-        <div class='corpsProfil'>
-
-
-            <div class='headerprofil'>
-                <div class="nom"><br><img class="imgprofil" src="view/images/Boss.jpg">&ensp;Compte Administrateur &ensp;<?= $_SESSION['Prenom']?>&ensp;<?= $_SESSION['Nom']?><br><br></div>
-
-                <a href='index.php?action=ProfilModif'><div class="lien"><br><img class="imgOption" src="view/images/Modif.png">&ensp;Modification du profil<br><br></div></a>
-
-                <a href='index.php?action=supprimerProfil'><div class="lien"><br>Supprimer votre profil<br><br></div></a>
-
-                <a href='index.php?action=deconnexion'><div class="lien"><br><img class="imgOption" src="view/images/deco.png">&ensp;Déconnexion<br><br></div></a>
-
-            </div>
-
-
-
-        </div><br>";
+    <div id="CProfil">
 
         <br>
         <br>
         <br>
         <br>
-
-
-
 
         <div class='internProfil'>
 
             <div class="navListeCapteur">
+
                 <style>
                     u2 {
                         list-style-type: none;
@@ -58,7 +41,7 @@ $bdd = bdd();
                     }
 
                     li1 a {
-                        display: block;
+                        display: inline-block;
                         color: #000;
                         padding: 8px 16px;
                         text-decoration: none;
@@ -70,11 +53,18 @@ $bdd = bdd();
                         color: white;
                     }
                 </style>
+
                 <u2>
                     <?php for($i=0 ; $i < sizeof($_SESSION['capteur']); $i++) {
-                        echo " <li1><a href='#capteur" . $i . "'>&emsp;" . $_SESSION['capteur'][$i][0] . "&emsp;&emsp;" . $_SESSION['capteur'][$i][1] . "&emsp;&emsp;" . $_SESSION['capteur'][$i][2] . "&emsp;</a><a href='index.php?action=supprimerCapteur&id=" . $_SESSION['capteur'][$i][0] . "' class='delete'>&ensp;X&ensp;</a></li1>
+                        echo " <li1>&emsp;" . $_SESSION['capteur'][$i][0] . "&emsp;&emsp;" . $_SESSION['capteur'][$i][1] . "&emsp;&emsp;" . $_SESSION['capteur'][$i][2] . "&emsp;<a href='index.php?action=supprimerListeCapteur&id=" . $_SESSION['capteur'][$i][0] . "'>&ensp;X&ensp;</a></li1><br>
                     ";
                     } ?>
+                    <br>
+                    <br>
+                    <li1><a href='index.php?action=AjoutListeCapteur'>Ajoutez un capteur</a></li1>
+                    <br>
+                    <br>
+                    <li1><a href='index.php?action=ProfilAdmin'>Revenir au menu</a></li1>
                 </u2>
 
         </div>
