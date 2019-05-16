@@ -25,6 +25,7 @@ $body="
         
         <p> <a href=\"index.php?action=Connexion\">Annuler et revenir à mon profil</a></p>
 
+
     </div>
     <br>
     </div>";
