@@ -146,7 +146,7 @@ $bdd = bdd();
                                     <a href='index.php?action=supprimerCapteur&id=".$_SESSION['Maison'][$i][2][$j][2][$k][0]."&Maison=Maison".$i."' class='delete' id='DelC'>&times;&ensp;</a>
                                     <br>";
                                         if ($_SESSION['Maison'][$i][2][$j][2][$k][2] == 1){
-                                            echo "<div style='background-color: yellow' class='info'>&ensp;Allumer&ensp;</div>";
+                                            echo "<div style='background-color: yellow' class='info'>&ensp;On&ensp;</div>";
                                         }else{
                                             echo "<div style='background-color: black; color: white;' class='info'>&ensp;Off&ensp;</div>";
                                         }
