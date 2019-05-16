@@ -19,26 +19,20 @@ class connexion{
         $requete->execute(array('Email'=> $this->Email));
         $reponse = $requete->fetch();
         if($reponse){
-
                 if(password_verify($this->Mdp,$reponse['Mdp'])){
                     if ('Admin' == $reponse['Role']){
                         return 'Admin';
-                    }else {
+                    } else {
                         return 'ok';
                     }
-                }
-                else {
+                } else {
                     $erreur = 'Le mot de passe est incorrect';
                     return $erreur;
                 }
-
-        }
-        else {
+        } else {
             $erreur = 'Email inéxistant';
             return $erreur;
          }
-
-
     }
     
     public function session(){
