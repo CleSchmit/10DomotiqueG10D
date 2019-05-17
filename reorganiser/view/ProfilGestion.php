@@ -3,8 +3,6 @@ session_start();
 include_once "model/function.php";
 include_once "controller/ControlProfilGestion.php";
 include_once 'controller/ControlCapteurAction.php';
-
-
 $bdd = bdd();
 ?>
 <html>
@@ -39,7 +37,11 @@ $bdd = bdd();
                     }?>
                 </div>
 
-                <a href='index.php?action=Graphconso' class="lienOption"><div class="lien"><br><p>&emsp;</p><img class="imgOption" src="view/images/Modif.png">&ensp;Graphique des consommations<br><br></div></a>
+                <div class="lienM"><br><a class="PrezMaison"> Graphique consommation</a><br><br></div>
+
+                <div class="navMaisons">
+                    <a href='index.php?action=Graphconso' class="lienOption"><div class="lien"><br><p>&emsp;</p>&ensp;Graphique consommation immeuble en w/h<br><br></div></a>
+                </div>
 
                 <a href='index.php?action=ProfilModif' class="lienOption"><div class="lien"><br><p>&emsp;</p><img class="imgOption" src="view/images/Modif.png">&ensp;Modification du profil<br><br></div></a>
 

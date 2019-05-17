@@ -57,7 +57,6 @@ $_SESSION['indice'] = array();
 
             <u2>
                 <?php for($i=0 ; $i < sizeof($_SESSION['profil']); $i++) {
-<<<<
                     echo " <li1><a href=\"index.php?action=ProfilModifAdmin&i=$i\">&emsp;" . $_SESSION['profil'][$i][0] . "&emsp;&emsp;" . $_SESSION['profil'][$i][1] . "&emsp;&emsp;" . $_SESSION['profil'][$i][2] . "&emsp;&emsp;" . $_SESSION['profil'][$i][3] . "&emsp;&emsp;" . $_SESSION['profil'][$i][4] . "&emsp;&emsp;" . $_SESSION['profil'][$i][5] . "&emsp;&emsp;" . $_SESSION['profil'][$i][6] . "&emsp;&emsp;" . $_SESSION['profil'][$i][9] . "&emsp;</a><a href='index.php?action=supprimerListeProfil&id=".$_SESSION['profil'][$i][8] ."'>&ensp;X&ensp;</a></li1><br>
                     ";
                 } ?>

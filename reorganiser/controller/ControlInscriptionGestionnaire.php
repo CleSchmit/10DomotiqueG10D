@@ -10,7 +10,7 @@ if(isset($_POST['Email']) AND isset($_POST['Mdp'])  AND isset($_POST['Mdp2']) AN
     $verif = $inscription->verif();
     if($verif == "ok"){/*Tout est bon*/
         if($inscription->enregistrement()){
-            header("Location: index.php?action=ListeProfil");
+            header("Location: index.php?action=ProfilAdmin");
         }
         else{ /*Erreur lors de l'enregistrement*/
             echo 'Une erreur est survenue';

@@ -8,7 +8,7 @@ if(isset($_POST['Prenom']) AND isset($_POST['Nom']) AND isset($_POST['Mdp'])  AN
 {
     $inscription = new inscriptionadmin($_POST['Prenom'],$_POST['Nom'],$_POST['Mdp'],$_POST['Mdp2']);
     if($inscription->enregistrement()){
-        header("Location: index.php?action=ListeProfil");
+        header("Location: index.php?action=ProfilAdmin");
     }
     else{ /*Erreur lors de l'enregistrement*/
         echo 'Une erreur est survenue';

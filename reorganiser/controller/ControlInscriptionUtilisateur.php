@@ -10,7 +10,7 @@ if(isset($_POST['Prenom']) AND isset($_POST['Nom']) AND isset($_POST['Email']) A
     $verif = $inscription->verif();
     if($verif == "ok"){/*Tout est bon*/
         if($inscription->enregistrement()){
-            header('Location: index.php?action=ListeProfil');
+            header('Location: index.php?action=ProfilAdmin');
         }
         else{ /*Erreur lors de l'enregistrement*/
             echo 'Une erreur est survenue';
