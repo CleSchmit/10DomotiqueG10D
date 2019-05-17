@@ -1,8 +1,12 @@
 <?php session_start();
 include_once "model/function.php";
 <<<<<<< HEAD
+<<<<<<< HEAD
 include_once "controller/ControlProfilGestion.php";
 include_once 'controller/ControlCapteurAction.php';
+=======
+include_once "controller/ControlDataConso.php";
+>>>>>>> parent of 1a680ea... Merge branch 'master' of https://github.com/CleSchmit/10DomotiqueG10D
 =======
 include_once "controller/ControlDataConso.php";
 >>>>>>> parent of 1a680ea... Merge branch 'master' of https://github.com/CleSchmit/10DomotiqueG10D
@@ -21,6 +25,7 @@ $bdd = bdd();
     <?php include "template/Header.php" ?>
 </header>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
                         echo "
                               <a href='#Maison".$i."' class='Maison'>
@@ -44,6 +49,14 @@ $bdd = bdd();
 
     <div id="CProfil">
 
+=======
+<div class="corps">
+
+    <br>
+
+    <div id="CProfil">
+
+>>>>>>> parent of 1a680ea... Merge branch 'master' of https://github.com/CleSchmit/10DomotiqueG10D
         <div class='corpsProfil'>
 
             <div class='headerprofil'>
