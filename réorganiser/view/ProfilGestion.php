@@ -2,8 +2,12 @@
 include_once "model/function.php";
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 include_once "controller/ControlProfilGestion.php";
 include_once 'controller/ControlCapteurAction.php';
+=======
+include_once "controller/ControlDataConso.php";
+>>>>>>> parent of 1a680ea... Merge branch 'master' of https://github.com/CleSchmit/10DomotiqueG10D
 =======
 include_once "controller/ControlDataConso.php";
 >>>>>>> parent of 1a680ea... Merge branch 'master' of https://github.com/CleSchmit/10DomotiqueG10D
@@ -25,6 +29,7 @@ $bdd = bdd();
     <?php include "template/Header.php" ?>
 </header>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                         echo "
@@ -59,6 +64,16 @@ $bdd = bdd();
 >>>>>>> parent of 1a680ea... Merge branch 'master' of https://github.com/CleSchmit/10DomotiqueG10D
         <div class='corpsProfil'>
 
+=======
+<div class="corps">
+
+    <br>
+
+    <div id="CProfil">
+
+        <div class='corpsProfil'>
+
+>>>>>>> parent of 1a680ea... Merge branch 'master' of https://github.com/CleSchmit/10DomotiqueG10D
             <div class='headerprofil'>
                 <div class="nom"><br><img class="imgprofil" src="view/images/Boss.jpg">&ensp;Compte gestionnaire<br><br></div>
             </div>

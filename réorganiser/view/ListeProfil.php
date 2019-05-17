@@ -59,7 +59,11 @@ $_SESSION['indice'] = array();
                 <?php for($i=0 ; $i < sizeof($_SESSION['profil']); $i++) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     echo " <li1><a href=\"index.php?action=ProfilModifAdmin&i=$i\">&emsp;" . $_SESSION['profil'][$i][0] . "&emsp;&emsp;" . $_SESSION['profil'][$i][1] . "&emsp;&emsp;" . $_SESSION['profil'][$i][2] . "&emsp;&emsp;" . $_SESSION['profil'][$i][3] . "&emsp;&emsp;" . $_SESSION['profil'][$i][4] . "&emsp;&emsp;" . $_SESSION['profil'][$i][5] . "&emsp;&emsp;" . $_SESSION['profil'][$i][6] . "&emsp;&emsp;" . $_SESSION['profil'][$i][9] . "&emsp;</a><a href='index.php?action=supprimerListeProfil&id=".$_SESSION['profil'][$i][8] ."'>&ensp;X&ensp;</a></li1><br>
+=======
+                    echo " <li1><a href=\"index.php?action=ProfilModifAdmin&i=0\">&emsp;" . $_SESSION['profil'][$i][0] . "&emsp;&emsp;" . $_SESSION['profil'][$i][1] . "&emsp;&emsp;" . $_SESSION['profil'][$i][2] . "&emsp;&emsp;" . $_SESSION['profil'][$i][3] . "&emsp;&emsp;" . $_SESSION['profil'][$i][4] . "&emsp;&emsp;" . $_SESSION['profil'][$i][5] . "&emsp;&emsp;" . $_SESSION['profil'][$i][6] . "&emsp;&emsp;" . $_SESSION['profil'][$i][7] . "&emsp;</a><a href='index.php?action=supprimerListeProfil&id=" . $_SESSION['profil'][$i][7] . "'>&ensp;X&ensp;</a></li1><br>
+>>>>>>> parent of 1a680ea... Merge branch 'master' of https://github.com/CleSchmit/10DomotiqueG10D
 =======
                     echo " <li1><a href=\"index.php?action=ProfilModifAdmin&i=0\">&emsp;" . $_SESSION['profil'][$i][0] . "&emsp;&emsp;" . $_SESSION['profil'][$i][1] . "&emsp;&emsp;" . $_SESSION['profil'][$i][2] . "&emsp;&emsp;" . $_SESSION['profil'][$i][3] . "&emsp;&emsp;" . $_SESSION['profil'][$i][4] . "&emsp;&emsp;" . $_SESSION['profil'][$i][5] . "&emsp;&emsp;" . $_SESSION['profil'][$i][6] . "&emsp;&emsp;" . $_SESSION['profil'][$i][7] . "&emsp;</a><a href='index.php?action=supprimerListeProfil&id=" . $_SESSION['profil'][$i][7] . "'>&ensp;X&ensp;</a></li1><br>
 >>>>>>> parent of 1a680ea... Merge branch 'master' of https://github.com/CleSchmit/10DomotiqueG10D
