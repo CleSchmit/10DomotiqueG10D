@@ -15,13 +15,13 @@ class capteurAction{
         $this->bdd = bdd();
     }
 
-    public function modifValue(){
+    public function modifValue()
+    {
         $req = $this->bdd->prepare('UPDATE capteur_actionneur SET Valeur = :valeur WHERE Id_Capteur = :id ');
         $req->execute(array(
             'valeur' => $this->value,
             'id' => $this->idCapteur
         ));
-
     }
 
 
