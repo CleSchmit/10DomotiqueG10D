@@ -102,20 +102,29 @@ $bdd = bdd();
                     <?php for($i=0 ; $i < sizeof($_SESSION['profil']); $i++) {
 
                         if($i%2==0){
-                            $color='lightgray';
+                            if ($_SESSION['profil'][$i][9] == NULL){
+                                $color = 'rgb(255, 77, 77)';
+                            }else{
+                                $color='lightgray';
+                            }
                         }else{
-                            $color='white';
+                            if ($_SESSION['profil'][$i][9] == NULL){
+                                $color = 'rgb(255, 153, 153)';
+                            }else {
+                                $color = 'white';
+                            }
                         }
+
 
                         echo "<tr style='border: 14px solid ".$color.";background-color: ".$color.";'>
                          <td><br>".$_SESSION['profil'][$i][0]."</td>
                          <td><br>".$_SESSION['profil'][$i][1]."</td>
                          <td><br>".$_SESSION['profil'][$i][2]."</td>
-                         <td><br>".$_SESSION['profil'][$i][3]."</td>
+                         <td><br>+33 ".$_SESSION['profil'][$i][3]."</td>
                          <td><br>".$_SESSION['profil'][$i][4]."</td>
                          <td><br>".$_SESSION['profil'][$i][5]."</td>
-                         <td><br><a href='index.php?action=ProfilModifAdmin&i=" . $i. "'>Modifier</a></td>
-                         <td><a href='index.php?action=supprimerListeProfil&id=" . $i. "'>&times;&ensp;</a></td>
+                         <td><br><a href='index.php?action=ProfilModifAdmin&i=" . $i. "' style='color: blue'>Modifier</a></td>
+                         <td><a href='index.php?action=supprimerListeProfil&id=" .$_SESSION['profil'][$i][8]. "' class='delete'>&times;&ensp;</a></td>
                          </tr>                 ";
                     } ?>
                 </table>
