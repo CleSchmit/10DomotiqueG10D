@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>10Domotique</title>
-    <link rel="stylesheet" href="view/style.css" />
+    <link rel="stylesheet" href="view_cn/style.css" />
 </head>
 <body>
 <header>
