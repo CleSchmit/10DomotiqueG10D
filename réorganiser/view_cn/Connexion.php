@@ -9,9 +9,9 @@ $body="
     <br>
 
     <div id=\"Cforum\">
-        <form method=\"post\" action=\"index.php?action=Connexion\">
+        <form method=\"post\" action=\"index_cn.php?action=Connexion\">
             <p>
-                <h1>Votre Compte :</h1>
+                <h1>你的账号 :</h1>
                 <input class=\"connexion\" name=\"Email\" type=\"email\" placeholder=\"Email...\" /><br><br>
                 <input class=\"connexion\" name=\"Mdp\" type=\"password\" placeholder=\"Mot de passe...\" /><br><br>
                     $erreur
@@ -19,7 +19,7 @@ $body="
                 <input class=\"bouton\" type=\"submit\" value=\"Connexion\" />
             </p>
         </form>
-        <p>Vous n'avez pas encore de compte ? <a href=\"index.php?action=inscription\">Inscrivez-vous</a></p>
+        <p>还没有账号? <a href=\"index_cn.php?action=inscription\">注册</a></p>
 
     </div>
     <br>

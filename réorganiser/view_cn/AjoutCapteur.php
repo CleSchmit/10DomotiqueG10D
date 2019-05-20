@@ -7,11 +7,11 @@ $body="
 <div class='main'>
 <br>
 <div id=\"Cforum\">
-        <h1>Ajout d'un capteur</h1>
-        <form method=\"post\" action=\"index.php?action=AjoutCapteur&id=".$_GET['id']."&Maison=".$_GET['Maison']."\">
+        <h1>添加传感器</h1>
+        <form method=\"post\" action=\"index_cn.php?action=AjoutCapteur&id=".$_GET['id']."&Maison=".$_GET['Maison']."\">
             <p>
-                <input class=\"connexion\" name=\"Nom\" type=\"text\" placeholder=\"Nom...\" required /><br><br>
-                <label>Quelle capteur voulez-vous ajouter?</label><br>
+                <input class=\"connexion\" name=\"Nom\" type=\"text\" placeholder=\"名字...\" required /><br><br>
+                <label>你想添加哪一个传感器?</label><br>
                 <select name=\"Model\">
                     <option>--Select an option--</option>
                     <option value=\"1\">Capteur infrarouge  34$</option>
