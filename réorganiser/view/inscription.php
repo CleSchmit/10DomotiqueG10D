@@ -10,8 +10,8 @@ $body="
         <h1>Inscription</h1>
         <form method=\"post\" action=\"index.php?action=inscription\">
             <p>
-                <input class=\"connexion\" name=\"Prenom\" type=\"text\" placeholder=\"Prenom...\" /><br><br>
-                <input class=\"connexion\" name=\"Nom\" type=\"text\" placeholder=\"Nom...\" /><br><br>
+                <input class=\"connexion\" name=\"Prenom\" type=\"text\" placeholder=\"Prenom...\" required/><br><br>
+                <input class=\"connexion\" name=\"Nom\" type=\"text\" placeholder=\"Nom...\" required/><br><br>
                 <input class=\"connexion\" name=\"Email\" type=\"email\" placeholder=\"Adresse Email...\" required /><br><br>
                 <input class=\"connexion\" name=\"Tel\" type=\"tel\" placeholder=\"Téléphone portable...\"/><br><br>
                 <input class=\"connexion\" name=\"Naissance\" type=\"date\" placeholder=\"\"/><br>(date de naissance)<br>
