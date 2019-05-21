@@ -8,22 +8,25 @@ class dataconso
     private $conso = array();
     private $data = array();
     private $globale;
+    private $adresse;
     private $bdd;
 
 
     public function __construct()
     {
+        $this->adresse = $_SESSION['Adresse'];
         $this->bdd = bdd();
-        $this->Model();
+        $this->immeuble();
         $this->Conso();
         $this->Calcconso();
         $this->enregistrement();
     }
 
-    function Model()
+    function immeuble()
     {
-        $req = $this->bdd->prepare('SELECT Model FROM capteur_actionneur');
-        $req->execute(array());
+        $req = $this->bdd->prepare('SELECT DISTINCT Id_Capteur, Model FROM capteur_actionneur INNER JOIN piece ON piece.Id_Piece = capteur_actionneur.Id_Piece INNER JOIN model_maison ON model_maison.Id_Maison = piece.Id_Maison WHERE Adresse =:adresse ORDER BY Id_Capteur');
+        $req->execute(array(
+            'adresse' => $this->adresse));
         while ($row = $req->fetch()) {
             $this->model[] = $row['Model'];
         }
@@ -43,20 +46,22 @@ class dataconso
     {
         for($i=0 ; $i < count($this->model); $i++)
         {
-            if ($this->model[$i] == 1)
+            for($j=1 ; $j <= count($this->conso) ; $j++)
             {
-                $this->globale += $this->conso[0];
-            } else {
-                $this->globale += $this->conso[1];
+                if ($this->model[$i] == $j)
+                {
+                    $this->globale += $this->conso[$j-1];
+                }
             }
         }
     }
 
     function enregistrement()
     {
-        $req = $this->bdd->prepare('INSERT INTO consommation(globale) VALUES (:globale)');
+        $req = $this->bdd->prepare('INSERT INTO consommation(globale,Adresse) VALUES (:globale,:adresse)');
         $req->execute(array(
             'globale' => $this->globale,
+            'adresse' => $this->adresse,
         ));
         return 1;
     }

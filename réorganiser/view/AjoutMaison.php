@@ -22,6 +22,8 @@ $body="
 
             </p>
         </form>
+        <p> <a href=\"index.php?action=Profil#Maison".$_GET['Maison']."\">Annuler et revenir à mon profil</a></p>
+
         <br>
     </div>
     <br>

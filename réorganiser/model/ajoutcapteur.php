@@ -2,7 +2,7 @@
 include_once 'function.php';
 
 
-class capteur{
+class ajoutcapteur{
 
     private $Nom;
     private $Model;

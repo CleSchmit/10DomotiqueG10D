@@ -15,7 +15,7 @@ $bdd = bdd();
 <html>
 <head>
     <title>10Domotique</title>
-    <link rel="stylesheet" href="view/style.css" />
+    <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
 
@@ -74,62 +74,61 @@ $bdd = bdd();
             </div>
             <div class="navListe" id="ListeProfil">
 
-                <h3><br>&emsp;Liste Profils<br><br></h3><br>
-
-                <div class="AjoutCompte">
-                <a href='index.php?action=inscriptionGestionnaire'><div class='AjoutCO'><br><div>
-                            <img class='imgAjoutCO' src='view/images/Ajout.png'>
-                            &emsp;Ajouter un compte gestionnaire d'immmeuble</div><br></div></a>
-                <a href='index.php?action=inscriptionAdmin'><div class='AjoutCO'><br><div>
-                            <img class='imgAjoutCO' src='view/images/Ajout.png'>
-                            &emsp;Ajouter un compte Admin</div><br></div></a>
-                <a href='index.php?action=inscriptionUtilisateur'><div class='AjoutCO'><br><div>
-                            <img class='imgAjoutCO' src='view/images/Ajout.png'>
-                            &emsp;Ajouter un compte Utilisateur</div><br></div></a></div>
-
-                <br>
+                <h3><br>&emsp;Liste Profils<br><br></h3><br><br>
 
                 <table>
-                    <tr class="Prez">
-                        <td>Nom</td>
-                        <td>Prénom</td>
-                        <td>Email</td>
-                        <td>Téléphone</td>
-                        <td>Date de naissance</td>
-                        <td>Rôle</td>
-                        <td>Modifier</td>
-                        <td>&emsp;</td></tr>
                     <?php for($i=0 ; $i < sizeof($_SESSION['profil']); $i++) {
 
-                        if($i%2==0){
-                            if ($_SESSION['profil'][$i][9] == NULL){
-                                $color = 'rgb(255, 77, 77)';
-                            }else{
-                                $color='lightgray';
-                            }
-                        }else{
-                            if ($_SESSION['profil'][$i][9] == NULL){
-                                $color = 'rgb(255, 153, 153)';
-                            }else {
-                                $color = 'white';
-                            }
-                        }
-
-
-                        echo "<tr style='border: 14px solid ".$color.";background-color: ".$color.";'>
+                        if ($i > 0){
+                        echo " <tr><a href=\"index.php?action=ProfilModifAdmin&i=0\">
                          <td><br>".$_SESSION['profil'][$i][0]."</td>
                          <td><br>".$_SESSION['profil'][$i][1]."</td>
                          <td><br>".$_SESSION['profil'][$i][2]."</td>
-                         <td><br>+33 ".$_SESSION['profil'][$i][3]."</td>
+                         <td><br>".$_SESSION['profil'][$i][3]."</td>
                          <td><br>".$_SESSION['profil'][$i][4]."</td>
                          <td><br>".$_SESSION['profil'][$i][5]."</td>
-                         <td><br><a href='index.php?action=ProfilModifAdmin&i=" . $i. "' style='color: blue'>Modifier</a></td>
-                         <td><a href='index.php?action=supprimerListeProfil&id=" .$_SESSION['profil'][$i][8]. "' class='delete'>&times;&ensp;</a></td>
-                         </tr>                 ";
+                         <td><br>".$_SESSION['profil'][$i][6]."</td></a>
+                         <td><br><a href='index.php?action=supprimerListeProfil&id=" . $_SESSION['profil'][$i][7] . "'>&times;&ensp;</a></td>
+                         </tr><tr class='line'>
+                         <td>&emsp;</td>
+                         <td>&emsp;</td>
+                         <td>&emsp;</td>
+                         <td>&emsp;</td>
+                         <td>&emsp;</td>
+                         <td>&emsp;</td>
+                         <td>&emsp;</td>
+                         <td>&emsp;</td></tr>
+                    ";}else{
+                            echo " <tr><a href=\"index.php?action=ProfilModifAdmin&i=0\">
+                         <td>".$_SESSION['profil'][$i][0]."</td>
+                         <td>".$_SESSION['profil'][$i][1]."</td>
+                         <td>".$_SESSION['profil'][$i][2]."</td>
+                         <td>".$_SESSION['profil'][$i][3]."</td>
+                         <td>".$_SESSION['profil'][$i][4]."</td>
+                         <td>".$_SESSION['profil'][$i][5]."</td>
+                         <td>".$_SESSION['profil'][$i][6]."</td></a>
+                         <td><a href='index.php?action=supprimerListeProfil&id=" . $_SESSION['profil'][$i][7] . "'>&times;&ensp;</a></td>
+                         </tr><tr class='line'>
+                         <td>&emsp;</td>
+                         <td>&emsp;</td>
+                         <td>&emsp;</td>
+                         <td>&emsp;</td>
+                         <td>&emsp;</td>
+                         <td>&emsp;</td>
+                         <td>&emsp;</td>
+                         <td>&emsp;</td></tr>
+                    ";}
                     } ?>
                 </table>
                     <br>
-
+                    <br>
+                    <a href="index.php?action=inscriptionGestionnaire">Ajouter un compte gestionnaire d'immmeuble</a>
+                    <br>
+                    <a href="index.php?action=inscriptionAdmin">Ajouter un compte Admin</a>
+                    <br>
+                    <a href="index.php?action=inscriptionUtilisateur">Ajouter un compte Utilisateur</a>
+                    <br>
+                    <br>
 
 
             </div>
