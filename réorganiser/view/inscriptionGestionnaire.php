@@ -19,7 +19,7 @@ $body="
                 <br>
                 <input class=\"bouton\" type=\"submit\" value=\"Créer\" />
                 
-                <p> <a href=\"index.php?action=ProfilAdmin\">Annuler et revenir à la liste des Profils</a></p>
+                <p> <a href=\"index.php?action=ProfilAdmin#ListeProfil\">Annuler et revenir à la liste des Profils</a></p>
 
             </p>
         </form>

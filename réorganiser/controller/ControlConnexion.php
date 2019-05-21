@@ -10,7 +10,7 @@ if(isset($_POST['Email']) AND isset($_POST['Mdp'])) {
     $verif = $connexion->verif();
     if ($verif == "Admin") {
         if ($connexion->session()) {
-            header('Location: index.php?action=ProfilAdmin');
+            header('Location: index.php?action=ProfilAdmin#ListeCapteur');
         }
     } else if ($verif == "Gestionnaire") {
         if ($connexion->session()) {
@@ -27,7 +27,7 @@ if(isset($_POST['Email']) AND isset($_POST['Mdp'])) {
 
 if(isset($_SESSION['Email']) AND isset($_SESSION['Mdp'])){
     if($_SESSION['Role'] == 'Admin'){
-        header('Location: index.php?action=ProfilAdmin');
+        header('Location: index.php?action=ProfilAdmin#ListeCapteur');
     } else if($_SESSION['Role'] == 'Gestionnaire'){
         header('Location: index.php?action=ProfilGestion');
     } else {

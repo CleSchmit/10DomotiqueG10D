@@ -12,55 +12,64 @@ a{
     position: relative;
 }
 
-/*Header*/
 
-.logoconnexion{
-    width: 10% ;
-}
-
-.Logo{
-    float: left;
-    margin: 0 2%;
-    width: 11%;
-}
-
-
-header ul li{
-    list-style-type: none;
-}
-
-header ul{
-    display: flex;
-    justify-content: space-around;
-}
-
-header li{
-    display: inline-block;
-}
-
-header a:hover{
-    border-bottom: 5px solid orange;
-}
-
-header .logoconnexion:hover{
-    background-color: orange;
-}
-
-header li a{
-    color: white;
-}
-
-#menu{
-    background-color: black;
-    font-size: 150%;
+/*Accueil*/
+.imageFond{
     width: 100%;
-    height: 10%;
 }
 
+.VersProduit{
+    color: black;
+    font-weight: bold;
+    background-color: rgba(255,255,255,0.8);
+    position: absolute;
+    top: 40%;
+    right: 51%;
+    padding: 1%;
+    border-radius: 50px;
+    border: solid black;
+}
 
+.VersProduit:hover{
+    background-color: darkorange;
 
+}
 
-/*Galerie Photo*/
+.VersConnexion{
+    color: black;
+    font-weight: bold;
+    background-color: rgba(255,255,255,0.8);
+    position: absolute;
+    top: 40%;
+    left: 51%;
+    padding: 1%;
+    border-radius: 50px;
+    border: solid black;
+}
+.VersConnexion:hover{
+    background-color: darkorange;
+
+}
+
+.information{
+    border-top-left-radius: 20px ;
+    border-bottom-left-radius: 20px ;
+    border: solid darkorange;
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.contact{
+    color: black;
+    padding: 3%;
+    width: 35%;
+    margin: auto auto;
+    text-align: center;
+    background-color: rgba(255, 117, 26, 0.6);
+    border-radius: 50px;
+    border: solid rgb(255, 117, 26);
+}
 
 .information2{
     border-top-right-radius: 20px ;
@@ -74,7 +83,9 @@ header li a{
 }
 
 
-
+.contact:hover{
+    background-color: rgb(255, 117, 26);
+}
 
 /*L'entreprise*/
 
@@ -511,21 +522,29 @@ tr{
 
 }
 
-/* FOOTER*/
+.Prez{
+    background-color: gray;
+    border: 14px solid gray;
 
-footer{
-    font-size: 70%;
+}
+
+.AjoutCompte{
+    display: flex;
+}
+
+.AjoutCO{
+    color: black;
+    background-color: gray;
     width: 98%;
-    right: 1%;
-    bottom: 1%;
+    margin: 0 auto;
 }
 
-footer ul{
-    list-style-type: none;
-    padding: 0% 10%;
+.AjoutCO:hover{
+    background-color: darkorange;
+}
+
+.imgAjoutCO{
+    margin-left: 2%;
     float: left;
-}
-
-footer .Titre{
-    font-size: 150%;
+    width: 6%;
 }

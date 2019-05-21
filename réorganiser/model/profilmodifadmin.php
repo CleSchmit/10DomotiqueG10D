@@ -21,6 +21,8 @@ class modif{
                 return 'ok';
         } else if ($this->element == 'Nom') {
                 return 'ok';
+        }else if ($this->element == 'Validation') {
+            return 'ok';
         } else if ($this->element == 'Email') {
             $syntaxe = '#^[\w.-]+@[\w.-]+\.[a-zA-Z]{2,6}$#';
             if (preg_match($syntaxe, $this->modification)) {
@@ -48,6 +50,8 @@ class modif{
             $req = $this->bdd->prepare('UPDATE profil SET Prenom = :modification WHERE Email = :Email ');
         }else if($this->element == 'Nom'){
             $req = $this->bdd->prepare('UPDATE profil SET Nom = :modification WHERE Email = :Email ');
+        }else if($this->element == 'Validation'){
+            $req = $this->bdd->prepare('UPDATE profil SET Validation = :modification WHERE Email = :Email ');
         }else if($this->element == 'Email'){
             $req = $this->bdd->prepare('UPDATE profil SET Email = :modification WHERE Email = :Email ');
         }else if($this->element == 'Tel'){

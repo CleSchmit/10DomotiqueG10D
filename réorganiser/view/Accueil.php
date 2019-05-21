@@ -17,10 +17,10 @@ $body="<div class='main'>
             <img src='view/images/Ask.png'>
             <div><p>&emsp;Vous bénéficiez de nos services <br> &emsp;vous n'avez pas de compte ?</p><br><br>
             <a href='index.php?action=inscription'><div class='contact'>Inscrivez Vous</div></a></div>
-
-</div>
-<br>
-</div>
+        </div>
+        <br>
+        
+        </div>
         ";
 
 require("template/template.php"); ?>

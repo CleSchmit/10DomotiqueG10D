@@ -1,9 +1,9 @@
 <?php session_start();
 include_once 'controller/ControlCapteur.php';
-include_once 'controller/ControlListeCapteur.php';
+
 ob_start();
 
-echo "
+$body="
 <div class='main'>
 <br>
 <div id=\"Cforum\">
@@ -13,24 +13,21 @@ echo "
                 <input class=\"connexion\" name=\"Nom\" type=\"text\" placeholder=\"Nom...\" required /><br><br>
                 <label>Quelle capteur voulez-vous ajouter?</label><br>
                 <select name=\"Model\">
-                    <option>--Select an option--</option>";
-                    for ($i = 1; $i <= sizeof($_SESSION['capteur']); $i++) {
-                        echo " <option value= $i >Capteur&emsp;" . $_SESSION['capteur'][$i-1][0] . "&emsp;&emsp;" . $_SESSION['capteur'][$i-1][1] . "$</option> ";
-                    }
-              echo" </select>
+                    <option>--Select an option--</option>
+                    <option value=\"1\">Capteur infrarouge  34$</option>
+                    <option value=\"2\">Capteur température  25$</option>
+                    <option value=\"3\">Actionneur lumière  10$</option>
+                </select>
                 <br><br>
                     $erreur
                 <br>
                 <input class=\"bouton\" type=\"submit\" value=\"Valider l'ajout!\" />
             </p>
         </form>
-        <p> <a href=\"index.php?action=Profil#Maison".$_GET['Maison']."\">Annuler et revenir à mon profil</a></p>
-
         <br>
     </div>
     <br>
-    </div>";
+    </div>
+";
 
 require("template/template.php"); ?>
-
-
