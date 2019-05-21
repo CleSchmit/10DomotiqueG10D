@@ -15,7 +15,7 @@ $bdd = bdd();
 <html>
 <head>
     <title>10Domotique</title>
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="view/style.css" />
 </head>
 <body>
 
@@ -74,7 +74,7 @@ $bdd = bdd();
             </div>
             <div class="navListe" id="ListeProfil">
 
-                <h3><br>&emsp;Liste Profils<br><br></h3><br><br>
+                <h3><br>&emsp;Liste Profils<br><br></h3><br>
 
                 <div class="AjoutCompte">
                 <a href='index.php?action=inscriptionGestionnaire'><div class='AjoutCO'><br><div>

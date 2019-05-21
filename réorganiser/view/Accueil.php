@@ -1,30 +1,26 @@
 <?php ob_start();
 
 $body="<div class='main'>
+            <img src='view/images/FondMaison.jpg' class='imageFond'>
+            <a href='index.php?action=NosProduits' class='VersProduit'>Découvrir nos Produits</a>
+            <a href=\"index.php?action=Connexion\" class='VersConnexion'>&emsp;Se Connecter&emsp;</a>
+
+        <br><br><br>
+        <div class='information'>
+            <div><p>&emsp;Vous voulez faire des économies, améliorer votre quotidien ? <br> &emsp;Vous souhaitez bénéficier de nos services</p><br><br>
+            <a href=#><div class='contact'>Contactez Nous</div></a></div>
+            <img src='view/images/Ask.png'>
+        </div>
+        
         <br>
-        <div id=\"containerGalerie\">
-        <input type=\"radio\" name=\"images\" id=\"i1\" checked>
-        <input type=\"radio\" name=\"images\" id=\"i2\">
-        <input type=\"radio\" name=\"images\" id=\"i3\">
-        <div class=\"image\" id=\"one\">
-            <img src=\"view/images/image1.jpg\">
-            <label for=\"i3\" class=\"precedent\">&lt;</label>
-            <label for=\"i2\" class=\"suivant\">&gt;</label>
+        <div class='information'>
+            <div><p>&emsp;Vous voulez faire des économies, améliorer votre quotidien ? <br> &emsp;Vous souhaitez bénéficier de nos services</p><br><br>
+            <a href=#><div class='contact'>Contactez Nous</div></a></div>
+            <img src='view/images/Ask.png'>
         </div>
-        <div class=\"image\" id=\"two\">
-            <img src=\"view/images/image2.jpg\">
-            <label for=\"i1\" class=\"precedent\">&lt;</label>
-            <label for=\"i3\" class=\"suivant\">&gt;</label>
+        <br>
+        
         </div>
-        <div class=\"image\" id=\"three\">
-            <img src=\"view/images/image3.jpg\">
-            <label for=\"i2\" class=\"precedent\">&lt;</label>
-            <label for=\"i1\" class=\"suivant\">&gt;</label>
-        </div>
-            
-</div>
-<br>
-</div>
         ";
 
 require("template/template.php"); ?>
