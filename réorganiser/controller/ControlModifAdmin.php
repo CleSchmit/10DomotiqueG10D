@@ -54,14 +54,9 @@ if(isset($_GET["modif"])) {
 
     }
 
-    if ($element == 'Validation') {
-        $modif = new modif('ok', 'Validation');
-        $verif = $modif->verif();
-    }
-
     if ($verif == "ok") {/*Tout est bon*/
         if ($modif->enregistrement()) {
-           header("Location: index.php?action=ProfilAdmin#ListeProfil");
+            header('Location: index.php?action=ListeProfil  ');
         } else { /*Erreur lors de l'enregistrement*/
             echo 'Une erreur est survenue';
         }

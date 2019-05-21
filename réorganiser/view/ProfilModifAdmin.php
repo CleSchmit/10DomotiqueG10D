@@ -9,13 +9,6 @@ $Tel = $_SESSION['profil'][$_GET['i']][3];
 $Nom = $_SESSION['profil'][$_GET['i']][0];
 $Adresse = $_SESSION['profil'][$_GET['i']][5];
 
-$val = '';
-if ($_SESSION['profil'][$_GET['i']][9] == NULL){
-    $val = "<form method=\"post\" action=\"index.php?action=ProfilModifAdmin&modif=Validation&i=".$_GET['i']."\">
-        <input name='Validation' type=\"submit\" style='background-color: lightcoral' value=\"Valider l'inscription\" /><br>
-        </form>";
-}
-
 $body="
 <br>
 
@@ -28,46 +21,43 @@ $body="
         </form>
         
         
-        <form method=\"post\" action=\"index.php?action=ProfilModifAdmin&modif=Nom&i=".$_GET['i']."\">
+        <form method=\"post\" action=\"index.php?action=ProfilModifAdmin&modif=Nom\">
         <input name=\"Nom\" type=\"Text\" placeholder=\"$Nom\" />
         <input type=\"submit\" value=\"Modifier mon nom\" /><br>
         $erreurNom<br>
         </form>
         
         /!\ Si vous modifiez votre Email, vous serez redirigez vers la page de connexion
-        <form method=\"post\" action=\"index.php?action=ProfilModifAdmin&modif=Email&i=".$_GET['i']."\">
+        <form method=\"post\" action=\"index.php?action=ProfilModifAdmin&modif=Email\">
         <input name=\"Email\" type=\"Text\" placeholder=\"$Email\" />
         <input type=\"submit\" value=\"Modifier mon Email\" /><br>
         $erreurEmail<br>
         </form>
         
         
-        <form method=\"post\" action=\"index.php?action=ProfilModifAdmin&modif=Tel&i=".$_GET['i']."\">
+        <form method=\"post\" action=\"index.php?action=ProfilModifAdmin&modif=Tel\">
         <input name=\"Tel\" type=\"Text\" placeholder=\"+33 $Tel\" />
         <input type=\"submit\" value=\"Modifier mon téléphone\" /><br>
         $erreurTel<br>
         </form>
         
-        <form method=\"post\" action=\"index.php?action = ProfilModifAdmin&modif=Adresse&i=".$_GET['i']."\">
+        <form method=\"post\" action=\"index.php?action = ProfilModifAdmin&modif=Adresse\">
         <input name=\"Tel\" type=\"Text\" placeholder=\" $Adresse\" />
         <input type=\"submit\" value=\"Modifier mon Adresse\" /><br>
         $erreurAdresse<br>
         </form>
         
         
-        <form method=\"post\" action=\"index.php?action=ProfilModif&modif=Mdp&i=".$_GET['i']."\">
+        <form method=\"post\" action=\"index.php?action=ProfilModif&modif=Mdp\">
         <input name=\"Mdp\" type=\"password\" placeholder=\" Nouveau mot de passe\" />
         <input name=\"Mdp2\" type=\"password\" placeholder=\" Confirmation\" />
         <input type=\"submit\" value=\"Modifier mon mot de passe\" /><br>
         $erreurMdp<br>
         </form>
-        
-        
-        $val
                 <br>
 
         
-        <a href='index.php?action=ProfilAdmin#ListeProfil' class='bouton'>&emsp;Retourner sur la liste&emsp;</a>
+        <a href='index.php?action=ListeProfil' class='bouton'>&emsp;Retourner sur la liste&emsp;</a>
         <br>
 
 
