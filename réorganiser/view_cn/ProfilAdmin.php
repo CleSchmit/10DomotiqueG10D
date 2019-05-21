@@ -23,18 +23,18 @@ $bdd = bdd();
 
 
             <div class='headerprofil'>
-                <div class="nom"><br><img class="imgprofil" src="view/images/Boss.jpg">&ensp;Compte Administrateur &ensp;<?= $_SESSION['Prenom']?>&ensp;<?= $_SESSION['Nom']?><br><br></div>
+                <div class="nom"><br><img class="imgprofil" src="view/images/Boss.jpg">&ensp;管理员账户 &ensp;<?= $_SESSION['Prenom']?>&ensp;<?= $_SESSION['Nom']?><br><br></div>
 
-                <a href='index.php?action=ProfilModif'><div class="lien"><br><img class="imgOption" src="view/images/Modif.png">&ensp;Modification du profil<br><br></div></a>
+                <a href='index_cn.php?action=ProfilModif'><div class="lien"><br><img class="imgOption" src="view/images/Modif.png">&ensp;更改你的信息<br><br></div></a>
 
-                <a href='index.php?action=supprimerProfil'><div class="lien"><br>Supprimer votre profil<br><br></div></a>
+                <a href='index_cn.php?action=supprimerProfil'><div class="lien"><br>删除你的信息<br><br></div></a>
 
-                <a href='index.php?action=deconnexion'><div class="lien"><br><img class="imgOption" src="view/images/deco.png">&ensp;Déconnexion<br><br></div></a>
+                <a href='index_cn.php?action=deconnexion'><div class="lien"><br><img class="imgOption" src="view/images/deco.png">&ensp;登出<br><br></div></a>
 
             </div>
-                
-            
-                
+
+
+
         </div><br>";
 
             <br>

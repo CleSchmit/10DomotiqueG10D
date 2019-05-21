@@ -3,7 +3,7 @@
 $Id_Profil = $_SESSION['id'];
 $Mdp = $_SESSION['Mdp'];
 
-include_once 'controller/ControlSuppProfil.php';
+include_once 'controller/ControlSuppProfil2.php';
 
 ob_start();
 
@@ -13,16 +13,16 @@ $body="
     <div class='main'>
     <br>
     <div id=\"Cforum\">
-        <form method=\"post\" action=\"index.php?action=supprimerProfil\">
+        <form method=\"post\" action=\"index_cn.php?action=supprimerProfil\">
             <p>
-                <input class=\"connexion\" name=\"Mdp\" type=\"password\" placeholder=\"Mot de passe...\" required/><br><br>
+                <input class=\"connexion\" name=\"Mdp\" type=\"password\" placeholder=\"密码...\" required/><br><br>
                     $erreur
                 <br>
-                <input class=\"bouton\" type=\"submit\" value=\"Validé\" />
+                <input class=\"bouton\" type=\"submit\" value=\"生效\" />
             </p>
         </form>
-        
-        <p> <a href=\"index.php?action=Profil\">Annuler et revenir à mon profil</a></p>
+
+        <p> <a href=\"index_cn.php?action=Profil\">取消并返回我的账号</a></p>
 
     </div>
     <br>

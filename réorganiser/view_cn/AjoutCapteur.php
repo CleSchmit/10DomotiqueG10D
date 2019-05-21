@@ -14,9 +14,9 @@ $body="
                 <label>你想添加哪一个传感器?</label><br>
                 <select name=\"Model\">
                     <option>--Select an option--</option>
-                    <option value=\"1\">Capteur infrarouge  34$</option>
-                    <option value=\"2\">Capteur température  25$</option>
-                    <option value=\"3\">Actionneur lumière  10$</option>
+                    <option value=\"1\">红外传感器  34$</option>
+                    <option value=\"2\">温度传感器  25$</option>
+                    <option value=\"3\">光线传感器开关  10$</option>
                 </select>
                 <br><br>
                     $erreur
