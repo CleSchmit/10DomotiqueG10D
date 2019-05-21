@@ -71,6 +71,17 @@ a{
     border: solid rgb(255, 117, 26);
 }
 
+.information2{
+    border-top-right-radius: 20px ;
+    border-bottom-right-radius: 20px ;
+    border: solid darkorange;
+    margin: 0 auto;
+    width: 50%;
+}
+.information2 img{
+    float: left;
+}
+
 
 .contact:hover{
     background-color: rgb(255, 117, 26);
