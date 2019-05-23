@@ -1,10 +1,10 @@
 <?php
 session_start();
 include_once 'model/function.php';
-include_once 'controller/ControlMessage.php';
-include_once 'controller/ControlConversation.php';
+include_once 'controller/ControlMessage2.php';
+include_once 'controller/ControlConversation2.php';
 
-$_SESSION['convName']="Choisissez un Sujet";
+$_SESSION['convName']="选择一个主题";
 if (isset($_GET['conv'])){
     $_SESSION['convName'] = $_GET['conv'];
 }
@@ -21,15 +21,15 @@ if (isset($_GET['conv'])){
         <div class="corps">
 			<div id="forum">
 				<div class="ListeForum">
-                    <h3 style="background-color: darkorange; color: black;    border-bottom: solid black;"><br>&emsp;Liste des Sujets<br><br></h3>
+                    <h3 style="background-color: darkorange; color: black;    border-bottom: solid black;"><br>&emsp;主题列表<br><br></h3>
                     	<?php         
                             $bdd = bdd();
                             $conversation = $bdd->query('SELECT nom FROM conversation');
                             if (isset($_SESSION['Nom'])){
-                                echo "<a href='index.php?action=forum&conv=add'><div class='Add'><br><p>&emsp;</p><img class='imgAjoutF' src='view/images/Ajout.png'>&ensp;Ajouter une question&emsp;<br><br></div></a>";
+                                echo "<a href='index_cn.php?action=forum&conv=add'><div class='Add'><br><p>&emsp;</p><img class='imgAjoutF' src='view/images/Ajout.png'>&ensp;添加一个问题&emsp;<br><br></div></a>";
                             }
                             while ($donnees = $conversation->fetch()) {
-                                echo "<a href='index.php?action=forum&conv=" . $donnees['nom'] . "'><div class='LienForum'>" . $donnees['nom'] . "</div></a>";
+                                echo "<a href='index_cn.php?action=forum&conv=" . $donnees['nom'] . "'><div class='LienForum'>" . $donnees['nom'] . "</div></a>";
                             }
                             $conversation->closeCursor();
 
@@ -43,7 +43,7 @@ if (isset($_GET['conv'])){
                     $delete = '';
                     if(isset($_SESSION['Role'])){
                         if($_SESSION['Role'] == 'Admin'){
-                            $delete = "<a href='index.php?action=forum&conv=caca' class='delete' id='DelP'>&times;&emsp;</a>";
+                            $delete = "<a href='index_cn.php?action=forum&conv=caca' class='delete' id='DelP'>&times;&emsp;</a>";
                         }
                     }
 
@@ -67,20 +67,20 @@ if (isset($_GET['conv'])){
        				if (isset($_SESSION['Nom'])){
        				    if (isset($_SESSION['id_conv'])) {
        				        echo "
-                        <form action='index.php?action=forum' method='post'>
+                        <form action='index_cn.php?action=forum' method='post'>
                               <p><br>
-                                  <textarea class='connexion' style='width: 100%;' name='message' placeholder=' Message...' required></textarea></br>
-                                  <br><input class = 'boutonbis' type='submit' value='Valider' /> </br>
+                                  <textarea class='connexion' style='width: 100%;' name='message' placeholder=' 信息...' required></textarea></br>
+                                  <br><input class = 'boutonbis' type='submit' value='生效' /> </br>
                               </p>
                         </form>";
 
        				    }
        				    if (isset($_GET['conv']) and $_GET['conv'] == 'add') {
        				        echo "
-                        <form action='index.php?action=forum' method='post'>
+                        <form action='index_cn.php?action=forum' method='post'>
                               <p><br>
-                                  <input class='connexion' style='width: 100%;' type='text' name='nomNouvelConv' placeholder=' Nom nouveau sujet..' required/> </br>
-                                  <br><input class='boutonbis' type='submit' value='Valider' /> </br>
+                                  <input class='connexion' style='width: 100%;' type='text' name='nomNouvelConv' placeholder=' 新主题名字...' required/> </br>
+                                  <br><input class='boutonbis' type='submit' value='生效' /> </br>
                               </p>
                         </form>";
        				    }

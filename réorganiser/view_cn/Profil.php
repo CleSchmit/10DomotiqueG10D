@@ -1,8 +1,8 @@
 <?php
 session_start();
 include_once "model/function.php";
-include_once "controller/ControlProfil.php";
-include_once 'controller/ControlCapteurAction.php';
+include_once "controller/ControlProfil2.php";
+include_once 'controller/ControlCapteurAction2.php';
 
 
 $bdd = bdd();
@@ -29,28 +29,28 @@ $bdd = bdd();
 
                 <div class="nom"><br><img class="imgprofil" src="view/images/talin.png">&ensp;<?= $_SESSION['Prenom']?>&ensp;<?= $_SESSION['Nom']?><br><br></div>
 
-                <div class="lienM"><br><a class="PrezMaison">&emsp;Maisons</a><br><br></div>
+                <div class="lienM"><br><a class="PrezMaison">&emsp;房间</a><br><br></div>
 
                 <div class="navMaisons">
                     <?php for($i=0 ; $i < sizeof($_SESSION['Maison']); $i++){
 
-                        echo "<a href='index.php?action=supprimerMaison&id=".$_SESSION['Maison'][$i][0]."&Maison=".$i."' class='delete'>&times;&ensp;</a>
+                        echo "<a href='index_cn.php?action=supprimerMaison&id=".$_SESSION['Maison'][$i][0]."&Maison=".$i."' class='delete'>&times;&ensp;</a>
                               <a href='#Maison".$i."' class='Maison'>
                                     <div class=\"ChoixMaison\"><br>&emsp;".$_SESSION['Maison'][$i][1]."&emsp;
                                         <br><br>
                                     </div>
                               </a>";
                     }?>
-                    <div class="ChoixMaison"><br><a class="Maison" href="index.php?action=AjoutMaison&Maison=Maison<?=sizeof($_SESSION['Maison'])?>"><p>&emsp;</p><img class='imgOption' src='view/images/Ajout.png'>&ensp;Ajouter une maison&emsp;</a><br><br></div>
+                    <div class="ChoixMaison"><br><a class="Maison" href="index_cn.php?action=AjoutMaison&Maison=Maison<?=sizeof($_SESSION['Maison'])?>"><p>&emsp;</p><img class='imgOption' src='view/images/Ajout.png'>&ensp;添加一个房间&emsp;</a><br><br></div>
                 </div>
 
 
 
-                <a href='index.php?action=ProfilModif' class="lienOption"><div class="lien"><br><p>&emsp;</p><img class="imgOption" src="view/images/Modif.png">&ensp;Modification du profil<br><br></div></a>
+                <a href='index_cn.php?action=ProfilModif' class="lienOption"><div class="lien"><br><p>&emsp;</p><img class="imgOption" src="view/images/Modif.png">&ensp;更改资料<br><br></div></a>
 
-                <a href='index.php?action=supprimerProfil' class="lienOption"><div class="lien"><br><p>&emsp;</p><img class="imgOption" src="view/images/croix.png">&ensp;Supprimer votre profil<br><br></div></a>
+                <a href='index_cn.php?action=supprimerProfil' class="lienOption"><div class="lien"><br><p>&emsp;</p><img class="imgOption" src="view/images/croix.png">&ensp;删除你的信息<br><br></div></a>
 
-                <a href='index.php?action=deconnexion' class="lienOption"><div class="lien"><br><p>&emsp;</p><img class="imgOption" src="view/images/deco.png">&ensp;Déconnexion<br><br></div></a>
+                <a href='index_cn.php?action=deconnexion' class="lienOption"><div class="lien"><br><p>&emsp;</p><img class="imgOption" src="view/images/deco.png">&ensp;注销<br><br></div></a>
 
             </div>
 
@@ -78,7 +78,7 @@ $bdd = bdd();
 
                     for ($j = 0; $j < sizeof($_SESSION['Maison'][$i][2]); $j++){
                         echo "<div class='Piece'><h4><br>&emsp;&emsp;".$_SESSION['Maison'][$i][2][$j][1]."
-                              <a href='index.php?action=supprimerPiece&id=".$_SESSION['Maison'][$i][2][$j][0]."&Maison=Maison".$i."' class='delete' id='DelP'>&times;&ensp;</a>
+                              <a href='index_cn.php?action=supprimerPiece&id=".$_SESSION['Maison'][$i][2][$j][0]."&Maison=Maison".$i."' class='delete' id='DelP'>&times;&ensp;</a>
                               <br><br></h4><br>
                                 
                               <div class='Capteurs'>";
@@ -93,17 +93,17 @@ $bdd = bdd();
 
 
                             if($_SESSION['Maison'][$i][2][$j][2][$k][3] == 1){
-                                $link = "index.php?action=Profil&Maison=".$i."&Piece=".$j."&Capteur=".$k."&Alarm=on#Maison".$i;
-                                $action = "<a href=".$link." class='lienCapteur'>Activer</a>";
+                                $link = "index_cn.php?action=Profil&Maison=".$i."&Piece=".$j."&Capteur=".$k."&Alarm=on#Maison".$i;
+                                $action = "<a href=".$link." class='lienCapteur'>启用</a>";
                                 if ($_SESSION['Maison'][$i][2][$j][2][$k][2] == 1){
-                                    $link = "index.php?action=Profil&Maison=".$i."&Piece=".$j."&Capteur=".$k."&Alarm=off#Maison".$i;
-                                    $action ="<a href=".$link." class='lienCapteur'>Desactiver</a>"
+                                    $link = "index_cn.php?action=Profil&Maison=".$i."&Piece=".$j."&Capteur=".$k."&Alarm=off#Maison".$i;
+                                    $action ="<a href=".$link." class='lienCapteur'>禁用</a>"
                                    ;}
 
                                 echo "
                                     <img class='imgCapteur' src='view/images/CapteurI.png'>
                                     &emsp;".$_SESSION['Maison'][$i][2][$j][2][$k][1]."&emsp;
-                                    <a href='index.php?action=supprimerCapteur&id=".$_SESSION['Maison'][$i][2][$j][2][$k][0]."&Maison=Maison".$i."' class='delete' id='DelC'>&times;&ensp;</a>
+                                    <a href='index_cn.php?action=supprimerCapteur&id=".$_SESSION['Maison'][$i][2][$j][2][$k][0]."&Maison=Maison".$i."' class='delete' id='DelC'>&times;&ensp;</a>
                                     
                                     <br>";
                                         if ($_SESSION['Maison'][$i][2][$j][2][$k][2] == 1){
@@ -115,35 +115,35 @@ $bdd = bdd();
                             }
                             if($_SESSION['Maison'][$i][2][$j][2][$k][3] == 2){
 
-                                $link = "index.php?action=Profil&Maison=".$i."&Piece=".$j."&Capteur=".$k."#Maison".$i;
+                                $link = "index_cn.php?action=Profil&Maison=".$i."&Piece=".$j."&Capteur=".$k."#Maison".$i;
 
 
                                 echo "
                                     <img class='imgCapteur' src='view/images/Capteur.png'>
                                     <div class='Tempname'>&emsp;".$_SESSION['Maison'][$i][2][$j][2][$k][1]."</div>
-                                    <a href='index.php?action=supprimerCapteur&id=".$_SESSION['Maison'][$i][2][$j][2][$k][0]."&Maison=Maison".$i."' class='delete' id='DelC'>&times;&ensp;</a>
+                                    <a href='index_cn.php?action=supprimerCapteur&id=".$_SESSION['Maison'][$i][2][$j][2][$k][0]."&Maison=Maison".$i."' class='delete' id='DelC'>&times;&ensp;</a>
                                     <div class='Tempchoisi'>".$_SESSION['Maison'][$i][2][$j][2][$k][2]."°C</div>
                                     <br>
                                     <div class='infoT'>".$_SESSION['Maison'][$i][2][$j][2][$k][2]."°C</div><span>10°C</span>
                                     <form class='Temp' method='post' action=$link>
                                         <input type=\"range\" name='Temp' value=".$_SESSION['Maison'][$i][2][$j][2][$k][2]." min='10' max='30'/>30°C
-                                        <input type=\"submit\" value=\"Valider\" />
+                                        <input type=\"submit\" value=\"生效\" />
                                     </form>  
                                     ";
                             }
                             if($_SESSION['Maison'][$i][2][$j][2][$k][3] == 3){
 
-                                $link = "index.php?action=Profil&Maison=".$i."&Piece=".$j."&Capteur=".$k."&Lum=on#Maison".$i;
-                                $action = "<a href=".$link." class='lienCapteur'>Allumer</a>";
+                                $link = "index_cn.php?action=Profil&Maison=".$i."&Piece=".$j."&Capteur=".$k."&Lum=on#Maison".$i;
+                                $action = "<a href=".$link." class='lienCapteur'>点亮</a>";
                                 if ($_SESSION['Maison'][$i][2][$j][2][$k][2] == 1){
-                                    $link = "index.php?action=Profil&Maison=".$i."&Piece=".$j."&Capteur=".$k."&Lum=off#Maison".$i;
-                                    $action ="<a href=".$link." class='lienCapteur'>Eteindre</a>"
+                                    $link = "index_cn.php?action=Profil&Maison=".$i."&Piece=".$j."&Capteur=".$k."&Lum=off#Maison".$i;
+                                    $action ="<a href=".$link." class='lienCapteur'>熄灭</a>"
                                     ;}
 
                                 echo "
                                     <img class='imgCapteur' src='view/images/CapteurP.png'>
                                     &emsp;".$_SESSION['Maison'][$i][2][$j][2][$k][1]."&emsp;
-                                    <a href='index.php?action=supprimerCapteur&id=".$_SESSION['Maison'][$i][2][$j][2][$k][0]."&Maison=Maison".$i."' class='delete' id='DelC'>&times;&ensp;</a>
+                                    <a href='index_cn.php?action=supprimerCapteur&id=".$_SESSION['Maison'][$i][2][$j][2][$k][0]."&Maison=Maison".$i."' class='delete' id='DelC'>&times;&ensp;</a>
                                     <br>";
                                         if ($_SESSION['Maison'][$i][2][$j][2][$k][2] == 1){
                                             echo "<div style='background-color: yellow' class='info'>&ensp;On&ensp;</div>";
@@ -164,10 +164,10 @@ $bdd = bdd();
                             //        <a class='Aug' href='index.php?action=Profil&Aug=".$_SESSION['Maison'][$i][2][$j][2][$k][0]."&Maison=Maison".$i."'>+1</a>
 
                         }
-                        echo"</div><br><a href='index.php?action=AjoutCapteur&id=".$_SESSION['Maison'][$i][2][$j][0]."&Maison=Maison".$i."'>
+                        echo"</div><br><a href='index_cn.php?action=AjoutCapteur&id=".$_SESSION['Maison'][$i][2][$j][0]."&Maison=Maison".$i."'>
                                     <div class='AjoutC'><br><div class='AjoutC2'>
                                     <img class='imgAjout' src='view/images/Ajout.png'>
-                                    &emsp;Ajouter Capteur</div><br></div>
+                                    &emsp;添加传感器</div><br></div>
                                     </a><br><br>
                                     </div><br>";
                     }
@@ -175,7 +175,7 @@ $bdd = bdd();
                 echo "<br><a href='index.php?action=AjoutPiece&id=".$_SESSION['Maison'][$i][0]."&Maison=Maison".$i."'>
                                     <figure>
                                     &emsp;<img class='imgAjoutP' src='view/images/Ajout.png'>
-                                    <figcaption>&emsp;Ajouter Pièce&emsp;</figcaption>
+                                    <figcaption>&emsp;添加房间&emsp;</figcaption>
                                     </figure></a>
                       </div>";
                 }?>

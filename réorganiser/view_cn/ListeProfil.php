@@ -1,7 +1,7 @@
 <?php
 session_start();
 include_once "model/function.php";
-include_once "controller/ControlListeProfil.php";
+include_once "controller/ControlListeProfil2.php";
 $bdd = bdd();
 $_SESSION['indice'] = array();
 ?>
@@ -57,19 +57,19 @@ $_SESSION['indice'] = array();
 
             <u2>
                 <?php for($i=0 ; $i < sizeof($_SESSION['profil']); $i++) {
-                    echo " <li1><a href=\"index.php?action=ProfilModifAdmin&i=$i\">&emsp;" . $_SESSION['profil'][$i][0] . "&emsp;&emsp;" . $_SESSION['profil'][$i][1] . "&emsp;&emsp;" . $_SESSION['profil'][$i][2] . "&emsp;&emsp;" . $_SESSION['profil'][$i][3] . "&emsp;&emsp;" . $_SESSION['profil'][$i][4] . "&emsp;&emsp;" . $_SESSION['profil'][$i][5] . "&emsp;&emsp;" . $_SESSION['profil'][$i][6] . "&emsp;&emsp;" . $_SESSION['profil'][$i][9] . "&emsp;</a><a href='index.php?action=supprimerListeProfil&id=".$_SESSION['profil'][$i][8] ."'>&ensp;X&ensp;</a></li1><br>
+                    echo " <li1><a href=\"index_cn.php?action=ProfilModifAdmin&i=$i\">&emsp;" . $_SESSION['profil'][$i][0] . "&emsp;&emsp;" . $_SESSION['profil'][$i][1] . "&emsp;&emsp;" . $_SESSION['profil'][$i][2] . "&emsp;&emsp;" . $_SESSION['profil'][$i][3] . "&emsp;&emsp;" . $_SESSION['profil'][$i][4] . "&emsp;&emsp;" . $_SESSION['profil'][$i][5] . "&emsp;&emsp;" . $_SESSION['profil'][$i][6] . "&emsp;&emsp;" . $_SESSION['profil'][$i][9] . "&emsp;</a><a href='index_cn.php?action=supprimerListeProfil&id=".$_SESSION['profil'][$i][8] ."'>&ensp;X&ensp;</a></li1><br>
                     ";
                 } ?>
                 <br>
                 <br>
-                <li1><a href="index.php?action=inscriptionGestionnaire">Ajouter un compte gestionnaire d'immmeuble</a></li1>
+                <li1><a href="index_cn.php?action=inscriptionGestionnaire">创建一个房屋管理员账号</a></li1>
                 <br>
-                <li1><a href="index.php?action=inscriptionAdmin">Ajouter un compte Admin</a></li1>
+                <li1><a href="index_cn.php?action=inscriptionAdmin">创建一个管理员账号</a></li1>
                 <br>
-                <li1><a href="index.php?action=inscriptionUtilisateur">Ajouter un compte Utilisateur</a></li1>
+                <li1><a href="index_cn.php?action=inscriptionUtilisateur">创建一个用户账号</a></li1>
                 <br>
                 <br>
-                <li1><a href='index.php?action=ProfilAdmin'>Revenir au menu</a></li1>
+                <li1><a href='index_cn.php?action=ProfilAdmin'>返回菜单</a></li1>
             </u2>
 
             </div>

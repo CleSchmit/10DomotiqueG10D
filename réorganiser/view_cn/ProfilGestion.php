@@ -1,8 +1,8 @@
 <?php
 session_start();
 include_once "model/function.php";
-include_once "controller/ControlProfilGestion.php";
-include_once 'controller/ControlCapteurAction.php';
+include_once "controller/ControlProfilGestion2.php";
+include_once 'controller/ControlCapteurAction2.php';
 $bdd = bdd();
 ?>
 <html>
@@ -21,9 +21,9 @@ $bdd = bdd();
 
             <div class='headerprofil'>
 
-                <div class="nom"><br><img class="imgprofil" src="view/images/talin.png">&ensp;Gestionnaire d'immeuble<br><br></div>
+                <div class="nom"><br><img class="imgprofil" src="view/images/talin.png">&ensp;房屋管理<br><br></div>
 
-                <div class="lienM"><br><a class="PrezMaison">&emsp;Habitation de l'immeuble</a><br><br></div>
+                <div class="lienM"><br><a class="PrezMaison">&emsp;住户管理</a><br><br></div>
 
                 <div class="navMaisons">
                     <?php for($i=0 ; $i < sizeof($_SESSION['Maison']); $i++){
@@ -37,17 +37,17 @@ $bdd = bdd();
                     }?>
                 </div>
 
-                <div class="lienM"><br><a class="PrezMaison"> Graphique consommation</a><br><br></div>
+                <div class="lienM"><br><a class="PrezMaison"> 消费图表</a><br><br></div>
 
                 <div class="navMaisons">
-                    <a href='index.php?action=Graphconso' class="lienOption"><div class="lien"><br><p>&emsp;</p>&ensp;Graphique consommation immeuble en w/h<br><br></div></a>
+                    <a href='index_cn.php?action=Graphconso' class="lienOption"><div class="lien"><br><p>&emsp;</p>&ensp;房屋消耗图表     单位 w/h<br><br></div></a>
                 </div>
 
-                <a href='index.php?action=ProfilModif' class="lienOption"><div class="lien"><br><p>&emsp;</p><img class="imgOption" src="view/images/Modif.png">&ensp;Modification du profil<br><br></div></a>
+                <a href='index_cn.php?action=ProfilModif' class="lienOption"><div class="lien"><br><p>&emsp;</p><img class="imgOption" src="view/images/Modif.png">&ensp;更改信息<br><br></div></a>
 
-                <a href='index.php?action=supprimerProfil' class="lienOption"><div class="lien"><br><p>&emsp;</p><img class="imgOption" src="view/images/croix.png">&ensp;Supprimer votre profil<br><br></div></a>
+                <a href='index_cn.php?action=supprimerProfil' class="lienOption"><div class="lien"><br><p>&emsp;</p><img class="imgOption" src="view/images/croix.png">&ensp;删除你的信息<br><br></div></a>
 
-                <a href='index.php?action=deconnexion' class="lienOption"><div class="lien"><br><p>&emsp;</p><img class="imgOption" src="view/images/deco.png">&ensp;Déconnexion<br><br></div></a>
+                <a href='index_cn.php?action=deconnexion' class="lienOption"><div class="lien"><br><p>&emsp;</p><img class="imgOption" src="view/images/deco.png">&ensp;注销<br><br></div></a>
 
             </div>
 
@@ -87,10 +87,10 @@ $bdd = bdd();
 
 
                             if($_SESSION['Maison'][$i][2][$j][2][$k][3] == 1){
-                                $link = "index.php?action=ProfilGestion&Maison=".$i."&Piece=".$j."&Capteur=".$k."&Alarm=on#Maison".$i;
+                                $link = "index_cn.php?action=ProfilGestion&Maison=".$i."&Piece=".$j."&Capteur=".$k."&Alarm=on#Maison".$i;
                                 $action = "<a href=".$link." class='lienCapteur'>Activer</a>";
                                 if ($_SESSION['Maison'][$i][2][$j][2][$k][2] == 1){
-                                    $link = "index.php?action=ProfilGestion&Maison=".$i."&Piece=".$j."&Capteur=".$k."&Alarm=off#Maison".$i;
+                                    $link = "index_cn.php?action=ProfilGestion&Maison=".$i."&Piece=".$j."&Capteur=".$k."&Alarm=off#Maison".$i;
                                     $action ="<a href=".$link." class='lienCapteur'>Desactiver</a>"
                                     ;}
 
@@ -108,7 +108,7 @@ $bdd = bdd();
                             }
                             if($_SESSION['Maison'][$i][2][$j][2][$k][3] == 2){
 
-                                $link = "index.php?action=ProfilGestion&Maison=".$i."&Piece=".$j."&Capteur=".$k."#Maison".$i;
+                                $link = "index_cn.php?action=ProfilGestion&Maison=".$i."&Piece=".$j."&Capteur=".$k."#Maison".$i;
 
 
                                 echo "
@@ -125,10 +125,10 @@ $bdd = bdd();
                             }
                             if($_SESSION['Maison'][$i][2][$j][2][$k][3] == 3){
 
-                                $link = "index.php?action=ProfilGestion&Maison=".$i."&Piece=".$j."&Capteur=".$k."&Lum=on#Maison".$i;
+                                $link = "index_cn.php?action=ProfilGestion&Maison=".$i."&Piece=".$j."&Capteur=".$k."&Lum=on#Maison".$i;
                                 $action = "<a href=".$link." class='lienCapteur'>Allumer</a>";
                                 if ($_SESSION['Maison'][$i][2][$j][2][$k][2] == 1){
-                                    $link = "index.php?action=ProfilGestion&Maison=".$i."&Piece=".$j."&Capteur=".$k."&Lum=off#Maison".$i;
+                                    $link = "index_cn.php?action=ProfilGestion&Maison=".$i."&Piece=".$j."&Capteur=".$k."&Lum=off#Maison".$i;
                                     $action ="<a href=".$link." class='lienCapteur'>Eteindre</a>"
                                     ;}
 

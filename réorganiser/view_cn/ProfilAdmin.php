@@ -1,12 +1,12 @@
 <?php
 session_start();
 include_once "model/function.php";
-include_once "controller/ControlListeCapteur.php";
-include_once 'controller/ControlAjoutListeCapteur.php';
-include_once "controller/ControlListeProfil.php";
-include_once 'controller/ControlInscriptionAdmin.php';
-include_once 'controller/ControlInscriptionGestionnaire.php';
-include_once 'controller/ControlInscriptionUtilisateur.php';
+include_once "controller/ControlListeCapteur2.php";
+include_once 'controller/ControlAjoutListeCapteur2.php';
+include_once "controller/ControlListeProfil2.php";
+include_once 'controller/ControlInscriptionAdmin2.php';
+include_once 'controller/ControlInscriptionGestionnaire2.php';
+include_once 'controller/ControlInscriptionUtilisateur2.php';
 
 
 $bdd = bdd();
@@ -38,11 +38,11 @@ $bdd = bdd();
 
                 <a href="#ListeProfil"><div class="ChoixListe"><br>&emsp;Liste profils<br><br></div></a>
 
-                <a href='index.php?action=ProfilModif'><div class="lien"><br><p>&emsp;</p><img class="imgOption" src="view/images/Modif.png">&ensp;Modification du profil<br><br></div></a>
+                <a href='index_cn.php?action=ProfilModif'><div class="lien"><br><p>&emsp;</p><img class="imgOption" src="view/images/Modif.png">&ensp;更改资料<br><br></div></a>
 
-                <a href='index.php?action=supprimerProfil' class="lienOption"><div class="lien"><br><p>&emsp;</p><img class="imgOption" src="view/images/croix.png">&ensp;Supprimer votre profil<br><br></div></a>
+                <a href='index_cn.php?action=supprimerProfil' class="lienOption"><div class="lien"><br><p>&emsp;</p><img class="imgOption" src="view/images/croix.png">&ensp;删除你的资料<br><br></div></a>
 
-                <a href='index.php?action=deconnexion'><div class="lien"><br><p>&emsp;</p><img class="imgOption" src="view/images/deco.png">&ensp;Déconnexion<br><br></div></a>
+                <a href='index_cn.php?action=deconnexion'><div class="lien"><br><p>&emsp;</p><img class="imgOption" src="view/images/deco.png">&ensp;注销<br><br></div></a>
             </div>
 
             <div class="interligne"></div>
@@ -57,14 +57,14 @@ $bdd = bdd();
 
 
             <div class="navListe" id="ListeCapteur">
-                <h3><br>&emsp;Liste Capteurs<br><br></h3><br>
+                <h3><br>&emsp;传感器列表<br><br></h3><br>
 
-                <a href='index.php?action=AjoutListeCapteur'><div class='AjoutC'><br><div class='AjoutC2'>
+                <a href='index_cn.php?action=AjoutListeCapteur'><div class='AjoutC'><br><div class='AjoutC2'>
                             <img class='imgAjout' src='view/images/Ajout.png'>
-                            &emsp;Ajouter Capteur</div><br></div></a><br><br>
+                            &emsp;添加传感器</div><br></div></a><br><br>
 
                     <?php for($i=0 ; $i < sizeof($_SESSION['capteur']); $i++) {
-                        echo " <div class='ChoixListeC'><a href='index.php?action=supprimerListeCapteur&id=" . $_SESSION['capteur'][$i][0] . "' class='delete' id='DelC'>&times;&emsp;</a><br>&emsp;" . $_SESSION['capteur'][$i][0] . "&emsp;&emsp;" . $_SESSION['capteur'][$i][1] . "&emsp;&emsp;" . $_SESSION['capteur'][$i][2] . "&emsp;<br><br></div><br>
+                        echo " <div class='ChoixListeC'><a href='index_cn.php?action=supprimerListeCapteur&id=" . $_SESSION['capteur'][$i][0] . "' class='delete' id='DelC'>&times;&emsp;</a><br>&emsp;" . $_SESSION['capteur'][$i][0] . "&emsp;&emsp;" . $_SESSION['capteur'][$i][1] . "&emsp;&emsp;" . $_SESSION['capteur'][$i][2] . "&emsp;<br><br></div><br>
                     ";
                     } ?>
                     <br>
@@ -74,30 +74,30 @@ $bdd = bdd();
             </div>
             <div class="navListe" id="ListeProfil">
 
-                <h3><br>&emsp;Liste Profils<br><br></h3><br>
+                <h3><br>&emsp;资料列表<br><br></h3><br>
 
                 <div class="AjoutCompte">
-                <a href='index.php?action=inscriptionGestionnaire'><div class='AjoutCO'><br><div>
+                <a href='index_cn.php?action=inscriptionGestionnaire'><div class='AjoutCO'><br><div>
                             <img class='imgAjoutCO' src='view/images/Ajout.png'>
-                            &emsp;Ajouter un compte gestionnaire d'immmeuble</div><br></div></a>
-                <a href='index.php?action=inscriptionAdmin'><div class='AjoutCO'><br><div>
+                            &emsp;添加一个房屋管理员账号</div><br></div></a>
+                <a href='index_cn.php?action=inscriptionAdmin'><div class='AjoutCO'><br><div>
                             <img class='imgAjoutCO' src='view/images/Ajout.png'>
-                            &emsp;Ajouter un compte Admin</div><br></div></a>
-                <a href='index.php?action=inscriptionUtilisateur'><div class='AjoutCO'><br><div>
+                            &emsp;添加一个管理员账号</div><br></div></a>
+                <a href='index_cn.php?action=inscriptionUtilisateur'><div class='AjoutCO'><br><div>
                             <img class='imgAjoutCO' src='view/images/Ajout.png'>
-                            &emsp;Ajouter un compte Utilisateur</div><br></div></a></div>
+                            &emsp;添加一个用户账号</div><br></div></a></div>
 
                 <br>
 
                 <table>
                     <tr class="Prez">
-                        <td>Nom</td>
-                        <td>Prénom</td>
-                        <td>Email</td>
-                        <td>Téléphone</td>
-                        <td>Date de naissance</td>
-                        <td>Rôle</td>
-                        <td>Modifier</td>
+                        <td>姓氏</td>
+                        <td>名字</td>
+                        <td>邮箱</td>
+                        <td>电话号码</td>
+                        <td>出生日期</td>
+                        <td>角色</td>
+                        <td>更改</td>
                         <td>&emsp;</td></tr>
                     <?php for($i=0 ; $i < sizeof($_SESSION['profil']); $i++) {
 
@@ -123,8 +123,8 @@ $bdd = bdd();
                          <td><br>+33 ".$_SESSION['profil'][$i][3]."</td>
                          <td><br>".$_SESSION['profil'][$i][4]."</td>
                          <td><br>".$_SESSION['profil'][$i][5]."</td>
-                         <td><br><a href='index.php?action=ProfilModifAdmin&i=" . $i. "' style='color: blue'>Modifier</a></td>
-                         <td><a href='index.php?action=supprimerListeProfil&id=" .$_SESSION['profil'][$i][8]. "' class='delete'>&times;&ensp;</a></td>
+                         <td><br><a href='index_cn.php?action=ProfilModifAdmin&i=" . $i. "' style='color: blue'>Modifier</a></td>
+                         <td><a href='index_cn.php?action=supprimerListeProfil&id=" .$_SESSION['profil'][$i][8]. "' class='delete'>&times;&ensp;</a></td>
                          </tr>                 ";
                     } ?>
                 </table>

@@ -1,7 +1,7 @@
 <?php
 session_start();
 include_once "model/function.php";
-include_once "controller/ControlListeCapteur.php";
+include_once "controller/ControlListeCapteur2.php";
 
 $bdd = bdd();
 ?>
@@ -56,15 +56,15 @@ $bdd = bdd();
 
                 <u2>
                     <?php for($i=0 ; $i < sizeof($_SESSION['capteur']); $i++) {
-                        echo " <li1>&emsp;" . $_SESSION['capteur'][$i][0] . "&emsp;&emsp;" . $_SESSION['capteur'][$i][1] . "&emsp;&emsp;" . $_SESSION['capteur'][$i][2] . "&emsp;<a href='index.php?action=supprimerListeCapteur&id=" . $_SESSION['capteur'][$i][0] . "'>&ensp;X&ensp;</a></li1><br>
+                        echo " <li1>&emsp;" . $_SESSION['capteur'][$i][0] . "&emsp;&emsp;" . $_SESSION['capteur'][$i][1] . "&emsp;&emsp;" . $_SESSION['capteur'][$i][2] . "&emsp;<a href='index_cn.php?action=supprimerListeCapteur&id=" . $_SESSION['capteur'][$i][0] . "'>&ensp;X&ensp;</a></li1><br>
                     ";
                     } ?>
                     <br>
                     <br>
-                    <li1><a href='index.php?action=AjoutListeCapteur'>Ajoutez un capteur</a></li1>
+                    <li1><a href='index_cn.php?action=AjoutListeCapteur'>添加一个传感器</a></li1>
                     <br>
                     <br>
-                    <li1><a href='index.php?action=ProfilAdmin'>Revenir au menu</a></li1>
+                    <li1><a href='index_cn.php?action=ProfilAdmin'>返回菜单</a></li1>
                 </u2>
 
         </div>

@@ -1,6 +1,6 @@
 <?php session_start();
-include_once 'controller/ControlDataConso.php';
-include_once 'controller/ControlListeConso.php';
+include_once 'controller/ControlDataConso2.php';
+include_once 'controller/ControlListeConso2.php';
 ?>
 
 <html>
@@ -23,7 +23,7 @@ include_once 'controller/ControlListeConso.php';
         data: {
         labels: <?php echo json_encode($_SESSION['liste2']); ?>,
             datasets: [{
-            label: 'Consommation en W/h',
+            label: '消耗 单位W/h',
                 backgroundColor: 'rgb(144, 141, 140)',
                 borderColor: 'rgb(0, 0, 0)',
                 data: <?php echo json_encode($_SESSION['liste1']); ?>
