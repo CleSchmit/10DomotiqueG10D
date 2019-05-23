@@ -2,13 +2,17 @@
 
 
     // S'il y des données de postées
-    if ($_SERVER['REQUEST_METHOD']=='POST') {
+if (isset($_POST['objet']) AND isset($_POST['message'])) {
     
       // (1) Code PHP pour traiter l'envoi de l'email
     
       // Récupération des variables et sécurisation des données
       $objet = htmlentities($_POST['objet']);
-      $mail = htmlentities($_POST['mail']);
+      if(isset($_SESSION['Email'])){
+          $mail = $_SESSION['Email'];
+      }else{
+          $mail = htmlentities($_POST['mail']);
+      }
       $message = htmlentities($_POST['message']);
     
       // Variables concernant l'email

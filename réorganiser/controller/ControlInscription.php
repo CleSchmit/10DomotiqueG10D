@@ -4,7 +4,7 @@ include_once 'model/inscription.class.php';
 $bdd = bdd();
 $erreur = NULL;
 
-if(isset($_POST['Prenom']) AND isset($_POST['Nom']) AND isset($_POST['Email']) AND isset($_POST['Mdp'])  AND isset($_POST['Mdp2']) AND isset($_POST['Tel']) AND isset($_POST['Naissance'])){
+if(isset($_POST['Email']) AND isset($_POST['Mdp'])  AND isset($_POST['Mdp2'])){
 
     $inscription = new inscription($_POST['Prenom'],$_POST['Nom'],$_POST['Email'],$_POST['Mdp'],$_POST['Mdp2'],$_POST['Tel'],$_POST['Naissance']);
     $verif = $inscription->verif();

@@ -1,7 +1,7 @@
 <?php
 include_once 'function.php';
 
-class Capteur
+class ListeCapteur
 {
 
     private $capteur = array();

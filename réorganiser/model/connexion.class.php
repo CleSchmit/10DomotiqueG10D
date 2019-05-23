@@ -6,41 +6,42 @@ class connexion{
     private $Mdp;
     private $bdd;
 
-    
+
     public function __construct($Email,$Mdp) {
         $this->Email = $Email;
         $this->Mdp = $Mdp;
         $this->bdd = bdd();
     }
-    
+
     public function verif(){
-        
+
         $requete = $this->bdd->prepare('SELECT * FROM profil WHERE Email = :Email');
         $requete->execute(array('Email'=> $this->Email));
         $reponse = $requete->fetch();
         if($reponse){
-
-                if($this->Mdp == $reponse['Mdp']){
-                    if ('Admin' == $reponse['Role']){
+            if(password_verify($this->Mdp,$reponse['Mdp'])){
+                if('ok' == $reponse['Validation']) {
+                    if ('Admin' == $reponse['Role']) {
                         return 'Admin';
-                    }else {
+                    } else if ('Gestionnaire' == $reponse['Role']) {
+                        return 'Gestionnaire';
+                    } else {
                         return 'ok';
                     }
-                }
-                else {
-                    $erreur = 'Le mot de passe est incorrect';
+                } else {
+                    $erreur = "Compte non validé par l'administrateur";
                     return $erreur;
                 }
-
-        }
-        else {
+            } else {
+                $erreur = 'Le mot de passe est incorrect';
+                return $erreur;
+            }
+        } else {
             $erreur = 'Email inéxistant';
             return $erreur;
-         }
-
-
+        }
     }
-    
+
     public function session(){
         $requete = $this->bdd->prepare('SELECT * FROM profil WHERE Email = :Email ');
         $requete->execute(array(
@@ -52,11 +53,13 @@ class connexion{
         $_SESSION['Tel'] = $response['Tel'];
         $_SESSION['Naissance'] = $response['DateNaissance'];
         $_SESSION['Email'] = $this->Email;
-        $_SESSION['Mdp'] = $this->Mdp;
+        $_SESSION['Mdp'] = $response['Mdp'];
         $_SESSION['Role'] = $response['Role'];
+        $_SESSION['Adresse'] = $response['Adresse'];
+        $_SESSION['Validation'] = $response['Validation'];
 
         return 1;
     }
-    
-    
+
+
 }

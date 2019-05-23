@@ -50,7 +50,7 @@ $body="
                 <br>
 
         
-        <a href='index.php?action=Connexion' class='bouton'>&emsp;Retourner sur mon profil&emsp;</a>
+        <a href='index.php?action=Connexion' class='boutonbis'>&emsp;Retourner sur mon profil&emsp;</a>
         <br>
 
 

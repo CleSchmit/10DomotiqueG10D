@@ -1,4 +1,4 @@
 <?php
 include_once 'model/listeCapteur.php';
-$Capteur = new Capteur();
+$Capteur = new ListeCapteur();
 
