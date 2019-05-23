@@ -131,6 +131,65 @@ h7{
 
 
 
+
+/*Forum*/
+
+#forum{
+    display: flex;
+}
+
+.ListeForum{
+    background-color: lightgray;
+    margin: 1%;
+    width: 30%;
+}
+
+.LienForum{
+    color: black;
+    border-bottom: solid black;
+    padding: 5%;
+}
+
+.LienForum:hover{
+    background-color: rgb(247,121,53) ;
+}
+
+.Add{
+    background-color: gray;
+    color: black;
+    border-bottom: solid black;
+
+}
+
+.Add:hover{
+    background-color: #555555;
+}
+
+.imgAjoutF{
+    float: left;
+    width: 4%;
+}
+
+.Add p{
+    float: left;
+}
+
+.conv{
+    width: 67%;
+}
+
+.user{
+    background: gray;
+    padding: 1%;
+}
+
+.message{
+    background-color: lightgray;
+    padding: 1%;
+}
+
+
+
 /*Connexion*/
 h1{
     font-size: 200%;
