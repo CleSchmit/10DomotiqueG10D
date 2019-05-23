@@ -18,6 +18,7 @@ if (isset($_GET['conv'])){
 		<header>
     		<?php include "template/Header.php" ?>
 		</header>
+        <div class="corps">
 			<div id="forum">
 				<div class="ListeForum">
                     <h3 style="background-color: darkorange; color: black;    border-bottom: solid black;"><br>&emsp;Liste des Sujets<br><br></h3>
@@ -88,6 +89,7 @@ if (isset($_GET['conv'])){
                 ?>
     		</div>
 		</div>
+        </div>
 	<footer>
     	<?php include "template/Footer.php" ?>
 	</footer>
