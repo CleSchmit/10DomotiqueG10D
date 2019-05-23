@@ -121,42 +121,33 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reorganiser/view/NosProduits.php">
+        <entry file="file://$PROJECT_DIR$/réorganiser/view/template/template.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="80" column="179" selection-start-line="80" selection-start-column="179" selection-end-line="80" selection-end-column="179" />
+            <state>
+              <caret lean-forward="true" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reorganiser/notation/styletoile.css">
+        <entry file="file://$PROJECT_DIR$/réorganiser/view/AjoutCapteur.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="459">
+              <caret line="42" column="18" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reorganiser/notation/etoile.js">
+        <entry file="file://$PROJECT_DIR$/réorganiser/view/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1739">
-              <folding>
-                <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
+            <state relative-caret-position="-9882" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/reorganiser/notation/noter.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="36" column="95" lean-forward="true" selection-start-line="36" selection-start-column="95" selection-end-line="36" selection-end-column="95" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/réorganiser/view/template/footer.css">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -191,7 +182,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/view/Profil.php" />
         <option value="$PROJECT_DIR$/view/NosProduits.php" />
         <option value="$PROJECT_DIR$/view/style.css" />
         <option value="$PROJECT_DIR$/view/L'Entreprise.php" />
@@ -242,6 +232,7 @@
         <option value="$PROJECT_DIR$/reorganiser/view/notation/styletoile.css" />
         <option value="$PROJECT_DIR$/reorganiser/view/notation/noter.php" />
         <option value="$PROJECT_DIR$/reorganiser/view/NosProduits.php" />
+        <option value="$PROJECT_DIR$/réorganiser/view/AjoutCapteur.php" />
       </list>
     </option>
   </component>
@@ -251,9 +242,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="351" />
-    <option name="y" value="16" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="350" />
+    <option name="y" value="15" />
     <option name="width" value="980" />
     <option name="height" value="1040" />
   </component>
@@ -269,32 +260,33 @@
         <subPane>
           <expand>
             <path>
-              <item name="htdocs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="htdocs" type="462c0819:PsiDirectoryNode" />
+              <item name="10DomotiqueG10D" type="b2602c69:ProjectViewProjectNode" />
+              <item name="10DomotiqueG10D" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="htdocs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="htdocs" type="462c0819:PsiDirectoryNode" />
-              <item name="reorganiser" type="462c0819:PsiDirectoryNode" />
+              <item name="10DomotiqueG10D" type="b2602c69:ProjectViewProjectNode" />
+              <item name="10DomotiqueG10D" type="462c0819:PsiDirectoryNode" />
+              <item name="réorganiser" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="htdocs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="htdocs" type="462c0819:PsiDirectoryNode" />
-              <item name="reorganiser" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="htdocs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="htdocs" type="462c0819:PsiDirectoryNode" />
-              <item name="reorganiser" type="462c0819:PsiDirectoryNode" />
+              <item name="10DomotiqueG10D" type="b2602c69:ProjectViewProjectNode" />
+              <item name="10DomotiqueG10D" type="462c0819:PsiDirectoryNode" />
+              <item name="réorganiser" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="10DomotiqueG10D" type="b2602c69:ProjectViewProjectNode" />
+              <item name="10DomotiqueG10D" type="462c0819:PsiDirectoryNode" />
+              <item name="réorganiser" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -405,17 +397,18 @@
       <workItem from="1557480101013" duration="675000" />
       <workItem from="1558359782309" duration="5623000" />
       <workItem from="1558597220827" duration="6748000" />
+      <workItem from="1558604818342" duration="495000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214769000" />
+    <option name="totallyTimeSpent" value="215264000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14072494" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12416107" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -453,10 +446,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/réorganiser/view/supprimerProfil.php" />
-    <entry file="file://$PROJECT_DIR$/réorganiser/model/listeProfil.php" />
-    <entry file="file://$PROJECT_DIR$/réorganiser/model/suppProfil.php" />
-    <entry file="file://$PROJECT_DIR$/réorganiser/view/ProfilAdmin.php" />
     <entry file="file://$PROJECT_DIR$/réorganiser/view/ListeProfil.php" />
     <entry file="file://$PROJECT_DIR$/réorganiser/controller/ControlProfil.php" />
     <entry file="file://$PROJECT_DIR$/réorganiser/model/Profil.php" />
@@ -472,243 +461,59 @@
     <entry file="file://$PROJECT_DIR$/réorganisé/controller/ControlDataConso.php" />
     <entry file="file://$PROJECT_DIR$/réorganisé/view/Graphconso.php" />
     <entry file="file://$PROJECT_DIR$/réorganisé/model/dataconso.php" />
-    <entry file="file://$PROJECT_DIR$/reorganiser/controller/ControlInscriptionUtilisateur.php">
+    <entry file="file://$PROJECT_DIR$/reorganiser/controller/ControlInscriptionUtilisateur.php" />
+    <entry file="file://$PROJECT_DIR$/reorganiser/model/inscriptionutilisateur.php" />
+    <entry file="file://$PROJECT_DIR$/reorganiser/controller/ControlDataConso.php" />
+    <entry file="file://$PROJECT_DIR$/reorganiser/view/ListeCapteur.php" />
+    <entry file="file://$PROJECT_DIR$/reorganiser/controller/ControlCapteur.php" />
+    <entry file="file://$PROJECT_DIR$/reorganiser/model/listeCapteur.php" />
+    <entry file="file://$PROJECT_DIR$/reorganiser/view/ProfilAdmin.php" />
+    <entry file="file://$PROJECT_DIR$/reorganiser/controller/ControlAjoutListeCapteur.php" />
+    <entry file="file://$PROJECT_DIR$/reorganiser/model/ajoutlistecapteur.php" />
+    <entry file="file://$PROJECT_DIR$/reorganiser/view/AjoutListeCapteur.php" />
+    <entry file="file://$PROJECT_DIR$/reorganiser/controller/ControlListeCapteur.php" />
+    <entry file="file://$PROJECT_DIR$/reorganiser/model/capteurAction.php" />
+    <entry file="file://$PROJECT_DIR$/reorganiser/model/capteur.php" />
+    <entry file="file://$PROJECT_DIR$/reorganiser/model/ajoutcapteur.php" />
+    <entry file="file://$PROJECT_DIR$/reorganiser/model/inscription.class.php" />
+    <entry file="file://$PROJECT_DIR$/reorganiser/model/connexion.class.php" />
+    <entry file="file://$PROJECT_DIR$/reorganiser/view/Graphconso.php" />
+    <entry file="file://$PROJECT_DIR$/reorganiser/view/AjoutCapteur.php" />
+    <entry file="file://$PROJECT_DIR$/reorganiser/model/dataconso.php" />
+    <entry file="file://$PROJECT_DIR$/reorganiser/view/ListeProfil.php" />
+    <entry file="file://$PROJECT_DIR$/reorganiser/view/note.php" />
+    <entry file="file://$PROJECT_DIR$/reorganiser/view/etoile.js" />
+    <entry file="file://$PROJECT_DIR$/reorganiser/view/noter.php" />
+    <entry file="file://$PROJECT_DIR$/reorganiser/notation/staroff.gif" />
+    <entry file="file://$PROJECT_DIR$/reorganiser/view/style.css" />
+    <entry file="file://$PROJECT_DIR$/reorganiser/view/Profil.php" />
+    <entry file="file://$PROJECT_DIR$/reorganiser/index.php" />
+    <entry file="file://$PROJECT_DIR$/reorganiser/controller/controller.php" />
+    <entry file="file://$PROJECT_DIR$/reorganiser/notation/etoile.js" />
+    <entry file="file://$PROJECT_DIR$/reorganiser/notation/styletoile.css" />
+    <entry file="file://$PROJECT_DIR$/reorganiser/view/NosProduits.php" />
+    <entry file="file://$PROJECT_DIR$/reorganiser/notation/noter.php" />
+    <entry file="file://$PROJECT_DIR$/réorganiser/view/template/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/réorganiser/view/AjoutCapteur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="42" column="18" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/réorganiser/view/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9882" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/réorganiser/view/template/footer.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reorganiser/model/inscriptionutilisateur.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reorganiser/controller/ControlDataConso.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reorganiser/view/ListeCapteur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="57" column="19" lean-forward="true" selection-start-line="57" selection-start-column="19" selection-end-line="57" selection-end-column="19" />
-          <folding>
-            <element signature="e#6#12#0" expanded="true" />
-            <element signature="e#42#48#0" expanded="true" />
-            <element signature="e#48#54#0" expanded="true" />
-            <element signature="e#84#90#0" expanded="true" />
-            <element signature="e#90#96#0" expanded="true" />
-            <element signature="e#126#132#0" expanded="true" />
-            <element signature="e#215#221#0" expanded="true" />
-            <element signature="e#222#228#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reorganiser/controller/ControlCapteur.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reorganiser/model/listeCapteur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reorganiser/view/ProfilAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="66" column="367" selection-start-line="66" selection-start-column="367" selection-end-line="66" selection-end-column="367" />
-          <folding>
-            <element signature="e#134#141#0" expanded="true" />
-            <element signature="e#141#147#0" expanded="true" />
-            <element signature="e#155#161#0" expanded="true" />
-            <element signature="e#191#197#0" expanded="true" />
-            <element signature="e#197#203#0" expanded="true" />
-            <element signature="e#233#239#0" expanded="true" />
-            <element signature="e#239#245#0" expanded="true" />
-            <element signature="e#275#281#0" expanded="true" />
-            <element signature="e#281#287#0" expanded="true" />
-            <element signature="e#317#323#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reorganiser/controller/ControlAjoutListeCapteur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="8" column="115" selection-start-line="8" selection-start-column="115" selection-end-line="8" selection-end-column="115" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reorganiser/model/ajoutlistecapteur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reorganiser/view/AjoutListeCapteur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reorganiser/controller/ControlListeCapteur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="2" column="30" lean-forward="true" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reorganiser/model/capteurAction.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reorganiser/model/capteur.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reorganiser/model/ajoutcapteur.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reorganiser/model/inscription.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="69" column="65" lean-forward="true" selection-start-line="69" selection-start-column="65" selection-end-line="69" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reorganiser/model/connexion.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-495" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reorganiser/view/Graphconso.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="28" column="61" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reorganiser/view/AjoutCapteur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="2" column="31" selection-start-line="2" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reorganiser/model/dataconso.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="849">
-          <caret line="67" column="1" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reorganiser/view/ListeProfil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1683">
-          <folding>
-            <element signature="e#60#66#0" expanded="true" />
-            <element signature="e#95#101#0" expanded="true" />
-            <element signature="e#101#107#0" expanded="true" />
-            <element signature="e#136#142#0" expanded="true" />
-            <element signature="e#142#148#0" expanded="true" />
-            <element signature="e#177#183#0" expanded="true" />
-            <element signature="e#183#189#0" expanded="true" />
-            <element signature="e#218#224#0" expanded="true" />
-            <element signature="e#224#230#0" expanded="true" />
-            <element signature="e#259#265#0" expanded="true" />
-            <element signature="e#265#271#0" expanded="true" />
-            <element signature="e#300#306#0" expanded="true" />
-            <element signature="e#306#312#0" expanded="true" />
-            <element signature="e#341#347#0" expanded="true" />
-            <element signature="e#347#353#0" expanded="true" />
-            <element signature="e#382#388#0" expanded="true" />
-            <element signature="e#473#479#0" expanded="true" />
-            <element signature="e#480#486#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reorganiser/view/note.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1749">
-          <caret line="53" column="85" selection-start-line="53" selection-start-column="85" selection-end-line="53" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reorganiser/view/etoile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="69" column="81" selection-start-line="69" selection-start-column="81" selection-end-line="69" selection-end-column="81" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reorganiser/view/noter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1287">
-          <caret line="39" column="109" lean-forward="true" selection-start-line="39" selection-start-column="109" selection-end-line="39" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reorganiser/notation/staroff.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reorganiser/view/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="849">
-          <caret line="550" selection-start-line="550" selection-end-line="550" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reorganiser/view/Profil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="145" column="62" lean-forward="true" selection-start-line="145" selection-start-column="45" selection-end-line="145" selection-end-column="62" />
-          <folding>
-            <element signature="e#356#363#0" expanded="true" />
-            <element signature="e#363#369#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reorganiser/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="6" column="48" lean-forward="true" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reorganiser/controller/controller.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reorganiser/notation/etoile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1739">
-          <folding>
-            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reorganiser/notation/styletoile.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reorganiser/view/NosProduits.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="80" column="179" selection-start-line="80" selection-start-column="179" selection-end-line="80" selection-end-column="179" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reorganiser/notation/noter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="36" column="95" lean-forward="true" selection-start-line="36" selection-start-column="95" selection-end-line="36" selection-end-column="95" />
-        </state>
-      </provider>
     </entry>
   </component>
   <component name="masterDetails">

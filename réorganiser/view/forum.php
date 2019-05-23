@@ -3,6 +3,10 @@ session_start();
 include_once 'model/function.php';
 include_once 'controller/ControlMessage.php';
 include_once 'controller/ControlConversation.php';
+$_SESSION['convName']="Choisissez un Sujet";
+if (isset($_GET['conv'])){
+    $_SESSION['convName'] = $_GET['conv'];
+}
 ?>
 <html>
 	<head>
@@ -13,24 +17,34 @@ include_once 'controller/ControlConversation.php';
 		<header>
     		<?php include "template/Header.php" ?>
 		</header>
+		<div class="corps">
 			<div id="forum">
-				<div >
+				<div class="ListeForum">
+                    <h3 style="background-color: darkorange; color: black;    border-bottom: solid black;"><br>&emsp;Liste des Sujets<br><br></h3>
                     	<?php         
                             $bdd = bdd();
                             $conversation = $bdd->query('SELECT nom FROM conversation');
+                            if (isset($_SESSION['Nom'])){
+                                echo "<a href='index.php?action=forum&conv=add'><div class='Add'><br><p>&emsp;</p><img class='imgAjoutF' src='view/images/Ajout.png'>&ensp;Ajouter une question&emsp;<br><br></div></a>";
+                            }
                             while ($donnees = $conversation->fetch()) {
-                                echo "<a class='lien' href='index.php?action=forum&conv=" . $donnees['nom'] . "'><br>" . $donnees['nom'] . "</a>";
+                                echo "<a href='index.php?action=forum&conv=" . $donnees['nom'] . "'><div class='LienForum'>" . $donnees['nom'] . "</div></a>";
                             }
                             $conversation->closeCursor();
-                            if (isset($_SESSION['Nom'])){
-                                echo "<a href='index.php?action=forum&conv=add'><br>Add</a>";
-                            }
                            
                         ?>
 				</div>
-			<div >
+			<div class="conv">
+
 				<p>
                 	<?php
+                    $delete = '';
+                    if(isset($_SESSION['Role'])){
+                        if($_SESSION['Role'] == 'Admin'){
+                            $delete = "<a href='index.php?action=forum&conv=sup' class='delete' id='DelP'>&times;&emsp;</a>";
+                        }
+                    }
+                    echo "<h3><br>&emsp;".$_SESSION['convName']."$delete<br><br></h3><br>";
                         if (isset($_GET['conv'])) {
                             $bdd = bdd();
                             $conversation_id = $bdd->query('SELECT id FROM conversation WHERE nom = \'' . $_GET['conv'] . '\'');
@@ -39,7 +53,14 @@ include_once 'controller/ControlConversation.php';
                         if (isset($_SESSION['id_conv'])) {
                             $messages = $bdd->query('SELECT * FROM messages WHERE id_conv= \'' . $_SESSION['id_conv'] . '\'  ORDER BY id ASC');
                             while ($message = $messages->fetch()) {
-                                echo "<strong>" . $message['utilisateur'] . " : </strong>" . $message['contenu'] . "</br>";
+                                echo "<div class='user'>Ecrit par <strong>" . $message['utilisateur'];
+                                if(isset($_SESSION['Role'])){
+                                    if($_SESSION['Role'] == 'Admin' OR $message['utilisateur'] == $_SESSION['Nom']. " ".$_SESSION['Prenom']){
+                                        echo "<a href='index.php?action=forum&id=".$message['id']."' class='delete' style='font-size: 120%;'>&times;&emsp;</a>";
+                                    }
+                                }
+
+                                echo " </strong></br></strong>".$message['date']."</div><div class='message'><br>" . $message['contenu'] . "</br></br></div><br>";
                             }
                             $conversation->closeCursor();
                         }
@@ -51,22 +72,17 @@ include_once 'controller/ControlConversation.php';
        				        echo "
                         <form action='index.php?action=forum' method='post'>
                               <p><br>
-                                  <textarea class='connexion' name='message' placeholder=' Message...' required></textarea></br>
-                                  <input class = 'bouton' type='submit' value='Valider' /> </br>
+                                  <textarea class='connexion' style='width: 100%;' name='message' placeholder=' Message...' required></textarea></br>
+                                  <br><input class = 'boutonbis' type='submit' value='Valider' /> </br>
                               </p>
                         </form>";
-       				        if(isset($_SESSION['Role'])){
-       				            if($_SESSION['Role'] == 'Admin'){
-       				                echo "<a href='index.php?action=forum&conv=caca'><br>Supprimer</a>";;
-       				            }
-       				        }
        				    }
        				    if (isset($_GET['conv']) and $_GET['conv'] == 'add') {
        				        echo "
                         <form action='index.php?action=forum' method='post'>
                               <p><br>
-                                  <input class='connexion' type='text' name='nomNouvelConv' placeholder=' Nom nouveau sujet..' required/> </br>
-                                  <input class='bouton' type='submit' value='Valider' /> </br>
+                                  <input class='connexion' style='width: 100%;' type='text' name='nomNouvelConv' placeholder=' Nom nouveau sujet..' required/> </br>
+                                  <br><input class='boutonbis' type='submit' value='Valider' /> </br>
                               </p>
                         </form>";
        				    }
@@ -74,6 +90,7 @@ include_once 'controller/ControlConversation.php';
                     
                 ?>
     		</div>
+		</div>
 		</div>
 	<footer>
     	<?php include "template/Footer.php" ?>

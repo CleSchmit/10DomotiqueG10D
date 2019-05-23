@@ -1,9 +1,17 @@
 <?php session_start();
 include_once 'controller/ControlCapteur.php';
 include_once 'controller/ControlListeCapteur.php';
-ob_start();
 
-echo "
+echo "<html>
+<head>
+    <title>10Domotique</title>
+    <link rel=\"stylesheet\" href=\"view/style.css\" />
+</head>
+<body>
+<header>";
+include "template/Header.php";
+echo "</header>
+<div class=\"corps\">
 <div class='main'>
 <br>
 <div id=\"Cforum\">
@@ -29,8 +37,14 @@ echo "
         <br>
     </div>
     <br>
-    </div>";
+    </div>
+    </div>
+<footer>";
+include "template/Footer.php";
+echo"</footer>
+</body>
+</html>";
 
-require("template/template.php"); ?>
+?>
 
 

@@ -1,9 +1,10 @@
 
 footer{
+    position: absolute;
     font-size: 70%;
-    width: 98%;
-    right: 1%;
-    bottom: 1%;
+    width: 100%;
+    right: 0%;
+    bottom: 0%;
 }
 
 footer ul{
