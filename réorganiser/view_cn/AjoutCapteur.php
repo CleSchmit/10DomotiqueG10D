@@ -21,7 +21,7 @@ $body="
                 <br><br>
                     $erreur
                 <br>
-                <input class=\"bouton\" type=\"submit\" value=\"Valider l'ajout!\" />
+                <input class=\"bouton\" type=\"submit\" value=\"添加生效！\" />
             </p>
         </form>
         <br>

@@ -1,7 +1,7 @@
 <?php
 session_start();
 include_once "model/function.php";
-include_once "controller/ControlProfil.php";
+include_once "controller/ControlProfil2.php";
 
 $bdd = bdd();
 ?>
@@ -47,9 +47,9 @@ $bdd = bdd();
 
             <div class='internProfil'>
 				<u2>
-                    <li1><a href="index.php?action=ListeCapteur">Liste capteur</a></li1>
-                    <li1><a href=\"#news\">Créer compte gestionnaire d'immmeuble</a></li1>
-                    <li1><a href=\"#contact\">Accéder aux profils</a></li1>
+                    <li1><a href="index_cn.php?action=ListeCapteur">传感器列表</a></li1>
+                    <li1><a href=\"#news\">创建房屋管理员账号</a></li1>
+                    <li1><a href=\"#contact\">访问资料</a></li1>
                 </u2>
 
             </div>

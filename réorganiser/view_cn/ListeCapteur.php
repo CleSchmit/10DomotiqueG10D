@@ -1,7 +1,7 @@
 <?php
 session_start();
 include_once "model/function.php";
-include_once "controller/ControlProfil.php";
+include_once "controller/ControlProfil2.php";
 
 $bdd = bdd();
 ?>
@@ -23,13 +23,13 @@ $bdd = bdd();
 
 
             <div class='headerprofil'>
-                <div class="nom"><br><img class="imgprofil" src="view/images/Boss.jpg">&ensp;Compte Administrateur &ensp;<?= $_SESSION['Prenom']?>&ensp;<?= $_SESSION['Nom']?><br><br></div>
+                <div class="nom"><br><img class="imgprofil" src="view/images/Boss.jpg">&ensp;管理员账号 &ensp;<?= $_SESSION['Prenom']?>&ensp;<?= $_SESSION['Nom']?><br><br></div>
 
-                <a href='index.php?action=ProfilModif'><div class="lien"><br><img class="imgOption" src="view/images/Modif.png">&ensp;Modification du profil<br><br></div></a>
+                <a href='index_cn.php?action=ProfilModif'><div class="lien"><br><img class="imgOption" src="view/images/Modif.png">&ensp;更改你的信息<br><br></div></a>
 
-                <a href='index.php?action=supprimerProfil'><div class="lien"><br>Supprimer votre profil<br><br></div></a>
+                <a href='index_cn.php?action=supprimerProfil'><div class="lien"><br>删除你的信息<br><br></div></a>
 
-                <a href='index.php?action=deconnexion'><div class="lien"><br><img class="imgOption" src="view/images/deco.png">&ensp;Déconnexion<br><br></div></a>
+                <a href='index_cn.php?action=deconnexion'><div class="lien"><br><img class="imgOption" src="view/images/deco.png">&ensp;注销<br><br></div></a>
 
             </div>
 
@@ -72,7 +72,7 @@ $bdd = bdd();
                 </style>
                 <u2>
                     <?php for($i=0 ; $i < sizeof($_SESSION['capteur']); $i++) {
-                        echo " <li1><a href='#capteur" . $i . "'>&emsp;" . $_SESSION['capteur'][$i][0] . "&emsp;&emsp;" . $_SESSION['capteur'][$i][1] . "&emsp;&emsp;" . $_SESSION['capteur'][$i][2] . "&emsp;</a><a href='index.php?action=supprimerCapteur&id=" . $_SESSION['capteur'][$i][0] . "' class='delete'>&ensp;X&ensp;</a></li1>
+                        echo " <li1><a href='#capteur" . $i . "'>&emsp;" . $_SESSION['capteur'][$i][0] . "&emsp;&emsp;" . $_SESSION['capteur'][$i][1] . "&emsp;&emsp;" . $_SESSION['capteur'][$i][2] . "&emsp;</a><a href='index_cn.php?action=supprimerCapteur&id=" . $_SESSION['capteur'][$i][0] . "' class='delete'>&ensp;X&ensp;</a></li1>
                     ";
                     } ?>
                 </u2>
@@ -88,8 +88,3 @@ $bdd = bdd();
 </footer>
 </body>
 </html>
-
-
-
-
-

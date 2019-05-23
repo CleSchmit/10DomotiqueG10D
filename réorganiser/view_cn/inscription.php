@@ -1,5 +1,5 @@
 <?php
-include_once 'controller/ControlInscription.php';
+include_once 'controller/ControlInscription2.php';
 
 ob_start();
 

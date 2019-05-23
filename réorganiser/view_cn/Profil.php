@@ -1,7 +1,7 @@
 <?php
 session_start();
 include_once "model/function.php";
-include_once "controller/ControlProfil.php";
+include_once "controller/ControlProfil2.php";
 
 $bdd = bdd();
 ?>
@@ -72,7 +72,7 @@ $bdd = bdd();
 
                     for ($j = 0; $j < sizeof($_SESSION['Maison'][$i][2]); $j++){
                         echo "<div class='Piece'><h4>&emsp;&emsp;".$_SESSION['Maison'][$i][2][$j][1]."</h4> <br>&ensp;
-                              <a href='index.php?action=supprimerPiece&id=".$_SESSION['Maison'][$i][2][$j][0]."&Maison=Maison".$i."' class='delete'>&ensp;X&ensp;</a><br><br><br>
+                              <a href='index_cn.php?action=supprimerPiece&id=".$_SESSION['Maison'][$i][2][$j][0]."&Maison=Maison".$i."' class='delete'>&ensp;X&ensp;</a><br><br><br>
                               <div class='Capteurs'>";
 
 
@@ -81,7 +81,7 @@ $bdd = bdd();
 
 
                             if($_SESSION['Maison'][$i][2][$j][2][$k][3] == 1){
-                                echo "<a href='index.php?action=CapteurAction&Maison=".$i."&Piece=".$j."&Capteur=".$k."'><figure>
+                                echo "<a href='index_cn.php?action=CapteurAction&Maison=".$i."&Piece=".$j."&Capteur=".$k."'><figure>
                                     <img class='imgCapteur' src='view/images/CapteurI.png'>
                                         <figcaption>&emsp;".$_SESSION['Maison'][$i][2][$j][2][$k][1]."&emsp;</figcaption>
                                     </figure></a>";
@@ -97,7 +97,7 @@ $bdd = bdd();
                                     <figcaption>&emsp;".$_SESSION['Maison'][$i][2][$j][2][$k][1]."&emsp;</figcaption>
                                     </figure></a>";}
 
-                            echo "<a href='index.php?action=supprimerCapteur&id=".$_SESSION['Maison'][$i][2][$j][2][$k][0]."&Maison=Maison".$i."' class='delete'>&ensp;X&ensp;</a>";
+                            echo "<a href='index_cn.php?action=supprimerCapteur&id=".$_SESSION['Maison'][$i][2][$j][2][$k][0]."&Maison=Maison".$i."' class='delete'>&ensp;X&ensp;</a>";
 
                             if (($k+1)%4 == 0){
                                 echo "</div><div class='Capteurs'>";
@@ -108,17 +108,17 @@ $bdd = bdd();
                             //        <a class='Aug' href='index.php?action=Profil&Aug=".$_SESSION['Maison'][$i][2][$j][2][$k][0]."&Maison=Maison".$i."'>+1</a>
 
                         }
-                        echo"<a href='index.php?action=AjoutCapteur&id=".$_SESSION['Maison'][$i][2][$j][0]."&Maison=Maison".$i."'>
+                        echo"<a href='index_cn.php?action=AjoutCapteur&id=".$_SESSION['Maison'][$i][2][$j][0]."&Maison=Maison".$i."'>
                                     <figure>
                                     &emsp;<img class='imgAjout' src='view/images/Ajout.png'>
-                                    <figcaption>&emsp;Ajouter Capteur&emsp;</figcaption>
+                                    <figcaption>&emsp;添加传感器&emsp;</figcaption>
                                     </figure></a></div></div><br>";
                     }
 
-                echo "<br><a href='index.php?action=AjoutPiece&id=".$_SESSION['Maison'][$i][0]."&Maison=Maison".$i."'>
+                echo "<br><a href='index_cn.php?action=AjoutPiece&id=".$_SESSION['Maison'][$i][0]."&Maison=Maison".$i."'>
                                     <figure>
                                     &emsp;<img class='imgAjoutP' src='view/images/Ajout.png'>
-                                    <figcaption>&emsp;Ajouter Pièce&emsp;</figcaption>
+                                    <figcaption>&emsp;添加一间房间&emsp;</figcaption>
                                     </figure></a>
                       </div>";
                 }?>
