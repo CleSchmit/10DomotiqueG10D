@@ -64,7 +64,7 @@ $bdd = bdd();
                             &emsp;Ajouter Capteur</div><br></div></a><br><br>
 
                     <?php for($i=0 ; $i < sizeof($_SESSION['capteur']); $i++) {
-                        echo " <div class='ChoixListeC'><a href='index.php?action=supprimerListeCapteur&id=" . $_SESSION['capteur'][$i][0] . "' class='delete' id='DelC'>&times;&emsp;</a><br>&emsp;" . $_SESSION['capteur'][$i][0] . "&emsp;&emsp;" . $_SESSION['capteur'][$i][1] . "&emsp;&emsp;" . $_SESSION['capteur'][$i][2] . "&emsp;<br><br></div><br>
+                        echo " <div class='ChoixListeC'><a href='index.php?action=supprimerListeCapteur&id=" . $_SESSION['capteur'][$i][0] . "' class='delete' id='DelC'>&times;&emsp;</a><br>&emsp;" . $_SESSION['capteur'][$i][0] . "&emsp;&emsp;" . $_SESSION['capteur'][$i][1] . "&emsp;&emsp;" . $_SESSION['capteur'][$i][2] . "&emsp;&emsp;" . $_SESSION['capteur'][$i][3] . "&emsp;<br><br></div><br>
                     ";
                     } ?>
                     <br>

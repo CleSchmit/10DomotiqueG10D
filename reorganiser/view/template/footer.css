@@ -1,0 +1,17 @@
+
+footer{
+    font-size: 70%;
+    width: 98%;
+    right: 1%;
+    bottom: 1%;
+}
+
+footer ul{
+    list-style-type: none;
+    padding: 0% 10%;
+    float: left;
+}
+
+footer .Titre{
+    font-size: 150%;
+}

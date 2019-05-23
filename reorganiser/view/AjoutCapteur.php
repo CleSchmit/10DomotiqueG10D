@@ -15,7 +15,7 @@ echo "
                 <select name=\"Model\">
                     <option>--Select an option--</option>";
                     for ($i = 1; $i <= sizeof($_SESSION['capteur']); $i++) {
-                        echo " <option value= $i >Capteur&emsp;" . $_SESSION['capteur'][$i-1][0] . "&emsp;&emsp;" . $_SESSION['capteur'][$i-1][1] . "$</option> ";
+                        echo " <option value= ".$_SESSION['capteur'][$i-1][3]."  >Capteur&emsp;" . $_SESSION['capteur'][$i-1][0] . "&emsp;&emsp;" . $_SESSION['capteur'][$i-1][1] . "$</option> ";
                     }
               echo" </select>
                 <br><br>
