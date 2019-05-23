@@ -16,10 +16,5 @@ class conversation{
         $req->execute(array($this->nom));
         return 1;
     }
-    public function supprimer(){
-        $this->bdd->query('DELETE from conversation WHERE id=\'' . $_SESSION['id_conv'] . '\'');
-        $this->bdd->query('DELETE from messages WHERE id_conv=\'' . $_SESSION['id_conv'] . '\'');
-        return 1;
-    }
 }
 
