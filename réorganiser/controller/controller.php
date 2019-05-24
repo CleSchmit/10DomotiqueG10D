@@ -1,5 +1,4 @@
 <?php
 function seeView($view){
-    require "view/".$view.".php";
+    require "view/$view.php";
 }
-

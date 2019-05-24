@@ -19,7 +19,7 @@ $body="
                 <input class=\"bouton\" type=\"submit\" value=\"登入\" />
             </p>
         </form>
-        <p>你还没有账号？ <a href=\"index_cn.php?action=inscription\">Inscrivez-vous</a></p>
+        <p>你还没有账号？ <a href=\"index_cn.php?action=inscription\">注册</a></p>
 
     </div>
     <br>

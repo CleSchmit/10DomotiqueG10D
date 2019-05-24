@@ -8,10 +8,10 @@ $body="<div class='main'>
         <br><br><br>
         <div class='information' style='    border-top-left-radius: 20px ;  border-bottom-left-radius: 20px ;'>
             <div><p>&emsp;你想省钱，改善你的日常生活吗？ <br> &emsp;您希望从我们的服务中受益吗？</p><br><br>
-            <a href='index_cn.php?action=Contacter'><div class='contact'>Contactez Nous</div></a></div>
+            <a href='index_cn.php?action=Contacter'><div class='contact'>与我们联系</div></a></div>
             <img src='view/images/Ask.png'>
         </div>
-        
+
         <br>
         <div class='information' style='    border-top-right-radius: 20px ;  border-bottom-right-radius: 20px ;'>
             <img src='view/images/Connec.png'>
@@ -19,7 +19,7 @@ $body="<div class='main'>
             <a href='index_cn.php?action=inscription'><div class='contact'>注册</div></a></div>
         </div>
         <br>
-        
+
         </div>
         ";
 

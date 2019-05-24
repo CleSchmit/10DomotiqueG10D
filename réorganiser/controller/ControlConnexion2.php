@@ -1,6 +1,6 @@
 <?php
 include_once 'model/function.php';
-include_once 'model/connexion.class.php';
+include_once 'model/connexion2.class.php';
 $bdd = bdd();
 $erreur = NULL;
 
