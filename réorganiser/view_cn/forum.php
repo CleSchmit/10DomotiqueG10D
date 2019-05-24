@@ -57,7 +57,9 @@ if (isset($_GET['conv'])){
                         if (isset($_SESSION['id_conv'])) {
                             $messages = $bdd->query('SELECT * FROM messages WHERE id_conv= \'' . $_SESSION['id_conv'] . '\'  ORDER BY id ASC');
                             while ($message = $messages->fetch()) {
-                                echo "<div class='user'><strong>" . $message['utilisateur'] . " : </strong><a href=# class='delete' style='font-size: 120%;'>&times;&emsp;</a></div><div class='message'><br>" . $message['contenu'] . "</br></br></div><br>";
+                                echo "<div class='user'><strong>" . $message['utilisateur'] . " : </strong><a href=# class='delete' style='font-size: 120%;'>&times;&emsp;</a>
+                                       <br>".$message['date']."
+                                    </div><div class='message'><br>" . $message['contenu'] . "</br></br></div><br>";
                             }
                             $conversation->closeCursor();
                         }
