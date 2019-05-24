@@ -34,9 +34,9 @@ $bdd = bdd();
             <div class='headerprofil'>
                 <div class="nom"><br><img class="imgprofil" src="view/images/Boss.jpg">&ensp;Compte Administrateur &ensp;<?= $_SESSION['Prenom']?>&ensp;<?= $_SESSION['Nom']?><br><br></div>
 
-                <a href="#ListeCapteur" ><div class="ChoixListe"><br>&emsp;Liste capteurs<br><br></div></a>
+                <a href="#ListeCapteur" ><div class="ChoixListe"><br>&emsp;传感器列表<br><br></div></a>
 
-                <a href="#ListeProfil"><div class="ChoixListe"><br>&emsp;Liste profils<br><br></div></a>
+                <a href="#ListeProfil"><div class="ChoixListe"><br>&emsp;信息列表<br><br></div></a>
 
                 <a href='index_cn.php?action=ProfilModif'><div class="lien"><br><p>&emsp;</p><img class="imgOption" src="view/images/Modif.png">&ensp;更改资料<br><br></div></a>
 

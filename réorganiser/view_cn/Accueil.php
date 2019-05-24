@@ -3,7 +3,7 @@
 $body="<div class='main'>
             <img src='view/images/FondMaison.jpg' class='imageFond'>
             <a href='index_cn.php?action=NosProduits' class='VersProduit'>发现我们的产品</a>
-            <a href=\"index_cn.php?action=Connexion\" class='VersConnexion'>&emsp;Se Connecter&emsp;</a>
+            <a href=\"index_cn.php?action=Connexion\" class='VersConnexion'>&emsp;登录&emsp;</a>
 
         <br><br><br>
         <div class='information' style='    border-top-left-radius: 20px ;  border-bottom-left-radius: 20px ;'>
