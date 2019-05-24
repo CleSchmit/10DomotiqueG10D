@@ -15,12 +15,21 @@ if (isset($_POST['nomNouvelConv'])){
     }
     if( $creerConv){
         if($conv->enregistrement()){
-            header("Location: index_cn.php?action=forum");
+            header("Location: index.php?action=forum");
         } else { /*Erreur lors de l'enregistrement*/
-            echo '发生了错误';
+            echo 'Une erreur est survenue';
         }
     }
-
+           
+}
+if(isset($_SESSION['Role']) AND isset($_SESSION['id_conv']) AND isset($_GET['conv'])){
+    if($_SESSION['Role'] == 'Admin' AND $_GET['conv'] == 'sup'){
+        $conv = new conversation($_GET['conv']);
+        if($conv->supprimer()){
+            header("Location: index.php?action=forum");
+        } else { /*Erreur lors de l'enregistrement*/
+            echo 'Une erreur est survenue';
+        }
+    }
 }
 
-?>

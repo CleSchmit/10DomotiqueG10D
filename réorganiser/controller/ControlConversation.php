@@ -22,5 +22,14 @@ if (isset($_POST['nomNouvelConv'])){
     }
            
 }
+if(isset($_SESSION['Role']) AND isset($_SESSION['id_conv']) AND isset($_GET['conv'])){
+    if($_SESSION['Role'] == 'Admin' AND $_GET['conv'] == 'sup'){
+        $conv = new conversation($_GET['conv']);
+        if($conv->supprimer()){
+            header("Location: index.php?action=forum");
+        } else { /*Erreur lors de l'enregistrement*/
+            echo 'Une erreur est survenue';
+        }
+    }
+}
 
-?>
