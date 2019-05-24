@@ -3,7 +3,7 @@
 $Mdp = $_SESSION['Mdp'];
 $Nom = $_GET['id'];
 
-include_once 'controller/ControlSuppListeCapteur.php';
+include_once 'controller/ControlSuppListeCapteur2.php';
 
 ob_start();
 
@@ -12,14 +12,14 @@ $body="
     <br>
     <div id=\"Cforum\">
     <br>
-        <form method=\"post\" action=\"index.php?action=supprimerListeCapteur&id=".$_GET['id']."\">
+        <form method=\"post\" action=\"index_cn.php?action=supprimerListeCapteur&id=".$_GET['id']."\">
             <p>
-                <input class=\"connexion\" name=\"Mdp\" type=\"password\" placeholder=\"Mot de passe...\" required/><br><br>
+                <input class=\"connexion\" name=\"Mdp\" type=\"password\" placeholder=\"密码...\" required/><br><br>
                     $erreur
                 <br>
-                <input class=\"bouton\" type=\"submit\" value=\"Validé\" />
+                <input class=\"bouton\" type=\"submit\" value=\"生效\" />
                 
-                <p> <a href=\"index.php?action=ProfilAdmin#ListeCapteur\">Annuler et revenir à la liste des capteurs</a></p>
+                <p> <a href=\"index_cn.php?action=ProfilAdmin#ListeCapteur\">取消并返回传感器列表</a></p>
 
             </p>
         </form>
