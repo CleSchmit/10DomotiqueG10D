@@ -5,12 +5,14 @@ class listeconso
 {
 
     private $listedata = array();
+    private $adresse;
     private $listedate = array();
     private $bdd;
 
 
     public function __construct()
     {
+        $this->adresse = $_SESSION['Adresse'];
         $this->bdd = bdd();
         $this->liste();
     }
@@ -18,8 +20,9 @@ class listeconso
 
     function liste()
     {
-        $req = $this->bdd->prepare('SELECT globale,temps FROM consommation');
-        $req->execute(array());
+        $req = $this->bdd->prepare('SELECT globale,temps FROM consommation WHERE Adresse =:adresse');
+        $req->execute(array(
+            'adresse' => $this->adresse));
         while ($row = $req->fetch()) {
             $this->listedata[] = $row['globale'];
             $this->listedate[]= $row['temps'];

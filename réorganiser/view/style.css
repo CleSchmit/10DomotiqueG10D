@@ -18,6 +18,8 @@ a{
 }
 
 
+
+
 /*Accueil*/
 .imageFond{
     width: 100%;
@@ -121,20 +123,95 @@ h7{
 
 
 /*Produit*/
-.Produit{
-    margin: auto auto;
-    background: lightgray;
-    height: 40%;
-    width: 80% ;
+.pro {
+    display: flex;
+    justify-content: space-around;
 }
 
-#ImgP1{
-    float: left;
-    width: 40%;
+.container {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+.image {
+    display: inline-block;
+    width: 125%;
+    height: auto;
+}
+
+.overlay {
+    border: solid black;
+    border-radius: 42px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: darkorange;
+    overflow: hidden;
+    width: 125%;
     height: 100%;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
 }
 
+.container:hover .overlay {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
 
+.text {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.listeEtoile ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.listeEtoile ul li {
+    display:inline-block;
+    width: 3%;
+    text-align: left;
+    list-style-type: none;
+}
+.listeEtoile ul li img {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#commentaire
+{
+    width: 80%;
+    height: 20%;
+    box-sizing: border-box;
+    resize: none;
+    text-align: left;
+    font-size: 150%;
+    border: solid black;
+    border-radius: 5px;
+    word-wrap: break-word;
+}
+
+.formulaire label
+{
+    font-size: 100%;
+    font-weight: bold;
+    font-style:italic;
+}
 
 
 /*Forum*/
