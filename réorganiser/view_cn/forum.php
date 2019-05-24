@@ -1,9 +1,8 @@
 <?php
 session_start();
 include_once 'model/function.php';
-include_once 'controller/ControlMessage2.php';
-include_once 'controller/ControlConversation2.php';
-
+include_once 'controller/ControlMessage.php';
+include_once 'controller/ControlConversation.php';
 $_SESSION['convName']="选择一个主题";
 if (isset($_GET['conv'])){
     $_SESSION['convName'] = $_GET['conv'];
@@ -18,7 +17,7 @@ if (isset($_GET['conv'])){
 		<header>
     		<?php include "template/Header.php" ?>
 		</header>
-        <div class="corps">
+		<div class="corps">
 			<div id="forum">
 				<div class="ListeForum">
                     <h3 style="background-color: darkorange; color: black;    border-bottom: solid black;"><br>&emsp;主题列表<br><br></h3>
@@ -32,7 +31,6 @@ if (isset($_GET['conv'])){
                                 echo "<a href='index_cn.php?action=forum&conv=" . $donnees['nom'] . "'><div class='LienForum'>" . $donnees['nom'] . "</div></a>";
                             }
                             $conversation->closeCursor();
-
                            
                         ?>
 				</div>
@@ -43,11 +41,9 @@ if (isset($_GET['conv'])){
                     $delete = '';
                     if(isset($_SESSION['Role'])){
                         if($_SESSION['Role'] == 'Admin'){
-                            $delete = "<a href='index_cn.php?action=forum&conv=caca' class='delete' id='DelP'>&times;&emsp;</a>";
+                            $delete = "<a href='index_cn.php?action=forum&conv=sup' class='delete' id='DelP'>&times;&emsp;</a>";
                         }
                     }
-
-
                     echo "<h3><br>&emsp;".$_SESSION['convName']."$delete<br><br></h3><br>";
                         if (isset($_GET['conv'])) {
                             $bdd = bdd();
@@ -57,9 +53,14 @@ if (isset($_GET['conv'])){
                         if (isset($_SESSION['id_conv'])) {
                             $messages = $bdd->query('SELECT * FROM messages WHERE id_conv= \'' . $_SESSION['id_conv'] . '\'  ORDER BY id ASC');
                             while ($message = $messages->fetch()) {
-                                echo "<div class='user'><strong>" . $message['utilisateur'] . " : </strong><a href=# class='delete' style='font-size: 120%;'>&times;&emsp;</a>
-                                       <br>".$message['date']."
-                                    </div><div class='message'><br>" . $message['contenu'] . "</br></br></div><br>";
+                                echo "<div class='user'>Ecrit par <strong>" . $message['utilisateur'];
+                                if(isset($_SESSION['Role'])){
+                                    if($_SESSION['Role'] == 'Admin' OR $message['utilisateur'] == $_SESSION['Nom']. " ".$_SESSION['Prenom']){
+                                        echo "<a href='index_cn.php?action=forum&id=".$message['id']."' class='delete' style='font-size: 120%;'>&times;&emsp;</a>";
+                                    }
+                                }
+                                
+                                echo " </strong></br></strong>".$message['date']."</div><div class='message'><br>" . $message['contenu'] . "</br></br></div><br>";
                             }
                             $conversation->closeCursor();
                         }
@@ -71,11 +72,10 @@ if (isset($_GET['conv'])){
        				        echo "
                         <form action='index_cn.php?action=forum' method='post'>
                               <p><br>
-                                  <textarea class='connexion' style='width: 100%;' name='message' placeholder=' 信息...' required></textarea></br>
+                                  <textarea class='connexion' style='width: 100%;' name='message' placeholder='  信息...' required></textarea></br>
                                   <br><input class = 'boutonbis' type='submit' value='生效' /> </br>
                               </p>
                         </form>";
-
        				    }
        				    if (isset($_GET['conv']) and $_GET['conv'] == 'add') {
        				        echo "
@@ -91,7 +91,7 @@ if (isset($_GET['conv'])){
                 ?>
     		</div>
 		</div>
-        </div>
+		</div>
 	<footer>
     	<?php include "template/Footer.php" ?>
 	</footer>

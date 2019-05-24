@@ -20,7 +20,7 @@ $bdd = bdd();
 <div class = 'pro'>
 <?php for ($i = 0; $i < sizeof($_SESSION['capteur']); $i++ ){
     $k = $i +1;
-
+    
     if ($_SESSION['capteur'][$i][3] == 1){
         echo "<div class='container'>
               <img class='image' src='view/images/CapteurI.png'>
@@ -59,6 +59,9 @@ $bdd = bdd();
     </div>
 </div>
 </body>
+<p>
+</br></br></br>
+</p>
 <footer>
     <?php include "template/Footer.php" ?>
 </footer>
