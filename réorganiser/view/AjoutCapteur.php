@@ -1,17 +1,9 @@
 <?php session_start();
 include_once 'controller/ControlCapteur.php';
 include_once 'controller/ControlListeCapteur.php';
+ob_start();
 
-echo "<html>
-<head>
-    <title>10Domotique</title>
-    <link rel=\"stylesheet\" href=\"view/style.css\" />
-</head>
-<body>
-<header>";
-include "template/Header.php";
-echo "</header>
-<div class=\"corps\">
+echo "
 <div class='main'>
 <br>
 <div id=\"Cforum\">
@@ -23,7 +15,7 @@ echo "</header>
                 <select name=\"Model\">
                     <option>--Select an option--</option>";
                     for ($i = 1; $i <= sizeof($_SESSION['capteur']); $i++) {
-                        echo " <option value= ".$_SESSION['capteur'][$i-1][3]."  >Capteur&emsp;" . $_SESSION['capteur'][$i-1][0] . "&emsp;&emsp;" . $_SESSION['capteur'][$i-1][1] . "$</option> ";
+                        echo " <option value= $i >Capteur&emsp;" . $_SESSION['capteur'][$i-1][0] . "&emsp;&emsp;" . $_SESSION['capteur'][$i-1][1] . "$</option> ";
                     }
               echo" </select>
                 <br><br>
@@ -37,14 +29,8 @@ echo "</header>
         <br>
     </div>
     <br>
-    </div>
-    </div>
-<footer>";
-include "template/Footer.php";
-echo"</footer>
-</body>
-</html>";
+    </div>";
 
-?>
+require("template/template.php"); ?>
 
 

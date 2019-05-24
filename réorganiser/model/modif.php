@@ -25,9 +25,17 @@ class modif{
             }
         }
         if ($this->element == 'Prenom') {
-            return 'ok';
+            if (strlen($this->modification) > 5 AND strlen($this->modification) < 20) {
+                return 'ok';
+            } else {
+                return 'Le Prenom doit contenir entre 5 et 20 caractères';
+            }
         } else if ($this->element == 'Nom') {
-            return 'ok';
+            if (strlen($this->modification) > 5 AND strlen($this->modification) < 20) {
+                return 'ok';
+            } else {
+                return 'Le Nom doit contenir entre 6 et 20 caractères';
+            }
         } else if ($this->element == 'Email') {
             $syntaxe = '#^[\w.-]+@[\w.-]+\.[a-zA-Z]{2,6}$#';
             if (preg_match($syntaxe, $this->modification)) {

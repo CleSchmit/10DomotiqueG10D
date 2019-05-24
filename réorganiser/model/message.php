@@ -19,9 +19,5 @@ class message{
         $req->execute(array($this->id_conv, $this->pseudo, $this->message));
         return 1;
     }
-    public function supprimer($id){
-        $this->bdd->query('DELETE from messages WHERE id=\'' . $id . '\'');
-        return 1;
-    }
 }
 

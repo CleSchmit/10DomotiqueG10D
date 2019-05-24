@@ -13,13 +13,6 @@ $body="
                 <input class=\"connexion\" name=\"Nom\" type=\"text\" placeholder=\"Nom...\" required /><br><br>
                 <input class=\"connexion\" name=\"Prix\" type=\"number\" placeholder=\"Prix...\" required /><br><br>
                 <input class=\"connexion\" name=\"Consommation\" type=\"number\" placeholder=\"en W/h...\" required /><br><br>
-                <label>Quelle type de capteur voulez-vous ajouter?</label><br>
-                <select name=\"Model\">
-                    <option>--Select an option--</option>
-                    <option value=\"1\">Alarme</option>
-                    <option value=\"2\">Capteur de température</option>
-                    <option value=\"3\">Lampe connectée</option>
-                </select>
                 <br>
                     $erreur
                 <br>

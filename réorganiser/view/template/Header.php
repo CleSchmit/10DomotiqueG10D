@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="view/template/header.css" />
 </head>
 <body>
+    <div style="float: right; background-color: #333333;"><a href="index.php"><img src="view/images/France.png"></a><a href="index_cn.php"><img src="view/images/Chine.png"></a></div>
     <div id="menu">
         <img src="view/images/LOGObis.png" class="Logo">
         <ul>

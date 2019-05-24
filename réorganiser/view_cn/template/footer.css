@@ -1,0 +1,18 @@
+
+footer{
+    position: absolute;
+    font-size: 70%;
+    width: 100%;
+    right: 0%;
+    bottom: 0%;
+}
+
+footer ul{
+    list-style-type: none;
+    padding: 0% 10%;
+    float: left;
+}
+
+footer .Titre{
+    font-size: 150%;
+}

@@ -30,8 +30,7 @@ if (isset($_POST['objet']) AND isset($_POST['message'])) {
     
       // Envoyer l'email
       mail($destinataire, $objet, $contenu, $headers); // Fonction principale qui envoi l'email
-      header('Location: index.php?action=Accueil');
-}
-?>
-
-
+	  header('Location: index.php?action=Accueil');       // Afficher un message pour indiquer que le message a été envoyé
+      // (2) Fin du code pour traiter l'envoi de l'email
+    }
+    ?>

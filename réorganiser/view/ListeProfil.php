@@ -32,6 +32,28 @@ $_SESSION['indice'] = array();
 
             <div class="navListeProfil">
 
+                <style>
+                    u2 {
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 8px 16px;
+                        width: 400px;
+                        background-color: #f1f1f1;
+                    }
+
+                    li1 a {
+                        display: inline-block;
+                        color: #000;
+                        padding: 8px 16px;
+                        text-decoration: none;
+                    }
+
+                /* Change the link color on hover */
+                    li1 a:hover {
+                        background-color: #555;
+                        color: white;
+                    }
+                </style>
 
             <u2>
                 <?php for($i=0 ; $i < sizeof($_SESSION['profil']); $i++) {
