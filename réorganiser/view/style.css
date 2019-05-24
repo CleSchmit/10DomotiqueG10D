@@ -1,3 +1,12 @@
+.gcu{
+	margin: 3% 3%;
+	background-color: lightgray;
+}
+.textgcu{
+
+	margin: 2% 2%;
+	top: 2%;
+}
 body{
     font-family: Arial;
     margin: 0 0;
