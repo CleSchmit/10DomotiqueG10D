@@ -13,6 +13,12 @@ $body="
                 <input class=\"connexion\" name=\"Nom\" type=\"text\" placeholder=\"名字...\" required /><br><br>
                 <input class=\"connexion\" name=\"Prix\" type=\"number\" placeholder=\"价格...\" required /><br><br>
                 <input class=\"connexion\" name=\"Consommation\" type=\"number\" placeholder=\"功率 W/h...\" required /><br><br>
+                <select name=\"Model\">
+                    <option>--选择一个选项--</option>
+                    <option value=\"1\">报警</option>
+                    <option value=\"2\">温度传感器</option>
+                    <option value=\"3\">连接灯</option>
+                </select>
                 <br>
                     $erreur
                 <br>
