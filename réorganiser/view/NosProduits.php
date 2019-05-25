@@ -78,19 +78,19 @@ $bdd = bdd();
         echo "<div class='container'>
               <img class='image' src='view/images/CapteurI.png'>
               <div class='overlay'>
-             <div class='text'>L'alarme ".$_SESSION['capteur'][$i][0]." consomme ".$_SESSION['capteur'][$i][2]." w/h pour un prix de ".$_SESSION['capteur'][$i][1]."$ <br><a href='index.php?action=notation/noter&nom=".$_SESSION['capteur'][$i][0]."'>Notez le capteur</a>
+             <div class='text'>L'alarme ".$_SESSION['capteur'][$i][0]." consomme ".$_SESSION['capteur'][$i][2]." w/h pour un prix de ".$_SESSION['capteur'][$i][1]."$ <br><a href='index.php?action=noter&nom=".$_SESSION['capteur'][$i][0]."'>Notez le capteur</a>
             </div></div></div>";
     } elseif ($_SESSION['capteur'][$i][3] == 2) {
         echo "<div class='container'>
             <img class='image' src='view/images/Capteur.png'>
              <div class='overlay'> 
-            <div class='text'>Le capteur de température ".$_SESSION['capteur'][$i][0]." consomme ".$_SESSION['capteur'][$i][2]." w/h pour un prix de ".$_SESSION['capteur'][$i][1]."$ <br><a href='index.php?action=notation/noter&nom=".$_SESSION['capteur'][$i][0]."'>Notez le capteur</a>
+            <div class='text'>Le capteur de température ".$_SESSION['capteur'][$i][0]." consomme ".$_SESSION['capteur'][$i][2]." w/h pour un prix de ".$_SESSION['capteur'][$i][1]."$ <br><a href='index.php?action=noter&nom=".$_SESSION['capteur'][$i][0]."'>Notez le capteur</a>
               </div></div></div>";
     } else {
         echo "<div class='container'>
                <img class='image' src='view/images/CapteurP.png'>
               <div class='overlay'>
-              <div class='text'>La lampe connéctée ".$_SESSION['capteur'][$i][0]." consomme ".$_SESSION['capteur'][$i][2]." w/h pour un prix de ".$_SESSION['capteur'][$i][1]."$ <br><a href='index.php?action=notation/noter&nom=".$_SESSION['capteur'][$i][0]."'>Notez le capteur</a>
+              <div class='text'>La lampe connéctée ".$_SESSION['capteur'][$i][0]." consomme ".$_SESSION['capteur'][$i][2]." w/h pour un prix de ".$_SESSION['capteur'][$i][1]."$ <br><a href='index.php?action=noter&nom=".$_SESSION['capteur'][$i][0]."'>Notez le capteur</a>
               </div></div></div>";
     }
     if ($k%4 == 0){

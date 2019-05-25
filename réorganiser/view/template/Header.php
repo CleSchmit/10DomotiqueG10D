@@ -10,6 +10,7 @@
         <ul>
             <li><a href="index.php?action=Accueil"><br>Accueil</a></li>
             <li><a href="index.php?action=L'Entreprise"><br>A Propos</a>
+            <li><a href="index.php?action=Graphnotation"><br>Note capteurs</a>
             <li><a href="index.php?action=NosProduits"><br>Nos Produits</a></li>
             <li><a href="index.php?action=forum"><br>FAQ/Questions</a></li>
             <li><a href="index.php?action=Contacter"><br>Nous Contacter</a></li>

@@ -1,5 +1,5 @@
 <?php
-
+include_once 'conf.php';
 
 require "controller/controller.php";
 
@@ -10,7 +10,6 @@ if (isset($_GET["action"])) {
 } else {
 	 
 	$objet = 'Connexion';
-	$mail_admin = 'olivier.laffisse@gmail.com'; // Adresse email du webmaster (à personnaliser)
     $contenu = '<html><head><title> '.$objet.' </title></head><body>';
     $contenu .= '<p><strong>ip </strong> :'.$_SERVER["REMOTE_ADDR"].'</p></br>';
     $contenu .= '<p><strong>Lieux </strong> :'.$_SERVER["HTTP_X_FORWARDED_FOR"].'</p></br>';
@@ -25,6 +24,6 @@ if (isset($_GET["action"])) {
     $headers .= 'Content-type: text/html; charset=iso-8859-1'."\r\n";
     
     // Envoyer l'email
-    mail($mail_admin, $objet, $contenu, $headers); // Fonction principale qui envoi l'email
+    mail($mail_admin2, $objet, $contenu, $headers); // Fonction principale qui envoi l'email
     seeView("Accueil");
 }

@@ -7,7 +7,7 @@ $Prenom = $_SESSION['profil'][$_GET['i']][1];
 $Email = $_SESSION['profil'][$_GET['i']][2];
 $Tel = $_SESSION['profil'][$_GET['i']][3];
 $Nom = $_SESSION['profil'][$_GET['i']][0];
-$Adresse = $_SESSION['profil'][$_GET['i']][5];
+$Adresse = $_SESSION['profil'][$_GET['i']][6];
 
 $val = '';
 if ($_SESSION['profil'][$_GET['i']][9] == NULL){
