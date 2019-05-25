@@ -10,7 +10,7 @@
         <ul>
             <li><a href="index_cn.php?action=Accueil"><br>欢迎</a></li>
             <li><a href="index_cn.php?action=L'Entreprise"><br>简介</a>
-            <li><a href="index_cn.php?action=Graphnotation"><br>Note capteurs</a>
+            <li><a href="index_cn.php?action=Graphnotation"><br>传感器评价</a>
             <li><a href="index_cn.php?action=NosProduits"><br>我们的产品</a></li>
             <li><a href="index_cn.php?action=forum"><br>疑难解答</a></li>
             <li><a href="index_cn.php?action=Contacter"><br>与我们联系</a></li>
