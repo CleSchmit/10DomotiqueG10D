@@ -119,7 +119,51 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/réorganiser/view/template/Header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="78" lean-forward="true" selection-start-line="12" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/réorganiser/view_cn/template/Header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/réorganiser/view_cn/ProfilModifAdmin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/réorganiser/view_cn/Graphnotation.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-39" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/réorganiser/view/Graphnotation.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="66" lean-forward="true" selection-start-line="18" selection-start-column="66" selection-end-line="18" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -151,8 +195,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/réorganiser/view/Profil.php" />
-        <option value="$PROJECT_DIR$/réorganiser/controller/ControlSupp.php" />
         <option value="$PROJECT_DIR$/réorganiser/view/supprimer.php" />
         <option value="$PROJECT_DIR$/réorganiser/model/supp.php" />
         <option value="$PROJECT_DIR$/réorganiser/view/ProfilAdmin.php" />
@@ -202,6 +244,8 @@
         <option value="$PROJECT_DIR$/réorganiser/model/ajoutlistecapteur.php" />
         <option value="$PROJECT_DIR$/réorganiser/controller/ControlAjoutListeCapteur2.php" />
         <option value="$PROJECT_DIR$/réorganiser/view_cn/AjoutListeCapteur.php" />
+        <option value="$PROJECT_DIR$/réorganiser/view_cn/template/Header.php" />
+        <option value="$PROJECT_DIR$/réorganiser/view_cn/ProfilModifAdmin.php" />
       </list>
     </option>
   </component>
@@ -211,10 +255,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
-    <option name="height" value="1087" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="952" />
+    <option name="width" value="975" />
+    <option name="height" value="1088" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -224,7 +268,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -241,13 +284,14 @@
               <item name="10DomotiqueG10D" type="b2602c69:ProjectViewProjectNode" />
               <item name="10DomotiqueG10D" type="462c0819:PsiDirectoryNode" />
               <item name="réorganiser" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="10DomotiqueG10D" type="b2602c69:ProjectViewProjectNode" />
               <item name="10DomotiqueG10D" type="462c0819:PsiDirectoryNode" />
               <item name="réorganiser" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="10DomotiqueG10D" type="b2602c69:ProjectViewProjectNode" />
@@ -255,10 +299,18 @@
               <item name="réorganiser" type="462c0819:PsiDirectoryNode" />
               <item name="view_cn" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="10DomotiqueG10D" type="b2602c69:ProjectViewProjectNode" />
+              <item name="10DomotiqueG10D" type="462c0819:PsiDirectoryNode" />
+              <item name="réorganiser" type="462c0819:PsiDirectoryNode" />
+              <item name="view_cn" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -372,16 +424,18 @@
       <workItem from="1558597220827" duration="6748000" />
       <workItem from="1558604818342" duration="1214000" />
       <workItem from="1558792397743" duration="1148000" />
+      <workItem from="1558814177432" duration="1230000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="217131000" />
+    <option name="totallyTimeSpent" value="218361000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1087" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2571116" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12818792" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -419,12 +473,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/réorganiser/controller/ControlProfilGestion.php" />
-    <entry file="file://$PROJECT_DIR$/réorganiser/view/Profil.php" />
-    <entry file="file://$PROJECT_DIR$/réorganiser/model/profilgestion.php" />
-    <entry file="file://$PROJECT_DIR$/réorganiser/view/ProfilGestion.php" />
-    <entry file="file://$PROJECT_DIR$/réorganisé/model/capteur.php" />
-    <entry file="file://$PROJECT_DIR$/réorganisé/controller/ControlCapteur.php" />
     <entry file="file://$PROJECT_DIR$/réorganisé/controller/ControlDataConso.php" />
     <entry file="file://$PROJECT_DIR$/réorganisé/view/Graphconso.php" />
     <entry file="file://$PROJECT_DIR$/réorganisé/model/dataconso.php" />
@@ -516,6 +564,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/réorganiser/view_cn/template/header.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/réorganiser/view/template/Header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="78" lean-forward="true" selection-start-line="12" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/réorganiser/view/Graphnotation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="66" lean-forward="true" selection-start-line="18" selection-start-column="66" selection-end-line="18" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/réorganiser/view_cn/Graphnotation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-39" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/réorganiser/view_cn/template/Header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/réorganiser/view_cn/ProfilModifAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
         </state>
       </provider>
     </entry>
