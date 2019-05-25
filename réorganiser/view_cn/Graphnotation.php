@@ -22,6 +22,7 @@ include_once 'controller/ControlListeNote.php';
         data: {
             labels: <?php echo json_encode($_SESSION['liste2']); ?>,
             datasets: [{
+
                 label: '传感器的评分(5分制）',
                 data: <?php echo json_encode($_SESSION['liste1']); ?>,
                 backgroundColor: 'rgba(0, 0, 0, 0.8)',
